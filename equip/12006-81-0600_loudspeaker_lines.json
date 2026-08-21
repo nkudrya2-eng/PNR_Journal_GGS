@@ -1,0 +1,370 @@
+{
+  "project_code": "12006-81-0600-СС1.2",
+  "system_name": "Система оперативно-диспетчерской связи и громкоговорящей связи (СОДС и ГГС)",
+  "object_name": "Култуминский горно-обогатительный комбинат. Объекты вспомогательных цехов. Площадка обслуживания вспомогательного транспорта",
+  "lines_count": 11,
+  "central_lines": [
+    {
+      "line_id": "cl6.0.6",
+      "loudspeakers": [
+        {
+          "tag": "LS6.0.6.01",
+          "location": "Территория ОВЦ.",
+          "type": "AR-25",
+          "power_w": 25.0
+        },
+        {
+          "tag": "LS6.0.6.02",
+          "location": "Территория ОВЦ.",
+          "type": "AR-25",
+          "power_w": 25.0
+        },
+        {
+          "tag": "LS6.0.6.03",
+          "location": "Территория ОВЦ.",
+          "type": "AR-25",
+          "power_w": 25.0
+        }
+      ],
+      "total_power_w": 75.0
+    },
+    {
+      "line_id": "cl6.0.7",
+      "loudspeakers": [
+        {
+          "tag": "LS6.0.7.01",
+          "location": "Территория ОВЦ.",
+          "type": "AR-25",
+          "power_w": 25.0
+        },
+        {
+          "tag": "LS6.0.7.02",
+          "location": "Территория ОВЦ.",
+          "type": "AR-25",
+          "power_w": 25.0
+        },
+        {
+          "tag": "LS6.0.7.03",
+          "location": "Территория ОВЦ.",
+          "type": "AR-25",
+          "power_w": 25.0
+        },
+        {
+          "tag": "LS6.0.7.04",
+          "location": "Территория ОВЦ.",
+          "type": "AR-25",
+          "power_w": 25.0
+        }
+      ],
+      "total_power_w": 100.0
+    },
+    {
+      "line_id": "cl6.0.8",
+      "loudspeakers": [
+        {
+          "tag": "LS6.0.8.1",
+          "location": "Территория ОВЦ.",
+          "type": "AR-25",
+          "power_w": 25.0
+        }
+      ],
+      "total_power_w": 25.0
+    },
+    {
+      "line_id": "cl6.0.9",
+      "loudspeakers": [
+        {
+          "tag": "LS6.0.9.1",
+          "location": "Территория ОВЦ.",
+          "type": "AR-25",
+          "power_w": 25.0
+        },
+        {
+          "tag": "LS6.0.9.2",
+          "location": "Территория ОВЦ.",
+          "type": "AR-25",
+          "power_w": 25.0
+        },
+        {
+          "tag": "LS6.0.9.3",
+          "location": "Территория ОВЦ.",
+          "type": "AR-25",
+          "power_w": 25.0
+        }
+      ],
+      "total_power_w": 75.0
+    },
+    {
+      "line_id": "cl6.0.10",
+      "loudspeakers": [
+        {
+          "tag": "LS6.0.10.1",
+          "location": "Территория ОВЦ.",
+          "type": "AR-25",
+          "power_w": 25.0
+        },
+        {
+          "tag": "LS6.4.10.2",
+          "location": "Автоб. павильон.",
+          "type": "B-406(T)",
+          "power_w": 3.0
+        },
+        {
+          "tag": "LS6.0.10.2",
+          "location": "Территория ОВЦ.",
+          "type": "AR-25",
+          "power_w": 25.0
+        }
+      ],
+      "total_power_w": 53.0
+    },
+    {
+      "line_id": "cl6.8.11",
+      "loudspeakers": [
+        {
+          "tag": "LS6.8.11.1",
+          "location": "АБК.",
+          "type": "B-406(T)",
+          "power_w": 1.5
+        },
+        {
+          "tag": "LS6.8.11.2",
+          "location": "АБК.",
+          "type": "B-406(T)",
+          "power_w": 1.5
+        },
+        {
+          "tag": "LS6.8.11.3",
+          "location": "АБК.",
+          "type": "CP-66(T)",
+          "power_w": 3.0
+        }
+      ],
+      "total_power_w": 6.0
+    },
+    {
+      "line_id": "cl6.2.1",
+      "loudspeakers": [
+        {
+          "tag": "LS6.2.1.01",
+          "location": "Пом. 142.",
+          "type": "CP-66(T)",
+          "power_w": 6.0
+        },
+        {
+          "tag": "LS6.2.1.03",
+          "location": "Пом. 142.",
+          "type": "CP-66(T)",
+          "power_w": 6.0
+        },
+        {
+          "tag": "LS6.2.1.05",
+          "location": "Пом. 142.",
+          "type": "CP-66(T)",
+          "power_w": 6.0
+        },
+        {
+          "tag": "LS6.2.1.08",
+          "location": "Пом. 142.",
+          "type": "CP-66(T)",
+          "power_w": 6.0
+        },
+        {
+          "tag": "LS6.2.1.11",
+          "location": "Пом. 142.",
+          "type": "CP-66(T)",
+          "power_w": 6.0
+        }
+      ],
+      "total_power_w": 30.0
+    },
+    {
+      "line_id": "cl6.2.2",
+      "loudspeakers": [
+        {
+          "tag": "LS6.2.2.01",
+          "location": "Пом.101. Уч. 133.",
+          "type": "AR-25",
+          "power_w": 5.0
+        },
+        {
+          "tag": "LS6.2.2.02",
+          "location": "Пом.101. Уч. 128.",
+          "type": "AR-25",
+          "power_w": 15.0
+        },
+        {
+          "tag": "LS6.2.2.03",
+          "location": "Пом.101. Уч. 128.",
+          "type": "AR-25",
+          "power_w": 15.0
+        },
+        {
+          "tag": "LS6.2.2.04",
+          "location": "Пом. 103.",
+          "type": "AR-25",
+          "power_w": 15.0
+        },
+        {
+          "tag": "LS6.2.2.05",
+          "location": "Пом. 104.",
+          "type": "AR-25",
+          "power_w": 15.0
+        }
+      ],
+      "total_power_w": 65.0
+    },
+    {
+      "line_id": "cl6.2.3",
+      "loudspeakers": [
+        {
+          "tag": "LS6.2.3.01",
+          "location": "Пом. 101. Уч. 123",
+          "type": "AR-25",
+          "power_w": 25.0
+        },
+        {
+          "tag": "LS6.2.03.2",
+          "location": "Пом. 101.",
+          "type": "AR-25",
+          "power_w": 25.0
+        },
+        {
+          "tag": "LS6.2.03.3",
+          "location": "Пом. 101. Уч. 128.",
+          "type": "AR-25",
+          "power_w": 15.0
+        },
+        {
+          "tag": "LS6.2.03.4",
+          "location": "Пом. 101. Уч. 129.",
+          "type": "AR-25",
+          "power_w": 15.0
+        },
+        {
+          "tag": "LS6.2.03.5",
+          "location": "Пом. 103.",
+          "type": "AR-25",
+          "power_w": 5.0
+        }
+      ],
+      "total_power_w": 85.0
+    },
+    {
+      "line_id": "cl6.2.4",
+      "loudspeakers": [
+        {
+          "tag": "LS6.2.4.01",
+          "location": "Пом. 101. Уч. 123",
+          "type": "AR-25",
+          "power_w": 15.0
+        },
+        {
+          "tag": "LS6.2.4.02",
+          "location": "Пом. 101. Уч. 121.",
+          "type": "AR-25",
+          "power_w": 25.0
+        },
+        {
+          "tag": "LS6.2.4.03",
+          "location": "Пом. 101. Уч. 120.",
+          "type": "AR-25",
+          "power_w": 25.0
+        },
+        {
+          "tag": "LS6.2.4.04",
+          "location": "Пом. Уч. 102.",
+          "type": "AR-25",
+          "power_w": 25.0
+        },
+        {
+          "tag": "LS6.2.4.05",
+          "location": "Пом. Уч. 102.",
+          "type": "AR-25",
+          "power_w": 15.0
+        }
+      ],
+      "total_power_w": 105.0
+    },
+    {
+      "line_id": "cl6.2.5",
+      "loudspeakers": [
+        {
+          "tag": "LS6.2.5.01",
+          "location": "Пом. 219.",
+          "type": "CP-66(T)",
+          "power_w": 6.0
+        },
+        {
+          "tag": "LS6.2.5.03",
+          "location": "Пом. 219.",
+          "type": "CP-66(T)",
+          "power_w": 6.0
+        },
+        {
+          "tag": "LS6.2.5.06",
+          "location": "Пом. 219.",
+          "type": "CP-66(T)",
+          "power_w": 6.0
+        },
+        {
+          "tag": "LS6.2.5.08",
+          "location": "Пом. 219.",
+          "type": "CP-66(T)",
+          "power_w": 6.0
+        },
+        {
+          "tag": "LS6.2.5.11",
+          "location": "Пом. 219.",
+          "type": "CP-66(T)",
+          "power_w": 6.0
+        }
+      ],
+      "total_power_w": 30.0
+    }
+  ],
+  "local_dw_speakers": [
+    {
+      "tag": "LS-DW.01",
+      "location": "Здание РММ, Переговорный пост DW с УНЧ №1",
+      "type": "AR-25",
+      "power_w": 25.0
+    },
+    {
+      "tag": "LS-DW.02",
+      "location": "Здание РММ, Переговорный пост DW с УНЧ №2",
+      "type": "AR-25",
+      "power_w": 25.0
+    },
+    {
+      "tag": "LS-DW.03",
+      "location": "Здание РММ, Переговорный пост DW с УНЧ №3",
+      "type": "AR-25",
+      "power_w": 25.0
+    },
+    {
+      "tag": "LS-DW.04",
+      "location": "Здание РММ, Переговорный пост DW с УНЧ №4",
+      "type": "AR-25",
+      "power_w": 25.0
+    },
+    {
+      "tag": "LS-DW.05",
+      "location": "Здание РММ, Переговорный пост DW с УНЧ №5",
+      "type": "AR-25",
+      "power_w": 25.0
+    },
+    {
+      "tag": "LS-DW.06",
+      "location": "Здание РММ, Переговорный пост DW с УНЧ №6",
+      "type": "AR-25",
+      "power_w": 25.0
+    },
+    {
+      "tag": "LS-DW.07",
+      "location": "Здание РММ, Переговорный пост DW с УНЧ №7",
+      "type": "AR-25",
+      "power_w": 25.0
+    }
+  ]
+}

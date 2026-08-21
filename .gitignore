@@ -1,0 +1,15 @@
+__pycache__/
+*.py[cod]
+*$py.class
+*.swp
+*.swo
+
+.idea/
+.vscode/
+.env
+.venv/
+venv/
+
+cache/
+tmp/
+scratch/
