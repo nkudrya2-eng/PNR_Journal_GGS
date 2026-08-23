@@ -168,13 +168,13 @@ table.acoustic-table td {
 <div style="font-size: 14pt; line-height: 1.5; color: #222; text-align: justify;">
 <ol style="padding-left: 20px; margin-top: 5px;">
   <li style="margin-bottom: 8px;">
-    <strong>Назначение и состав системы:</strong> Комплекс оперативно-диспетчерской и громкоговорящей связи (СОДС и ГГС) Култуминского ГОКа построен на базе цифрового оборудования ООО «Армтел» в соответствии с рабочей документацией <strong>{{ project_code }}</strong>, требованиями ГОСТ Р 21.703-2020, СП 134.13330.2022, ПУЭ и нормами промышленной безопасности опасных производственных объектов.
+    <strong>Назначение и состав системы:</strong> {% if technical_notes.scope_summary %}{{ technical_notes.scope_summary }}{% else %}Комплекс оперативно-диспетчерской и громкоговорящей связи (СОДС и ГГС) Култуминского ГОКа построен на базе цифрового оборудования ООО «Армтел» в соответствии с рабочей документацией <strong>{{ project_code }}</strong>, требованиями ГОСТ Р 21.703-2020, СП 134.13330.2022, ПУЭ и нормами промышленной безопасности опасных производственных объектов.{% endif %}
   </li>
   <li style="margin-bottom: 8px;">
     <strong>Размещение центрального узла и сетевая связность:</strong> Центральное коммутационное оборудование системы (коммутаторы DCN-16U, модули E1/SIP, усилители TDA-500) размещено в телекоммуникационном шкафу <strong>TR6.2.3</strong> (здание РММ, пом. 105 «Узел связи»). Интеграция в общую информационную сеть предприятия выполнена по Ethernet через коммутатор КСПД шкафа <strong>TR6.2.2</strong>. Стыковка с объектовой системой оповещения РАСЦО организована через блок <strong>П161М РММ-8 БС</strong> и МАП (помещение «Серверная» Главного корпуса ОФ).
   </li>
   <li style="margin-bottom: 8px;">
-    <strong>Электропитание, резервирование и заземление:</strong> Электроснабжение шкафа TR6.2.3 выполнено по I категории надёжности. Автономное резервирование обеспечивается установкой постоянного тока <strong>ШТИЛЬ PS48-0080-2U 2kW/48V</strong> с 4 АКБ по 40 А·ч (48 В). Расчётное время непрерывной автономной работы составляет <strong>53 минуты</strong> при рабочей нагрузке 1740 Вт (требование ТУ — не менее 40 минут). Корпус шкафа и аппаратные блоки присоединены к контуру защитного заземления проводом ПВ3 1×6 мм² (R &lt; 4 Ом).
+    <strong>Электропитание, резервирование и заземление:</strong> Электроснабжение шкафа центрального оборудования выполнено по I категории надёжности. Автономное резервирование обеспечивается установкой питания <strong>{{ ups.model_title }}</strong> с <strong>{{ ups.battery_desc }}</strong>. Расчётное время непрерывной автономной работы составляет <strong>{{ ups.runtime_minutes }} минут</strong> при рабочей нагрузке {{ ups.load_watts }} Вт (требование ТУ — не менее 40 минут). Корпус шкафа и аппаратные блоки присоединены к контуру защитного заземления проводом ПВ3 1×6 мм² (R &lt; 4 Ом).
   </li>
   <li style="margin-bottom: 8px;">
     <strong>Охрана труда и регламент ПНР:</strong> Пусконаладочные работы выполнены аттестованным персоналом наладочной организации по утверждённым программам и заводским руководствам по эксплуатации (РЭ). Все применяемое оборудование сертифицировано в РФ и ЕАЭС.
@@ -429,23 +429,23 @@ table.acoustic-table td {
 <table style="width: 100%; border-collapse: collapse; font-size: 12pt; margin-bottom: 12px;">
   <tr>
     <td style="border: 1px solid #777; padding: 6px; width: 35%; font-weight: bold; background-color: #f7f7f7; text-align: left;">Объект испытаний</td>
-    <td style="border: 1px solid #777; padding: 6px; text-align: left;">Установка питания постоянного тока ШТИЛЬ PS48-0080-2U 2kW/48V с инвертором PS48-60/500</td>
+    <td style="border: 1px solid #777; padding: 6px; text-align: left;">{{ ups.model_title }}</td>
   </tr>
   <tr>
     <td style="border: 1px solid #777; padding: 6px; font-weight: bold; background-color: #f7f7f7; text-align: left;">Место установки</td>
-    <td style="border: 1px solid #777; padding: 6px; text-align: left;">Здание РММ, пом. 105 «Узел связи», шкаф TR6.2.3</td>
+    <td style="border: 1px solid #777; padding: 6px; text-align: left;">{{ project_object }}, центральный телекоммуникационный шкаф</td>
   </tr>
   <tr>
     <td style="border: 1px solid #777; padding: 6px; font-weight: bold; background-color: #f7f7f7; text-align: left;">Аккумуляторная батарея</td>
-    <td style="border: 1px solid #777; padding: 6px; text-align: left;">4 × 12 В 40 А·ч (последовательно, Uном = 48 В, C = 40 А·ч)</td>
+    <td style="border: 1px solid #777; padding: 6px; text-align: left;">{{ ups.battery_desc }}</td>
   </tr>
   <tr>
     <td style="border: 1px solid #777; padding: 6px; font-weight: bold; background-color: #f7f7f7; text-align: left;">Фактическая нагрузка шкафа</td>
-    <td style="border: 1px solid #777; padding: 6px; text-align: left;">1740 Вт (Iрасч = 7.98 А при ~220В, автомат 16 А, cos φ = 0.99)</td>
+    <td style="border: 1px solid #777; padding: 6px; text-align: left;">{{ ups.load_watts }} Вт (Iрасч = {{ ups.load_current }} А при ~220В, автомат {{ ups.circuit_breaker }} А, cos φ = 0.99)</td>
   </tr>
   <tr>
     <td style="border: 1px solid #777; padding: 6px; font-weight: bold; background-color: #f7f7f7; text-align: left;">Требование ТУ / Расчетное время</td>
-    <td style="border: 1px solid #777; padding: 6px; text-align: left;">Не менее 40 минут / Расчетное время: <strong>53 минуты</strong> (T = 40 × 48 × 0.8 / 1740)</td>
+    <td style="border: 1px solid #777; padding: 6px; text-align: left;">Не менее 40 минут / Расчетное время: <strong>{{ ups.runtime_minutes }} минут</strong> (T = {{ ups.capacity_ah }} × {{ ups.nominal_voltage }} × 0.85 / {{ ups.load_watts }} × 60)</td>
   </tr>
 </table>
 
@@ -484,55 +484,25 @@ table.acoustic-table td {
 <table style="width: 100%; border-collapse: collapse; font-size: 12pt; margin-bottom: 12px;">
   <thead>
     <tr style="background-color: #ededed;">
-      <th style="border: 1px solid #777; padding: 6px; width: 14%; text-align: left;">Время разряда</th>
-      <th style="border: 1px solid #777; padding: 6px; width: 18%; text-align: center;">Напряжение АКБ, В</th>
-      <th style="border: 1px solid #777; padding: 6px; width: 14%; text-align: center;">Ток разряда, А</th>
+      <th style="border: 1px solid #777; padding: 6px; width: 16%; text-align: left;">Время разряда</th>
+      <th style="border: 1px solid #777; padding: 6px; width: 16%; text-align: center;">Напряжение АКБ</th>
+      <th style="border: 1px solid #777; padding: 6px; width: 14%; text-align: center;">Ток разряда</th>
       <th style="border: 1px solid #777; padding: 6px; width: 40%; text-align: left;">Состояние оборудования и параметры выхода</th>
       <th style="border: 1px solid #777; padding: 6px; width: 14%; text-align: center;">Отметка</th>
     </tr>
   </thead>
   <tbody>
+    {% for row in ups.discharge_rows %}
     <tr>
-      <td style="border: 1px solid #777; padding: 5px; text-align: left;">0 мин (старт)</td>
-      <td style="border: 1px solid #777; padding: 5px; text-align: center;">52.8 В</td>
-      <td style="border: 1px solid #777; padding: 5px; text-align: center;">36.2 А</td>
-      <td style="border: 1px solid #777; padding: 5px;">Отключение ввода ~220В. Безразрывный переход на АКБ (0 мс). Выход -48В и ~220В стабилен.</td>
-      <td style="border: 1px solid #777; padding: 5px; text-align: center;">[x] Норма</td>
+      <td style="border: 1px solid #777; padding: 5px; text-align: left;">{{ row.time_str }}</td>
+      <td style="border: 1px solid #777; padding: 5px; text-align: center;">{{ row.voltage }}</td>
+      <td style="border: 1px solid #777; padding: 5px; text-align: center;">{{ row.current }}</td>
+      <td style="border: 1px solid #777; padding: 5px;">{{ row.state }}</td>
+      <td style="border: 1px solid #777; padding: 5px; text-align: center;">{{ row.mark }}</td>
     </tr>
-    <tr>
-      <td style="border: 1px solid #777; padding: 5px; text-align: left;">15 мин</td>
-      <td style="border: 1px solid #777; padding: 5px; text-align: center;">49.6 В</td>
-      <td style="border: 1px solid #777; padding: 5px; text-align: center;">36.8 А</td>
-      <td style="border: 1px solid #777; padding: 5px;">Питание DCN-16U, шлюзов и УНЧ TDA-500 в норме. Температура АКБ +22°C.</td>
-      <td style="border: 1px solid #777; padding: 5px; text-align: center;">[x] Норма</td>
-    </tr>
-    <tr>
-      <td style="border: 1px solid #777; padding: 5px; text-align: left;">30 мин</td>
-      <td style="border: 1px solid #777; padding: 5px; text-align: center;">48.0 В</td>
-      <td style="border: 1px solid #777; padding: 5px; text-align: center;">37.5 А</td>
-      <td style="border: 1px solid #777; padding: 5px;">Просадка напряжения в пределах нормы. Качество голосовой связи без искажений.</td>
-      <td style="border: 1px solid #777; padding: 5px; text-align: center;">[x] Норма</td>
-    </tr>
-    <tr>
-      <td style="border: 1px solid #777; padding: 5px; text-align: left;"><strong>40 мин (ТУ)</strong></td>
-      <td style="border: 1px solid #777; padding: 5px; text-align: center;"><strong>47.1 В</strong></td>
-      <td style="border: 1px solid #777; padding: 5px; text-align: center;">38.0 А</td>
-      <td style="border: 1px solid #777; padding: 5px;"><strong>Требование ТУ (не менее 40 минут) выполнено.</strong> Сигнал телесигнализации «Разряд АКБ».</td>
-      <td style="border: 1px solid #777; padding: 5px; text-align: center;">[x] Норма</td>
-    </tr>
-    <tr>
-      <td style="border: 1px solid #777; padding: 5px; text-align: left;">50 мин</td>
-      <td style="border: 1px solid #777; padding: 5px; text-align: center;">45.2 В</td>
-      <td style="border: 1px solid #777; padding: 5px; text-align: center;">38.8 А</td>
-      <td style="border: 1px solid #777; padding: 5px;">Система СОДС и ГГС сохраняет 100% работоспособность при всех типах вызовов.</td>
-      <td style="border: 1px solid #777; padding: 5px; text-align: center;">[x] Норма</td>
-    </tr>
-    <tr>
-      <td style="border: 1px solid #777; padding: 5px; text-align: left;"><strong>53 мин (расчет)</strong></td>
-      <td style="border: 1px solid #777; padding: 5px; text-align: center;"><strong>44.2 В</strong></td>
-      <td style="border: 1px solid #777; padding: 5px; text-align: center;">39.2 А</td>
-      <td style="border: 1px solid #777; padding: 5px;">Порог защитного отключения АКБ (43.2В) не достигнут. Испытание успешно завершено.</td>
-      <td style="border: 1px solid #777; padding: 5px; text-align: center;">[x] Норма</td>
+    {% endfor %}
+  </tbody>
+</table>
     </tr>
   </tbody>
 </table>

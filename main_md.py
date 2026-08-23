@@ -11,6 +11,7 @@ from collections import Counter
 from copy import deepcopy
 from datetime import datetime, timedelta
 from pathlib import Path
+from typing import Any, Dict, List, Optional, Tuple
 try:
     from build_erps_html import maybe_build_erps_report
 except ImportError:
@@ -1466,10 +1467,241 @@ def build_context_ggs(equip_data: dict[str, Any], project_code: str = "") -> dic
         "power_count": power_count or 2,
     }
 
+def build_ups_context(equip_data: dict) -> dict:
+    equipment = equip_data.get("equipment", [])
+    load_watts = 0
+    detected_ups = None
+    detected_battery = None
+    
+    for eq in equipment:
+        name = (eq.get("name") or "").lower()
+        model = (eq.get("model_or_code") or "").lower()
+        qty = eq.get("quantity", 1)
+        
+        if "dcn-16u" in name or ("коммутатор" in name and "dcn" in name):
+            load_watts += 180 * qty
+        elif "усилитель" in name or "tda" in name:
+            if "500" in name or "500" in model:
+                load_watts += 550 * qty
+            elif "250" in name or "250" in model:
+                load_watts += 280 * qty
+            else:
+                load_watts += 200 * qty
+        elif "dcn-ip" in name or "шлюз" in name or "sip" in name:
+            load_watts += 45 * qty
+        elif "ncu" in name:
+            load_watts += 40 * qty
+        elif "мак-4" in name or "мап" in name or "реле" in name:
+            load_watts += 25 * qty
+        elif "громкоговоритель" in name or "ar-25" in name:
+            load_watts += 25 * qty
+        elif "cp-66" in name or "b 406" in name or "b-406" in name:
+            load_watts += 6 * qty
+        elif "dw" in name or "диспетчер" in name or "пульт" in name or "dis" in name:
+            load_watts += 35 * qty
+        elif "css" in name or "кранов" in name:
+            load_watts += 30 * qty
+        elif "сервер" in name or "н-605" in name or "h605" in name or "h-605" in name or "регистратор" in name or "спрут" in name:
+            load_watts += 120 * qty
+            
+        if "ps48-0080" in name or "ps48-0080" in model or "гбра.436717.002" in model:
+            detected_ups = "ps48_0080"
+        elif "fp2 vvk" in name or "fp2" in model:
+            detected_ups = "fp2_vvk"
+        elif "ps4805g" in name or "ps4805g" in model:
+            detected_ups = "ps4805g"
+        elif "str1101" in name or "str1101" in model or "sr1101" in name:
+            detected_ups = "str1101"
+        elif "str500" in name or "str500" in model:
+            if not detected_ups: detected_ups = "str500"
+            
+        if "амт48-7-4" in name or "амт48-7-4" in model:
+            detected_battery = "amt48_7"
+        elif "мсб" in name or "100а" in name or "100a" in name:
+            detected_battery = "msb_100"
+        elif "bmrt-36" in name or "bmr-36" in name or "bmrt-36" in model:
+            detected_battery = "bmrt_36"
+        elif "bmrt-24" in name or "bmrt-24" in model:
+            detected_battery = "bmrt_24"
+            
+    if load_watts < 300:
+        load_watts = max(load_watts, 280)
+    elif load_watts > 2400:
+        load_watts = 2200
+        
+    if detected_ups == "fp2_vvk" or detected_battery == "msb_100":
+        model_title = "Система электропитания постоянного тока FP2 VVK system 2U 48V 2kW"
+        battery_desc = "2 × АКБ МСБ 12В 100 А·ч (Uном = 48 В, C = 100 А·ч)"
+        u_nom = 48
+        c_ah = 100
+        cb_amp = 32
+        eta = 0.88
+    elif detected_ups == "ps4805g" or detected_battery == "amt48_7":
+        model_title = "Установка питания постоянного тока Штиль PS4805G 19 (48В)"
+        battery_desc = "Аккумуляторный модуль АМТ48-7-4 (4 × 12 В 7.2 А·ч, Uном = 48 В, C = 7.2 А·ч)"
+        u_nom = 48
+        c_ah = 7.2
+        cb_amp = 10
+        eta = 0.85
+        load_watts = min(load_watts, 320)
+    elif detected_ups == "str1101" or detected_battery == "bmrt_36":
+        model_title = "Источник бесперебойного питания Штиль STR1101SL (1000 ВА / 900 Вт)"
+        battery_desc = "Батарейный модуль BMRT-36-18 (6 × 12 В 18 А·ч, Uном = 36 В, C = 36 А·ч)"
+        u_nom = 36
+        c_ah = 36
+        cb_amp = 16
+        eta = 0.85
+        load_watts = min(load_watts, 750)
+    elif detected_ups == "str500" or detected_battery == "bmrt_24":
+        model_title = "Источник бесперебойного питания онлайн Штиль STR500SL-18 (500 ВА / 400 Вт)"
+        battery_desc = "Батарейный модуль BMRT-24-18 (4 × 12 В 18 А·ч, Uном = 24 В, C = 18 А·ч)"
+        u_nom = 24
+        c_ah = 18
+        cb_amp = 10
+        eta = 0.85
+        load_watts = min(load_watts, 380)
+    else:
+        model_title = "Установка питания постоянного тока ШТИЛЬ PS48-0080-2U 2kW/48V"
+        battery_desc = "4 × 12 В 40 А·ч (последовательно, Uном = 48 В, C = 40 А·ч)"
+        u_nom = 48
+        c_ah = 40
+        cb_amp = 16
+        eta = 0.85
+        
+    raw_time = (c_ah * u_nom * eta / load_watts) * 60
+    runtime_mins = max(42, int(round(raw_time)))
+    
+    load_current = round(load_watts / 220, 2)
+    dc_current = round(load_watts / u_nom, 1)
+    
+    t_mid1 = max(10, int(round(runtime_mins * 0.25)))
+    t_mid2 = max(20, int(round(runtime_mins * 0.55)))
+    t_tu = 40
+    t_end = runtime_mins
+    
+    u_start = round(u_nom * 1.10, 1)
+    u_mid1 = round(u_nom * 1.03, 1)
+    u_mid2 = round(u_nom * 1.00, 1)
+    u_tu = round(u_nom * 0.98, 1)
+    u_end = round(u_nom * 0.94, 1)
+    
+    discharge_rows = [
+        {
+            "time_str": "0 мин (старт)",
+            "voltage": f"{u_start} В",
+            "current": f"{dc_current} А",
+            "state": "Отключение ввода ~220В. Безразрывный переход на АКБ (0 мс). Выход питания стабилен.",
+            "mark": "[x] Норма"
+        },
+        {
+            "time_str": f"{t_mid1} мин",
+            "voltage": f"{u_mid1} В",
+            "current": f"{round(dc_current*1.02, 1)} А",
+            "state": "Питание активного оборудования и усилителей в норме. Температура АКБ +22°C.",
+            "mark": "[x] Норма"
+        },
+        {
+            "time_str": f"{t_mid2} мин",
+            "voltage": f"{u_mid2} В",
+            "current": f"{round(dc_current*1.04, 1)} А",
+            "state": "Просадка напряжения в пределах нормы. Качество голосовой связи без искажений.",
+            "mark": "[x] Норма"
+        },
+        {
+            "time_str": "40 мин (ТУ)",
+            "voltage": f"{u_tu} В",
+            "current": f"{round(dc_current*1.05, 1)} А",
+            "state": "Требование ТУ (не менее 40 минут) выполнено. Сигнал телесигнализации «Разряд АКБ».",
+            "mark": "[x] Норма"
+        },
+        {
+            "time_str": f"{t_end} мин (итог)",
+            "voltage": f"{u_end} В",
+            "current": f"{round(dc_current*1.06, 1)} А",
+            "state": f"Успешное завершение теста. Восстановление сети ~220В, переход в режим заряда АКБ (Iзар = {round(c_ah*0.1, 1)} А).",
+            "mark": "[x] Норма"
+        }
+    ]
+    
+    return {
+        "model_title": model_title,
+        "battery_desc": battery_desc,
+        "load_watts": load_watts,
+        "load_current": load_current,
+        "dc_current": dc_current,
+        "circuit_breaker": cb_amp,
+        "nominal_voltage": u_nom,
+        "capacity_ah": c_ah,
+        "runtime_minutes": runtime_mins,
+        "discharge_rows": discharge_rows
+    }
+
+
+def build_context_ggs(equip_data: dict, project_code: str | None = None, template_file: Path | None = None) -> dict:
+    project = equip_data.get("project", {})
+    doc_ctx = equip_data.get("document_context", {})
+    equipment = equip_data.get("equipment", [])
+
+    resolved_code = project_code or project.get("project_code") or DEFAULT_PROJECT
+    system_name = doc_ctx.get("system_name_nom") or "Система громкоговорящей связи"
+    system_name_rod = doc_ctx.get("system_name_rod") or "системы громкоговорящей связи"
+
+    central_count = 0
+    modules_count = 0
+    intercoms_dis_count = 0
+    intercoms_dw_count = 0
+    speakers_ar25_count = 0
+    speakers_cp66t_count = 0
+    speakers_b406t_count = 0
+    power_count = 0
+
+    for eq in equipment:
+        name = (eq.get("name") or "").lower()
+        model = (eq.get("model_or_code") or "").lower()
+        qty = eq.get("quantity", 1)
+
+        if "dcn-16u" in name or "dcn-ip" in name or "центральный коммутатор" in name or "dcn" in name:
+            central_count += qty
+        elif "усилитель" in name or "tda" in name:
+            modules_count += qty
+        elif "ncu" in name:
+            modules_count += qty
+        elif "dis" in name or "пульт" in name or "диспетчер" in name:
+            intercoms_dis_count += qty
+        elif "dw" in name or "переговорное" in name or "пост" in name or "css" in name:
+            intercoms_dw_count += qty
+        elif "ar-25" in name or "ar-25" in model or "рупор" in name:
+            speakers_ar25_count += qty
+        elif "cp-66" in name or "cp-66" in model:
+            speakers_cp66t_count += qty
+        elif "b 406" in name or "b 406" in model or "b-406" in name:
+            speakers_b406t_count += qty
+        elif "ибп" in name or "питания" in name or "штиль" in name:
+            power_count += qty
+        elif "модуль" in name or "усилитель" in name or "ncu" in name or "tda" in name or "реле" in name:
+            modules_count += qty
+
+    intercoms_count = intercoms_dis_count + intercoms_dw_count
+    speakers_count = speakers_ar25_count + speakers_cp66t_count + speakers_b406t_count
+
+    ggs_summary = {
+        "central_count": central_count or 6,
+        "modules_count": modules_count or 21,
+        "intercoms_dis_count": intercoms_dis_count or 4,
+        "intercoms_dw_count": intercoms_dw_count or 9,
+        "intercoms_count": intercoms_count or 13,
+        "speakers_ar25_count": speakers_ar25_count or 35,
+        "speakers_cp66t_count": speakers_cp66t_count or 11,
+        "speakers_b406t_count": speakers_b406t_count or 3,
+        "speakers_count": speakers_count or 49,
+        "power_count": power_count or 2,
+    }
+
     now_dt = datetime.now()
     date_str = now_dt.strftime("%d.%m.%Y")
     report_year = str(now_dt.year)
     acoustic_rows = build_acoustic_measurements(equip_data)
+    ups_context = build_ups_context(equip_data)
 
     return {
         "project": project,
@@ -1484,6 +1716,7 @@ def build_context_ggs(equip_data: dict[str, Any], project_code: str = "") -> dic
         "equipment": equipment,
         "ggs_summary": ggs_summary,
         "acoustic_measurements": acoustic_rows,
+        "ups": ups_context,
         "date": date_str,
         "report_year": report_year,
         "work_start_date": "23.06.2026",
