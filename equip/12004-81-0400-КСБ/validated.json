@@ -1,0 +1,1408 @@
+{
+  "document_context": {
+    "org_full": "Общество с ограниченной ответственностью «Голд-Линк»",
+    "org_short": "ООО «Голд-Линк»",
+    "org_inn_kpp": "7224078140/720301001",
+    "org_address": "625016, Россия, Тюменская область, город Тюмень, улица Александра Логунова, дом 11/5",
+    "org_phone_email": "Телефон: +7 (3452) 58-20-90 E-mail: info@gold-link.ru",
+    "approver_title": "Руководитель группы",
+    "approver_name": "Грязнов Е.Е.",
+    "developer_title": "Главный специалист",
+    "developer_title2": "технической группы",
+    "developer_name": "Кудря Н.Ю.",
+    "date_str": "12.05.25",
+    "system_name_nom": "Комплексная система безопасности",
+    "system_name_rod": "комплексной системы безопасности",
+    "category": "II (вторая)",
+    "coef_kuf": "1.0",
+    "coef_kms": "1.0",
+    "coef_kinf": "1.52",
+    "sheet_stage": "РД",
+    "sheet_page": "",
+    "sheet_pages": "",
+    "auto_pass_results": true
+  },
+  "auto_pass_results": true,
+  "project": {
+    "project_code": "12004-81-0400-КСБ",
+    "project_title": "Комплексная система безопасности. 12004-81-0400-КСБ",
+    "site_title": "Контрольно-пропускной пункт №1",
+    "designer": null,
+    "customer": null,
+    "executor": "ООО «Голд-Линк»",
+    "category": "II"
+  },
+  "equipment": [
+    {
+      "equipment_type": "camera",
+      "priority": 1,
+      "vendor": "Evidence",
+      "name": "Уличная купольная вандалозащищенная камера, 5 Мпикс APIX MiniDome / E5 28 (III)",
+      "model_or_code": "APIX MiniDome / E5 28 (III)",
+      "description": "Уличная купольная вандалозащищенная камера 5 Мпикс",
+      "quantity": 4,
+      "port_count": 0,
+      "ferp": [
+        {
+          "code": "ФЕРп 02-02-003-01",
+          "title": "Функциональная настройка специального программного обеспечения АС"
+        }
+      ],
+      "work": "ПНР, настройка, проверка работоспособности и испытания.",
+      "attributes": {
+        "ki": 4,
+        "ku": 4,
+        "rationale": "Камера: 1 физический видеоканал и 1 канал управления × 4 шт.",
+        "channel_rule": "camera_physical_and_management",
+        "channel_ruleset_version": "2026-07-30.2"
+      }
+    },
+    {
+      "equipment_type": "camera",
+      "priority": 2,
+      "vendor": "Evidence",
+      "name": "Уличная HD-камера c ИК-подсветкой 8МПикс APIX Bullet / E8 2713 AF",
+      "model_or_code": "APIX Bullet / E8 2713 AF",
+      "description": "Уличная HD-камера 8МПикс c ИК-подсветкой",
+      "quantity": 14,
+      "port_count": 0,
+      "ferp": [
+        {
+          "code": "ФЕРп 02-02-003-01",
+          "title": "Функциональная настройка специального программного обеспечения АС"
+        }
+      ],
+      "work": "ПНР, настройка, проверка работоспособности и испытания.",
+      "attributes": {
+        "ki": 14,
+        "ku": 14,
+        "rationale": "Камера: 1 физический видеоканал и 1 канал управления × 14 шт.",
+        "channel_rule": "camera_physical_and_management",
+        "channel_ruleset_version": "2026-07-30.2"
+      }
+    },
+    {
+      "equipment_type": "camera",
+      "priority": 3,
+      "vendor": "Evidence",
+      "name": "Уличная камера c ИК-подсветкой 4МПикс APIX 4ZBullet / M4 (II)",
+      "model_or_code": "APIX 4ZBullet / M4 (II)",
+      "description": "Уличная камера 4МПикс c моторизованным объективом",
+      "quantity": 4,
+      "port_count": 0,
+      "ferp": [
+        {
+          "code": "ФЕРп 02-02-003-01",
+          "title": "Функциональная настройка специального программного обеспечения АС"
+        }
+      ],
+      "work": "ПНР, настройка, проверка работоспособности и испытания.",
+      "attributes": {
+        "ki": 4,
+        "ku": 4,
+        "rationale": "Камера: 1 физический видеоканал и 1 канал управления × 4 шт.",
+        "channel_rule": "camera_physical_and_management",
+        "channel_ruleset_version": "2026-07-30.2"
+      }
+    },
+    {
+      "equipment_type": "camera",
+      "priority": 4,
+      "vendor": "Evidence",
+      "name": "Уличная камера c ИК-подсветкой 2МПикс APIX 10ZBullet / S2 (II)",
+      "model_or_code": "APIX 10ZBullet / S2 (II)",
+      "description": "Уличная камера 2МПикс c 10x трансфокатором",
+      "quantity": 11,
+      "port_count": 0,
+      "ferp": [
+        {
+          "code": "ФЕРп 02-02-003-01",
+          "title": "Функциональная настройка специального программного обеспечения АС"
+        }
+      ],
+      "work": "ПНР, настройка, проверка работоспособности и испытания.",
+      "attributes": {
+        "ki": 11,
+        "ku": 11,
+        "rationale": "Камера: 1 физический видеоканал и 1 канал управления × 11 шт.",
+        "channel_rule": "camera_physical_and_management",
+        "channel_ruleset_version": "2026-07-30.2"
+      }
+    },
+    {
+      "equipment_type": "camera",
+      "priority": 5,
+      "vendor": "Evidence",
+      "name": "Уличная камера распознавания номеров ТС APIX Bullet / S2 2713 AF LPR-W",
+      "model_or_code": "APIX Bullet / S2 2713 AF LPR-W",
+      "description": "Уличная камера распознавания номеров ТС 2МПикс",
+      "quantity": 2,
+      "port_count": 0,
+      "ferp": [
+        {
+          "code": "ФЕРп 02-02-003-01",
+          "title": "Функциональная настройка специального программного обеспечения АС"
+        }
+      ],
+      "work": "ПНР, настройка, проверка работоспособности и испытания.",
+      "attributes": {
+        "ki": 2,
+        "ku": 2,
+        "rationale": "Камера: 1 физический видеоканал и 1 канал управления × 2 шт.",
+        "channel_rule": "camera_physical_and_management",
+        "channel_ruleset_version": "2026-07-30.2"
+      }
+    },
+    {
+      "equipment_type": "camera",
+      "priority": 6,
+      "vendor": "Evidence",
+      "name": "Уличная HD-камера c ИК-подсветкой 2МПикс APIX MiniBullet / M2 28 (IV)",
+      "model_or_code": "APIX MiniBullet / M2 28 (IV)",
+      "description": "Уличная HD-камера 2МПикс",
+      "quantity": 1,
+      "port_count": 0,
+      "ferp": [
+        {
+          "code": "ФЕРп 02-02-003-01",
+          "title": "Функциональная настройка специального программного обеспечения АС"
+        }
+      ],
+      "work": "ПНР, настройка, проверка работоспособности и испытания.",
+      "attributes": {
+        "ki": 1,
+        "ku": 1,
+        "rationale": "Камера: 1 физический видеоканал и 1 канал управления × 1 шт.",
+        "channel_rule": "camera_physical_and_management",
+        "channel_ruleset_version": "2026-07-30.2"
+      }
+    },
+    {
+      "equipment_type": "camera",
+      "priority": 7,
+      "vendor": "Evidence",
+      "name": "Панорамная булет HD-камера c ИК-подсветкой 8 Мпикс APIX MiniBullet / R8 Panoramic",
+      "model_or_code": "APIX MiniBullet / R8 Panoramic",
+      "description": "Панорамная булет HD-камера 8 Мпикс, обзор 180°",
+      "quantity": 3,
+      "port_count": 0,
+      "ferp": [
+        {
+          "code": "ФЕРп 02-02-003-01",
+          "title": "Функциональная настройка специального программного обеспечения АС"
+        }
+      ],
+      "work": "ПНР, настройка, проверка работоспособности и испытания.",
+      "attributes": {
+        "ki": 3,
+        "ku": 3,
+        "rationale": "Камера: 1 физический видеоканал и 1 канал управления × 3 шт.",
+        "channel_rule": "camera_physical_and_management",
+        "channel_ruleset_version": "2026-07-30.2"
+      }
+    },
+    {
+      "equipment_type": "camera",
+      "priority": 8,
+      "vendor": "Evidence",
+      "name": "Уличная скоростная купольная HD-камера PTZ APIX 30ZDome / E3BP",
+      "model_or_code": "APIX 30ZDome / E3BP",
+      "description": "Уличная скоростная поворотная HD-камера 30X ZOOM",
+      "quantity": 1,
+      "port_count": 0,
+      "ferp": [
+        {
+          "code": "ФЕРп 02-02-003-01",
+          "title": "Функциональная настройка специального программного обеспечения АС"
+        }
+      ],
+      "work": "ПНР, настройка, проверка работоспособности и испытания.",
+      "attributes": {
+        "ki": 1,
+        "ku": 1,
+        "rationale": "Камера: 1 физический видеоканал и 1 канал управления × 1 шт.",
+        "channel_rule": "camera_physical_and_management",
+        "channel_ruleset_version": "2026-07-30.2"
+      }
+    },
+    {
+      "equipment_type": "camera",
+      "priority": 9,
+      "vendor": "Evidence",
+      "name": "Уличная скоростная купольная HD-камера PTZ APIX 30ZDome / E3B",
+      "model_or_code": "APIX 30ZDome / E3B",
+      "description": "Уличная скоростная поворотная HD-камера 30X ZOOM",
+      "quantity": 1,
+      "port_count": 0,
+      "ferp": [
+        {
+          "code": "ФЕРп 02-02-003-01",
+          "title": "Функциональная настройка специального программного обеспечения АС"
+        }
+      ],
+      "work": "ПНР, настройка, проверка работоспособности и испытания.",
+      "attributes": {
+        "ki": 1,
+        "ku": 1,
+        "rationale": "Камера: 1 физический видеоканал и 1 канал управления × 1 шт.",
+        "channel_rule": "camera_physical_and_management",
+        "channel_ruleset_version": "2026-07-30.2"
+      }
+    },
+    {
+      "equipment_type": "arm_workstation",
+      "priority": 10,
+      "vendor": "Evidence",
+      "name": "Рабочая станция отображения информации Workstation 320DS",
+      "model_or_code": "Workstation 320DS",
+      "description": "АРМ оператора видеонаблюдения до 32 телекамер",
+      "quantity": 1,
+      "port_count": 0,
+      "ferp": [
+        {
+          "code": "ФЕРп 02-02-002-01",
+          "title": "Настройка общего программного обеспечения"
+        }
+      ],
+      "work": "ПНР, настройка, проверка работоспособности и испытания.",
+      "attributes": {
+        "ki": 1,
+        "ku": 1,
+        "rationale": "арм оператора: 1 информационный цифровой узел и 1 канал управления.",
+        "channel_rule": "preserve_existing",
+        "channel_ruleset_version": "2026-07-30.2"
+      }
+    },
+    {
+      "equipment_type": "license",
+      "priority": 11,
+      "vendor": "Inner Range",
+      "name": "Дополнительная лицензия на 1 рабочее место Integriti Extra Client",
+      "model_or_code": "Integriti Extra Client",
+      "description": "Лицензия на рабочее место оператора СКУД",
+      "quantity": 1,
+      "port_count": 0,
+      "ferp": [
+        {
+          "code": "ФЕРп 02-02-001-01",
+          "title": "Инсталляция и базовая настройка общего и специального программного обеспечения"
+        },
+        {
+          "code": "ФЕРп 02-02-003-01",
+          "title": "Функциональная настройка специального программного обеспечения АС"
+        }
+      ],
+      "work": "Установка ПО, активация и настройка лицензии.",
+      "attributes": {
+        "ki": 0,
+        "ku": 0,
+        "rationale": "программная лицензия отдельно не создает физических каналов.",
+        "channel_rule": "preserve_existing",
+        "channel_ruleset_version": "2026-07-30.2"
+      }
+    },
+    {
+      "equipment_type": "ups",
+      "priority": 12,
+      "vendor": "Штиль",
+      "name": "Источник бесперебойного питания ST1101L",
+      "model_or_code": "ST1101L",
+      "description": "ИБП 1 кВА/0,9 кВт с платой SNMP",
+      "quantity": 1,
+      "port_count": 0,
+      "ferp": [
+        {
+          "code": "ФЕРп 01-06-023-01",
+          "title": "Устройство контроля уровня напряжения переменного или выпрямленного оперативного тока"
+        }
+      ],
+      "work": "ПНР, настройка параметры питания, проверка перехода на АКБ.",
+      "attributes": {
+        "ki": 1,
+        "ku": 1,
+        "rationale": "ибп с snmp-платой: 1 канал телеметрии и 1 канал дистанционного управления.",
+        "channel_rule": "preserve_existing",
+        "channel_ruleset_version": "2026-07-30.2"
+      }
+    },
+    {
+      "equipment_type": "switch",
+      "priority": 13,
+      "vendor": "Evidence",
+      "name": "Управляемый сетевой коммутатор Cross 24/HPoE 10G Plus",
+      "model_or_code": "Cross 24/HPoE 10G Plus",
+      "description": "Коммутатор 24 порта High PoE, 4 порта SFP+ 10GbE",
+      "quantity": 1,
+      "port_count": 24,
+      "ferp": [
+        {
+          "code": "ФЕРп 02-01-002-11",
+          "title": "Автоматизированная система управления II категории технической сложности, Кобщ = 160"
+        }
+      ],
+      "work": "ПНР, конфигурирование VLAN, QoS, маршрутизации и безопасности.",
+      "attributes": {
+        "ki": 24,
+        "ku": 1,
+        "rationale": "Коммутатор: 24 настраиваемых портов × 1 шт.; 1 канал управления × 1 шт.",
+        "channel_rule": "managed_switch_all_ports",
+        "channel_ruleset_version": "2026-07-30.2"
+      }
+    },
+    {
+      "equipment_type": "switch",
+      "priority": 14,
+      "vendor": "Evidence",
+      "name": "Управляемый сетевой коммутатор Cross 8/HPoE (II)",
+      "model_or_code": "Cross 8/HPoE (II)",
+      "description": "Коммутатор 8 портов High PoE, 2 порта SFP",
+      "quantity": 2,
+      "port_count": 10,
+      "ferp": [
+        {
+          "code": "ФЕРп 02-01-002-11",
+          "title": "Автоматизированная система управления II категории технической сложности, Кобщ = 160"
+        }
+      ],
+      "work": "ПНР, конфигурирование сетевых параметров и PoE.",
+      "attributes": {
+        "ki": 20,
+        "ku": 2,
+        "rationale": "Коммутатор: 10 настраиваемых портов × 2 шт.; 1 канал управления × 2 шт.",
+        "channel_rule": "managed_switch_all_ports",
+        "channel_ruleset_version": "2026-07-30.2"
+      }
+    },
+    {
+      "equipment_type": "switch",
+      "priority": 15,
+      "vendor": "Tfortis",
+      "name": "Уличный управляемый коммутатор PSW-2G6F+UPS-Box",
+      "model_or_code": "PSW-2G6F+UPS-Box",
+      "description": "Уличный L2 коммутатор 6xPoE, 2xSFP с ИБП",
+      "quantity": 2,
+      "port_count": 8,
+      "ferp": [
+        {
+          "code": "ФЕРп 02-01-002-11",
+          "title": "Автоматизированная система управления II категории технической сложности, Кобщ = 160"
+        }
+      ],
+      "work": "ПНР, настройка уличных коммутаторов и автоматики перезагрузки камер.",
+      "attributes": {
+        "ki": 16,
+        "ku": 2,
+        "rationale": "Коммутатор: 8 настраиваемых портов × 2 шт.; 1 канал управления × 2 шт.",
+        "channel_rule": "managed_switch_all_ports",
+        "channel_ruleset_version": "2026-07-30.2"
+      }
+    },
+    {
+      "equipment_type": "switch",
+      "priority": 16,
+      "vendor": "Evidence",
+      "name": "Управляемый сетевой коммутатор Cross - 8/UPoE SP",
+      "model_or_code": "Cross - 8/UPoE SP",
+      "description": "Коммутатор 4xPoE++, 4xPoE+, 2xSFP",
+      "quantity": 2,
+      "port_count": 10,
+      "ferp": [
+        {
+          "code": "ФЕРп 02-01-002-11",
+          "title": "Автоматизированная система управления II категории технической сложности, Кобщ = 160"
+        }
+      ],
+      "work": "ПНР, настройка коммутации и питания PoE.",
+      "attributes": {
+        "ki": 20,
+        "ku": 2,
+        "rationale": "Коммутатор: 10 настраиваемых портов × 2 шт.; 1 канал управления × 2 шт.",
+        "channel_rule": "managed_switch_all_ports",
+        "channel_ruleset_version": "2026-07-30.2"
+      }
+    },
+    {
+      "equipment_type": "access_control",
+      "priority": 17,
+      "vendor": "Inner Range",
+      "name": "Контроллер двух дверей Integriti SLAM INTG-996012PCBK",
+      "model_or_code": "INTG-996012PCBK",
+      "description": "Модуль контроллера двух дверей/считавателей СКУД",
+      "quantity": 9,
+      "port_count": 0,
+      "ferp": [
+        {
+          "code": "ФЕРп 02-03-002-01",
+          "title": "Контроллер локальный СКУД"
+        }
+      ],
+      "work": "ПНР, программирование логики прохода, проверка связи.",
+      "attributes": {
+        "ki": 0,
+        "ku": 9,
+        "rationale": "Контроллер: оконечные каналы учитываются на считывателях; 1 канал управления × 9 шт.",
+        "channel_rule": "controller_management_only",
+        "channel_ruleset_version": "2026-07-30.2"
+      }
+    },
+    {
+      "equipment_type": "access_control",
+      "priority": 18,
+      "vendor": "Inner Range",
+      "name": "Интеллектуальный контроллер двух дверей Integriti ILAM INTG-996018PCBK",
+      "model_or_code": "INTG-996018PCBK",
+      "description": "Интеллектуальный сетевой контроллер двух дверей",
+      "quantity": 1,
+      "port_count": 0,
+      "ferp": [
+        {
+          "code": "ФЕРп 02-03-002-01",
+          "title": "Контроллер локальный СКУД"
+        }
+      ],
+      "work": "ПНР, программирование сетевых параметров и алгоритмов.",
+      "attributes": {
+        "ki": 0,
+        "ku": 1,
+        "rationale": "Контроллер: оконечные каналы учитываются на считывателях; 1 канал управления × 1 шт.",
+        "channel_rule": "controller_management_only",
+        "channel_ruleset_version": "2026-07-30.2"
+      }
+    },
+    {
+      "equipment_type": "power_supply",
+      "priority": 19,
+      "vendor": "Inner Range",
+      "name": "Интеллектуальный блок питания Integriti 3A INTG-996091PCBK",
+      "model_or_code": "INTG-996091PCBK",
+      "description": "Блок питания 3А с контролем состояния по шине LAN",
+      "quantity": 1,
+      "port_count": 0,
+      "ferp": [
+        {
+          "code": "ФЕРп 01-06-010-03",
+          "title": "Выпрямительный блок питания до 1 кВА со стабилизацией выходного напряжения"
+        }
+      ],
+      "work": "ПНР, настройка порогов контроля напряжения и резервирования.",
+      "attributes": {
+        "ki": 0,
+        "ku": 1,
+        "rationale": "1 интеллектуальный бп: 1 канал управления/контроля.",
+        "channel_rule": "preserve_existing",
+        "channel_ruleset_version": "2026-07-30.2"
+      }
+    },
+    {
+      "equipment_type": "power_supply",
+      "priority": 20,
+      "vendor": "Inner Range",
+      "name": "Интеллектуальный блок питания Integriti 8A INTG-996092",
+      "model_or_code": "INTG-996092",
+      "description": "Импульсный БП 8А с мониторингом состояния",
+      "quantity": 2,
+      "port_count": 0,
+      "ferp": [
+        {
+          "code": "ФЕРп 01-06-010-03",
+          "title": "Выпрямительный блок питания до 1 кВА со стабилизацией выходного напряжения"
+        }
+      ],
+      "work": "ПНР, юстировка выходного напряжения, тестирование аварий.",
+      "attributes": {
+        "ki": 0,
+        "ku": 2,
+        "rationale": "2 бп x 1 канал управления/контроля.",
+        "channel_rule": "preserve_existing",
+        "channel_ruleset_version": "2026-07-30.2"
+      }
+    },
+    {
+      "equipment_type": "power_supply",
+      "priority": 21,
+      "vendor": "ЗАО \"НВП Болид\"",
+      "name": "Резервный источник питания РИП-24 исп. 01",
+      "model_or_code": "РИП-24 исп. 01",
+      "description": "Источник резервного питания 24В, 3А",
+      "quantity": 2,
+      "port_count": 0,
+      "ferp": [
+        {
+          "code": "ФЕРп 01-06-010-03",
+          "title": "Выпрямительный блок питания до 1 кВА со стабилизацией выходного напряжения"
+        }
+      ],
+      "work": "ПНР, замер токов, проверка работы от аккумуляторов.",
+      "attributes": {
+        "ki": 0,
+        "ku": 2,
+        "rationale": "2 рип x 1 канал управления/контроля.",
+        "channel_rule": "preserve_existing",
+        "channel_ruleset_version": "2026-07-30.2"
+      }
+    },
+    {
+      "equipment_type": "access_control",
+      "priority": 22,
+      "vendor": "Rosslare",
+      "name": "Считыватель RFID прокси-карт AY-K6255 (rev.B)",
+      "model_or_code": "AY-K6255 (rev.B)",
+      "description": "Считыватель Wiegand 26-bit, IP65",
+      "quantity": 16,
+      "port_count": 0,
+      "ferp": [
+        {
+          "code": "ФЕРп 02-03-001-02",
+          "title": "Устройство считывания идентификационных карт"
+        }
+      ],
+      "work": "ПНР, юстировка, проверка считывания карт доступа.",
+      "attributes": {
+        "ki": 16,
+        "ku": 0,
+        "rationale": "Считыватель: 1 информационный канал × 16 шт.; на контроллере повторно не учитывается.",
+        "channel_rule": "reader_single_channel",
+        "channel_ruleset_version": "2026-07-30.2"
+      }
+    },
+    {
+      "equipment_type": "access_control",
+      "priority": 23,
+      "vendor": "Aleko",
+      "name": "Замок электромагнитный ALM-350FB-G-12/24V",
+      "model_or_code": "ALM-350FB-G-12/24V",
+      "description": "Электромагнитный замок с усилием 350 кг",
+      "quantity": 12,
+      "port_count": 0,
+      "ferp": [
+        {
+          "code": "ФЕРп 02-03-001-02",
+          "title": "Исполнительное устройство СКУД"
+        }
+      ],
+      "work": "ПНР, регулировка прижима, проверка разблокировки по сигналу.",
+      "attributes": {
+        "ki": 0,
+        "ku": 12,
+        "rationale": "12 замков x 1 канал управления разблокировкой (ku).",
+        "channel_rule": "preserve_existing",
+        "channel_ruleset_version": "2026-07-30.2"
+      }
+    },
+    {
+      "equipment_type": "access_control",
+      "priority": 24,
+      "vendor": "ELTIS",
+      "name": "Кнопка выхода В-72",
+      "model_or_code": "В-72",
+      "description": "Кнопка выхода накладная",
+      "quantity": 8,
+      "port_count": 0,
+      "ferp": [
+        {
+          "code": "ФЕРп 02-03-001-02",
+          "title": "Кнопка управления выходом"
+        }
+      ],
+      "work": "Проверка срабатывания и цепи сброса замка.",
+      "attributes": {
+        "ki": 8,
+        "ku": 0,
+        "rationale": "8 кнопок x 1 информационный сигнал запроса на выход (ki).",
+        "channel_rule": "preserve_existing",
+        "channel_ruleset_version": "2026-07-30.2"
+      }
+    },
+    {
+      "equipment_type": "access_control",
+      "priority": 25,
+      "vendor": "ООО \"ТД Рубеж\"",
+      "name": "Устройство дистанционного пуска УДП 513-10 исп.1",
+      "model_or_code": "УДП 513-10 исп.1",
+      "description": "УДП Аварийный выход разблокировки дверей",
+      "quantity": 8,
+      "port_count": 0,
+      "ferp": [
+        {
+          "code": "ФЕРп 02-03-001-02",
+          "title": "Устройство аварийной разблокировки"
+        }
+      ],
+      "work": "Проверка цепи экстренной разблокировки прохода.",
+      "attributes": {
+        "ki": 8,
+        "ku": 0,
+        "rationale": "8 удп x 1 сигнал тревоги/разблокировки (ki).",
+        "channel_rule": "preserve_existing",
+        "channel_ruleset_version": "2026-07-30.2"
+      }
+    },
+    {
+      "equipment_type": "access_control",
+      "priority": 26,
+      "vendor": "Фантом",
+      "name": "Шлагбаум автоматический Гранд-Арктик F6GA",
+      "model_or_code": "Гранд-Арктик F6GA",
+      "description": "Автоматический шлагбаум, стрела 6м",
+      "quantity": 1,
+      "port_count": 0,
+      "ferp": [
+        {
+          "code": "ФЕРп 02-03-001-02",
+          "title": "Автоматическое пропускное устройство"
+        }
+      ],
+      "work": "ПНР, настройка конечных положений, времени открытия, фотоэлементов.",
+      "attributes": {
+        "ki": 1,
+        "ku": 1,
+        "rationale": "1 шлагбаум: 1 сигнал положения (ki) и 1 канал управления приводом (ku).",
+        "channel_rule": "preserve_existing",
+        "channel_ruleset_version": "2026-07-30.2"
+      }
+    },
+    {
+      "equipment_type": "detector",
+      "priority": 27,
+      "vendor": "ЗАО \"СПЭК\"",
+      "name": "Фотоэлемент безопасности СПЭК-1113",
+      "model_or_code": "СПЭК-1113",
+      "description": "Фотоэлемент безопасности с отражателем",
+      "quantity": 1,
+      "port_count": 0,
+      "ferp": [
+        {
+          "code": "ФЕРп 02-03-001-02",
+          "title": "Датчик безопасности шлагбаума"
+        }
+      ],
+      "work": "ПНР, юстировка Луча, проверка предотвращения опускания стрелы.",
+      "attributes": {
+        "ki": 1,
+        "ku": 0,
+        "rationale": "1 фотоэлемент x 1 канал контроля препятствия (ki).",
+        "channel_rule": "preserve_existing",
+        "channel_ruleset_version": "2026-07-30.2"
+      }
+    },
+    {
+      "equipment_type": "access_control",
+      "priority": 28,
+      "vendor": "ООО \"Промышленная точка\"",
+      "name": "Светофор светодиодный транспортный Т.8 100мм 24В",
+      "model_or_code": "Т.8 100мм 24В",
+      "description": "Двухсекционный светофор для регулирования проезда",
+      "quantity": 2,
+      "port_count": 0,
+      "ferp": [
+        {
+          "code": "ФЕРп 02-03-001-02",
+          "title": "Устройство световой сигнализации"
+        }
+      ],
+      "work": "ПНР, проверка переключения красного и зеленого сигналов.",
+      "attributes": {
+        "ki": 0,
+        "ku": 2,
+        "rationale": "2 светофора x 1 канал управления переключением (ku).",
+        "channel_rule": "preserve_existing",
+        "channel_ruleset_version": "2026-07-30.2"
+      }
+    },
+    {
+      "equipment_type": "detector",
+      "priority": 29,
+      "vendor": "ООО НПП \"Магнито-Контакт\"",
+      "name": "Извещатель охранный точечный магнитоконтактный ДПМГ-2-100",
+      "model_or_code": "ДПМГ-2-100",
+      "description": "Магнитоконтактный извещатель на ворота",
+      "quantity": 4,
+      "port_count": 0,
+      "ferp": [
+        {
+          "code": "ФЕРп 02-03-001-01",
+          "title": "Извещатель охранный магнитоконтактный"
+        }
+      ],
+      "work": "ПНР, юстировка зазора, проверка сработки при открытии ворот.",
+      "attributes": {
+        "ki": 4,
+        "ku": 0,
+        "rationale": "4 геркона x 1 тревожный сигнал (ki).",
+        "channel_rule": "preserve_existing",
+        "channel_ruleset_version": "2026-07-30.2"
+      }
+    },
+    {
+      "equipment_type": "detector",
+      "priority": 30,
+      "vendor": "Optex",
+      "name": "Пассивный уличный ИК извещатель SIP-100",
+      "model_or_code": "SIP-100",
+      "description": "Уличный ИК извещатель дальнего действия (100х3 м)",
+      "quantity": 11,
+      "port_count": 0,
+      "ferp": [
+        {
+          "code": "ФЕРп 02-03-001-01",
+          "title": "Извещатель охранный оптико-электронный"
+        }
+      ],
+      "work": "ПНР, юстировка диаграммы направленности, настройка чувствительности.",
+      "attributes": {
+        "ki": 11,
+        "ku": 0,
+        "rationale": "11 ик-извещателей x 1 тревожный канал (ki).",
+        "channel_rule": "preserve_existing",
+        "channel_ruleset_version": "2026-07-30.2"
+      }
+    },
+    {
+      "equipment_type": "detector",
+      "priority": 31,
+      "vendor": "Optex",
+      "name": "Пассивный уличный ИК извещатель SIP-404/5",
+      "model_or_code": "SIP-404/5",
+      "description": "Уличный ИК извещатель с нижней зоной (40х4 м)",
+      "quantity": 4,
+      "port_count": 0,
+      "ferp": [
+        {
+          "code": "ФЕРп 02-03-001-01",
+          "title": "Извещатель охранный оптико-электронный"
+        }
+      ],
+      "work": "ПНР, юстировка зоны обнаружения, тест антимаскирования.",
+      "attributes": {
+        "ki": 4,
+        "ku": 0,
+        "rationale": "4 ик-извещателя x 1 тревожный канал (ki).",
+        "channel_rule": "preserve_existing",
+        "channel_ruleset_version": "2026-07-30.2"
+      }
+    },
+    {
+      "equipment_type": "detector",
+      "priority": 32,
+      "vendor": "Optex",
+      "name": "Пассивный уличный ИК извещатель SIP-3020",
+      "model_or_code": "SIP-3020",
+      "description": "Уличный ИК извещатель широкого угла (30х20 м)",
+      "quantity": 1,
+      "port_count": 0,
+      "ferp": [
+        {
+          "code": "ФЕРп 02-03-001-01",
+          "title": "Извещатель охранный оптико-электронный"
+        }
+      ],
+      "work": "ПНР, настройка угла обзора и порога сработки.",
+      "attributes": {
+        "ki": 1,
+        "ku": 0,
+        "rationale": "1 ик-извещатель x 1 тревожный канал (ki).",
+        "channel_rule": "preserve_existing",
+        "channel_ruleset_version": "2026-07-30.2"
+      }
+    }
+  ],
+  "summaries": {
+    "total_switch_ports": 80,
+    "channel_totals": {
+      "ki": 177,
+      "ku": 80,
+      "total": 257
+    },
+    "channel_components": {
+      "switch_data_ports": 80,
+      "logical_mgmt_ports": 7,
+      "voip_phones": 0,
+      "ups_units": 1,
+      "other_channels": 170
+    },
+    "ferp_channels_summary": {
+      "category": "II",
+      "base_code": "ФЕРп 02-01-002-11",
+      "base_limit": 160,
+      "extra_code": "ФЕРп 02-01-002-12",
+      "extra_channels": 97,
+      "notes": "Единый расчет каналов 2026-07-30.2: K_total=257; база 160, дополнительных каналов 97."
+    },
+    "cable_sections_totals": {
+      "scs_lines": 2,
+      "insulation_sections": 3,
+      "link_lines": 2,
+      "video_coax_lines": 0,
+      "optical_lines": 1
+    },
+    "notes": "Пусконаладочные работы рассчитаны в полном соответствии с ФЕРп. Пассивные компоненты, крепеж, лотки и кабельная продукция исключены из расчета АСУ/ПНР."
+  },
+  "tables": {
+    "equipment_3_1": [
+      {
+        "n": 1,
+        "title": "Уличная купольная вандалозащищенная камера, 5 Мпикс",
+        "type_or_model": "APIX MiniDome / E5 28 (III)",
+        "work": "ПНР, настройка, проверка работоспособности по ФЕРп 02-02-003-01."
+      },
+      {
+        "n": 2,
+        "title": "Уличная HD-камера c ИК-подсветкой 8МПикс",
+        "type_or_model": "APIX Bullet / E8 2713 AF",
+        "work": "ПНР, настройка, проверка работоспособности по ФЕРп 02-02-003-01."
+      },
+      {
+        "n": 3,
+        "title": "Уличная камера c ИК-подсветкой 4МПикс",
+        "type_or_model": "APIX 4ZBullet / M4 (II)",
+        "work": "ПНР, настройка, проверка работоспособности по ФЕРп 02-02-003-01."
+      },
+      {
+        "n": 4,
+        "title": "Уличная камера c ИК-подсветкой 2МПикс",
+        "type_or_model": "APIX 10ZBullet / S2 (II)",
+        "work": "ПНР, настройка, проверка работоспособности по ФЕРп 02-02-003-01."
+      },
+      {
+        "n": 5,
+        "title": "Уличная камера распознавания номеров ТС",
+        "type_or_model": "APIX Bullet / S2 2713 AF LPR-W",
+        "work": "ПНР, настройка, проверка работоспособности по ФЕРп 02-02-003-01."
+      },
+      {
+        "n": 6,
+        "title": "Уличная HD-камера c ИК-подсветкой 2МПикс",
+        "type_or_model": "APIX MiniBullet / M2 28 (IV)",
+        "work": "ПНР, настройка, проверка работоспособности по ФЕРп 02-02-003-01."
+      },
+      {
+        "n": 7,
+        "title": "Панорамная булет HD-камера c ИК-подсветкой 8 Мпикс",
+        "type_or_model": "APIX MiniBullet / R8 Panoramic",
+        "work": "ПНР, настройка, проверка работоспособности по ФЕРп 02-02-003-01."
+      },
+      {
+        "n": 8,
+        "title": "Уличная скоростная купольная HD-камера PTZ",
+        "type_or_model": "APIX 30ZDome / E3BP",
+        "work": "ПНР, настройка, проверка позиционирования по ФЕРп 02-02-003-01."
+      },
+      {
+        "n": 9,
+        "title": "Уличная скоростная купольная HD-камера PTZ",
+        "type_or_model": "APIX 30ZDome / E3B",
+        "work": "ПНР, настройка, проверка позиционирования по ФЕРп 02-02-003-01."
+      },
+      {
+        "n": 10,
+        "title": "Рабочая станция отображения информации",
+        "type_or_model": "Workstation 320DS",
+        "work": "ПНР, настройка ОС и видеософта по ФЕРп 02-02-002-01."
+      },
+      {
+        "n": 11,
+        "title": "Дополнительная лицензия на 1 рабочее место",
+        "type_or_model": "Integriti Extra Client",
+        "work": "Установка и регистрация лицензии по ФЕРп 02-02-001-01, ФЕРп 02-02-003-01."
+      },
+      {
+        "n": 12,
+        "title": "Источник бесперебойного питания",
+        "type_or_model": "ST1101L",
+        "work": "ПНР, проверка перехода на АКБ, настройка SNMP по ФЕРп 01-06-023-01."
+      },
+      {
+        "n": 13,
+        "title": "Управляемый сетевой коммутатор",
+        "type_or_model": "Cross 24/HPoE 10G Plus",
+        "work": "Конфигурирование сетевых функций по ФЕРп 02-01-002-11."
+      },
+      {
+        "n": 14,
+        "title": "Управляемый сетевой коммутатор",
+        "type_or_model": "Cross 8/HPoE (II)",
+        "work": "Конфигурирование сетевых функций по ФЕРп 02-01-002-11."
+      },
+      {
+        "n": 15,
+        "title": "Уличный управляемый коммутатор",
+        "type_or_model": "PSW-2G6F+UPS-Box",
+        "work": "Конфигурирование сетевых функций и ИБП по ФЕРп 02-01-002-11."
+      },
+      {
+        "n": 16,
+        "title": "Управляемый сетевой коммутатор",
+        "type_or_model": "Cross - 8/UPoE SP",
+        "work": "Конфигурирование сетевых функций по ФЕРп 02-01-002-11."
+      },
+      {
+        "n": 17,
+        "title": "Контроллер двух дверей Integriti SLAM",
+        "type_or_model": "INTG-996012PCBK",
+        "work": "Программирование логики СКУД по ФЕРп 02-03-002-01."
+      },
+      {
+        "n": 18,
+        "title": "Интеллектуальный контроллер двух дверей Integriti ILAM",
+        "type_or_model": "INTG-996018PCBK",
+        "work": "Программирование логики СКУД по ФЕРп 02-03-002-01."
+      },
+      {
+        "n": 19,
+        "title": "Интеллектуальный блок питания Integriti 3A",
+        "type_or_model": "INTG-996091PCBK",
+        "work": "ПНР, калибровка напряжений по ФЕРп 01-06-010-03."
+      },
+      {
+        "n": 20,
+        "title": "Интеллектуальный блок питания Integriti 8A",
+        "type_or_model": "INTG-996092",
+        "work": "ПНР, калибровка напряжений по ФЕРп 01-06-010-03."
+      },
+      {
+        "n": 21,
+        "title": "Резервный источник питания",
+        "type_or_model": "РИП-24 исп. 01",
+        "work": "ПНР, проверка резервирования по ФЕРп 01-06-010-03."
+      },
+      {
+        "n": 22,
+        "title": "Считыватель RFID прокси-карт",
+        "type_or_model": "AY-K6255 (rev.B)",
+        "work": "Юстировка, проверка считывания карт по ФЕРп 02-03-001-02."
+      },
+      {
+        "n": 23,
+        "title": "Замок электромагнитный",
+        "type_or_model": "ALM-350FB-G-12/24V",
+        "work": "Регулировка прижима и сброса по ФЕРп 02-03-001-02."
+      },
+      {
+        "n": 24,
+        "title": "Кнопка выхода",
+        "type_or_model": "В-72",
+        "work": "Проверка разблокировки по ФЕРп 02-03-001-02."
+      },
+      {
+        "n": 25,
+        "title": "Устройство дистанционного пуска",
+        "type_or_model": "УДП 513-10 исп.1",
+        "work": "Проверка аварийной разблокировки по ФЕРп 02-03-001-02."
+      },
+      {
+        "n": 26,
+        "title": "Шлагбаум автоматический",
+        "type_or_model": "Гранд-Арктик F6GA",
+        "work": "ПНР, настройка привода и автоматики по ФЕРп 02-03-001-02."
+      },
+      {
+        "n": 27,
+        "title": "Фотоэлемент безопасности",
+        "type_or_model": "СПЭК-1113",
+        "work": "Настройка Луча и сработки по ФЕРп 02-03-001-02."
+      },
+      {
+        "n": 28,
+        "title": "Светофор светодиодный транспортный",
+        "type_or_model": "Т.8 100мм 24В",
+        "work": "Проверка переключения сигналов по ФЕРп 02-03-001-02."
+      },
+      {
+        "n": 29,
+        "title": "Извещатель охранный точечный магнитоконтактный",
+        "type_or_model": "ДПМГ-2-100",
+        "work": "Юстировка, проверка сработки по ФЕРп 02-03-001-01."
+      },
+      {
+        "n": 30,
+        "title": "Пассивный уличный ИК извещатель",
+        "type_or_model": "SIP-100",
+        "work": "Юстировка зоны, настройка по ФЕРп 02-03-001-01."
+      },
+      {
+        "n": 31,
+        "title": "Пассивный уличный ИК извещатель",
+        "type_or_model": "SIP-404/5",
+        "work": "Юстировка зоны, настройка по ФЕРп 02-03-001-01."
+      },
+      {
+        "n": 32,
+        "title": "Пассивный уличный ИК извещатель",
+        "type_or_model": "SIP-3020",
+        "work": "Юстировка зоны, настройка по ФЕРп 02-03-001-01."
+      }
+    ],
+    "calc_4_1": [
+      {
+        "n": 1,
+        "item": "Уличная купольная вандалозащищенная камера, 5 Мпикс APIX MiniDome / E5 28 (III)",
+        "qty": 4,
+        "rationale": "Камера: 1 физический видеоканал и 1 канал управления × 4 шт.",
+        "ki": 4,
+        "ku": 4
+      },
+      {
+        "n": 2,
+        "item": "Уличная HD-камера c ИК-подсветкой 8МПикс APIX Bullet / E8 2713 AF",
+        "qty": 14,
+        "rationale": "Камера: 1 физический видеоканал и 1 канал управления × 14 шт.",
+        "ki": 14,
+        "ku": 14
+      },
+      {
+        "n": 3,
+        "item": "Уличная камера c ИК-подсветкой 4МПикс APIX 4ZBullet / M4 (II)",
+        "qty": 4,
+        "rationale": "Камера: 1 физический видеоканал и 1 канал управления × 4 шт.",
+        "ki": 4,
+        "ku": 4
+      },
+      {
+        "n": 4,
+        "item": "Уличная камера c ИК-подсветкой 2МПикс APIX 10ZBullet / S2 (II)",
+        "qty": 11,
+        "rationale": "Камера: 1 физический видеоканал и 1 канал управления × 11 шт.",
+        "ki": 11,
+        "ku": 11
+      },
+      {
+        "n": 5,
+        "item": "Уличная камера распознавания номеров ТС APIX Bullet / S2 2713 AF LPR-W",
+        "qty": 2,
+        "rationale": "Камера: 1 физический видеоканал и 1 канал управления × 2 шт.",
+        "ki": 2,
+        "ku": 2
+      },
+      {
+        "n": 6,
+        "item": "Уличная HD-камера c ИК-подсветкой 2МПикс APIX MiniBullet / M2 28 (IV)",
+        "qty": 1,
+        "rationale": "Камера: 1 физический видеоканал и 1 канал управления × 1 шт.",
+        "ki": 1,
+        "ku": 1
+      },
+      {
+        "n": 7,
+        "item": "Панорамная булет HD-камера c ИК-подсветкой 8 Мпикс APIX MiniBullet / R8 Panoramic",
+        "qty": 3,
+        "rationale": "Камера: 1 физический видеоканал и 1 канал управления × 3 шт.",
+        "ki": 3,
+        "ku": 3
+      },
+      {
+        "n": 8,
+        "item": "Уличная скоростная купольная HD-камера PTZ APIX 30ZDome / E3BP",
+        "qty": 1,
+        "rationale": "Камера: 1 физический видеоканал и 1 канал управления × 1 шт.",
+        "ki": 1,
+        "ku": 1
+      },
+      {
+        "n": 9,
+        "item": "Уличная скоростная купольная HD-камера PTZ APIX 30ZDome / E3B",
+        "qty": 1,
+        "rationale": "Камера: 1 физический видеоканал и 1 канал управления × 1 шт.",
+        "ki": 1,
+        "ku": 1
+      },
+      {
+        "n": 10,
+        "item": "Рабочая станция отображения информации Workstation 320DS",
+        "qty": 1,
+        "rationale": "арм оператора: 1 информационный цифровой узел и 1 канал управления.",
+        "ki": 1,
+        "ku": 1
+      },
+      {
+        "n": 11,
+        "item": "Источник бесперебойного питания ST1101L",
+        "qty": 1,
+        "rationale": "ибп с snmp-платой: 1 канал телеметрии и 1 канал дистанционного управления.",
+        "ki": 1,
+        "ku": 1
+      },
+      {
+        "n": 12,
+        "item": "Управляемый сетевой коммутатор Cross 24/HPoE 10G Plus",
+        "qty": 1,
+        "rationale": "Коммутатор: 24 настраиваемых портов × 1 шт.; 1 канал управления × 1 шт.",
+        "ki": 24,
+        "ku": 1
+      },
+      {
+        "n": 13,
+        "item": "Управляемый сетевой коммутатор Cross 8/HPoE (II)",
+        "qty": 2,
+        "rationale": "Коммутатор: 10 настраиваемых портов × 2 шт.; 1 канал управления × 2 шт.",
+        "ki": 20,
+        "ku": 2
+      },
+      {
+        "n": 14,
+        "item": "Уличный управляемый коммутатор PSW-2G6F+UPS-Box",
+        "qty": 2,
+        "rationale": "Коммутатор: 8 настраиваемых портов × 2 шт.; 1 канал управления × 2 шт.",
+        "ki": 16,
+        "ku": 2
+      },
+      {
+        "n": 15,
+        "item": "Управляемый сетевой коммутатор Cross - 8/UPoE SP",
+        "qty": 2,
+        "rationale": "Коммутатор: 10 настраиваемых портов × 2 шт.; 1 канал управления × 2 шт.",
+        "ki": 20,
+        "ku": 2
+      },
+      {
+        "n": 16,
+        "item": "Контроллер двух дверей Integriti SLAM INTG-996012PCBK",
+        "qty": 9,
+        "rationale": "Контроллер: оконечные каналы учитываются на считывателях; 1 канал управления × 9 шт.",
+        "ki": 0,
+        "ku": 9
+      },
+      {
+        "n": 17,
+        "item": "Интеллектуальный контроллер двух дверей Integriti ILAM INTG-996018PCBK",
+        "qty": 1,
+        "rationale": "Контроллер: оконечные каналы учитываются на считывателях; 1 канал управления × 1 шт.",
+        "ki": 0,
+        "ku": 1
+      },
+      {
+        "n": 18,
+        "item": "Интеллектуальный блок питания Integriti 3A INTG-996091PCBK",
+        "qty": 1,
+        "rationale": "1 интеллектуальный бп: 1 канал управления/контроля.",
+        "ki": 0,
+        "ku": 1
+      },
+      {
+        "n": 19,
+        "item": "Интеллектуальный блок питания Integriti 8A INTG-996092",
+        "qty": 2,
+        "rationale": "2 бп x 1 канал управления/контроля.",
+        "ki": 0,
+        "ku": 2
+      },
+      {
+        "n": 20,
+        "item": "Резервный источник питания РИП-24 исп. 01",
+        "qty": 2,
+        "rationale": "2 рип x 1 канал управления/контроля.",
+        "ki": 0,
+        "ku": 2
+      },
+      {
+        "n": 21,
+        "item": "Считыватель RFID прокси-карт AY-K6255 (rev.B)",
+        "qty": 16,
+        "rationale": "Считыватель: 1 информационный канал × 16 шт.; на контроллере повторно не учитывается.",
+        "ki": 16,
+        "ku": 0
+      },
+      {
+        "n": 22,
+        "item": "Замок электромагнитный ALM-350FB-G-12/24V",
+        "qty": 12,
+        "rationale": "12 замков x 1 канал управления разблокировкой (ku).",
+        "ki": 0,
+        "ku": 12
+      },
+      {
+        "n": 23,
+        "item": "Кнопка выхода В-72",
+        "qty": 8,
+        "rationale": "8 кнопок x 1 информационный сигнал запроса на выход (ki).",
+        "ki": 8,
+        "ku": 0
+      },
+      {
+        "n": 24,
+        "item": "Устройство дистанционного пуска УДП 513-10 исп.1",
+        "qty": 8,
+        "rationale": "8 удп x 1 сигнал тревоги/разблокировки (ki).",
+        "ki": 8,
+        "ku": 0
+      },
+      {
+        "n": 25,
+        "item": "Шлагбаум автоматический Гранд-Арктик F6GA",
+        "qty": 1,
+        "rationale": "1 шлагбаум: 1 сигнал положения (ki) и 1 канал управления приводом (ku).",
+        "ki": 1,
+        "ku": 1
+      },
+      {
+        "n": 26,
+        "item": "Фотоэлемент безопасности СПЭК-1113",
+        "qty": 1,
+        "rationale": "1 фотоэлемент x 1 канал контроля препятствия (ki).",
+        "ki": 1,
+        "ku": 0
+      },
+      {
+        "n": 27,
+        "item": "Светофор светодиодный транспортный Т.8 100мм 24В",
+        "qty": 2,
+        "rationale": "2 светофора x 1 канал управления переключением (ku).",
+        "ki": 0,
+        "ku": 2
+      },
+      {
+        "n": 28,
+        "item": "Извещатель охранный точечный магнитоконтактный ДПМГ-2-100",
+        "qty": 4,
+        "rationale": "4 геркона x 1 тревожный сигнал (ki).",
+        "ki": 4,
+        "ku": 0
+      },
+      {
+        "n": 29,
+        "item": "Пассивный уличный ИК извещатель SIP-100",
+        "qty": 11,
+        "rationale": "11 ик-извещателей x 1 тревожный канал (ki).",
+        "ki": 11,
+        "ku": 0
+      },
+      {
+        "n": 30,
+        "item": "Пассивный уличный ИК извещатель SIP-404/5",
+        "qty": 4,
+        "rationale": "4 ик-извещателя x 1 тревожный канал (ki).",
+        "ki": 4,
+        "ku": 0
+      },
+      {
+        "n": 31,
+        "item": "Пассивный уличный ИК извещатель SIP-3020",
+        "qty": 1,
+        "rationale": "1 ик-извещатель x 1 тревожный канал (ki).",
+        "ki": 1,
+        "ku": 0
+      }
+    ],
+    "ferp_4_2": [
+      {
+        "code": "ФЕРп 02-01-002-11",
+        "title": "Автоматизированная система управления II категории технической сложности, Кобщ = 160",
+        "unit": "система",
+        "qty": 1,
+        "rationale": "По единому расчету K_total=257."
+      },
+      {
+        "code": "ФЕРп 02-01-002-12",
+        "title": "Автоматизированная система управления II категории технической сложности, добавляется каждый канал сверх базы",
+        "unit": "канал",
+        "qty": 97,
+        "rationale": "257 - 160 = 97 каналов."
+      },
+      {
+        "code": "ФЕРп 02-02-001-01",
+        "title": "Инсталляция и базовая настройка общего и специального программного обеспечения",
+        "unit": "комплекс",
+        "qty": 1,
+        "rationale": "Установка ПО VMS/Integriti на рабочей станции оператора."
+      },
+      {
+        "code": "ФЕРп 02-02-003-01",
+        "title": "Функциональная настройка специального программного обеспечения АС",
+        "unit": "комплекс",
+        "qty": 1,
+        "rationale": "Программирование планов помещений, правил реакции и интеграции систем."
+      },
+      {
+        "code": "ФЕРп 01-06-023-01",
+        "title": "Устройство контроля уровня напряжения переменного или выпрямленного оперативного тока",
+        "unit": "шт.",
+        "qty": 1,
+        "rationale": "Наладка системы мониторинга напряжения ИБП Штиль ST1101L."
+      },
+      {
+        "code": "ФЕРп 01-06-010-03",
+        "title": "Выпрямительный блок питания до 1 кВА со стабилизацией выходного напряжения",
+        "unit": "шт.",
+        "qty": 5,
+        "rationale": "Пусконаладка блоков питания Integriti (3 шт.) и РИП-24 (2 шт.)."
+      },
+      {
+        "code": "ФЕРп 01-11-011-01",
+        "title": "Проверка наличия цепи между заземлителями и заземляемыми элементами",
+        "unit": "элемент",
+        "qty": 12,
+        "rationale": "Проверка цепи заземления шкафов, ИБП и коммутационного оборудования."
+      },
+      {
+        "code": "ФЕРп 01-11-028-01",
+        "title": "Измерение сопротивления изоляции кабельных линий напряжением до 1 кВ",
+        "unit": "участок",
+        "qty": 3,
+        "rationale": "Измерение изоляции кабелей питания и силовых цепей."
+      }
+    ],
+    "cable_sections": [
+      {
+        "id": 1,
+        "trace_id": "T-SCS-01",
+        "system": "СОТ",
+        "cable_type": "19C-SA-39BL-R500 Eurolan S/FTP Cat.6A",
+        "length_m": 2735,
+        "pairs_or_cores": 4,
+        "endpoints": "Коммутаторы — IP-видеокамеры",
+        "is_scs_line": true,
+        "needs_insulation_test": false,
+        "rationale": "Уличные витопарные линии связи для IP-камер видеонаблюдения."
+      },
+      {
+        "id": 2,
+        "trace_id": "T-SCS-02",
+        "system": "СКУД",
+        "cable_type": "19C-U5-03WT-B305 Eurolan U/UTP Cat.5e",
+        "length_m": 75,
+        "pairs_or_cores": 4,
+        "endpoints": "Контроллеры СКУД — Модули LAN",
+        "is_scs_line": true,
+        "needs_insulation_test": false,
+        "rationale": "Внутренние UTP-линии передачи данных СКУД."
+      },
+      {
+        "id": 3,
+        "trace_id": "T-PWR-01",
+        "system": "Питание КСБ",
+        "cable_type": "КВКбШвнг(А)-LS 4х1,0",
+        "length_m": 2550,
+        "pairs_or_cores": 4,
+        "endpoints": "Шкафы питания — Уличные терминалы/камеры",
+        "is_scs_line": false,
+        "needs_insulation_test": true,
+        "rationale": "Бронированный кабель электропитания оборудования на периметре."
+      },
+      {
+        "id": 4,
+        "trace_id": "T-SIG-01",
+        "system": "СОС / СКУД",
+        "cable_type": "КПСВВнг(А)-LS 1x2x0,75",
+        "length_m": 192,
+        "pairs_or_cores": 2,
+        "endpoints": "Контроллеры — Извещатели / Считыватели",
+        "is_scs_line": false,
+        "needs_insulation_test": true,
+        "rationale": "Сигнальные шлейфы охранной сигнализации и управления замками."
+      },
+      {
+        "id": 5,
+        "trace_id": "T-OPT-01",
+        "system": "ВОЛС",
+        "cable_type": "ТОД-нг(A)-HF-04У-8кН ИНКАБ",
+        "length_m": 1400,
+        "pairs_or_cores": 4,
+        "endpoints": "Центральный коммутатор — Шкафы ТШ",
+        "is_scs_line": false,
+        "needs_insulation_test": true,
+        "rationale": "Магистральный оптический кабель связи между термошкафами периметра."
+      }
+    ],
+    "cable_journal": [],
+    "channel_tests": []
+  }
+}

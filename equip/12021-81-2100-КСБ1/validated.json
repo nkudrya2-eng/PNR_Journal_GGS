@@ -1,0 +1,443 @@
+{
+  "document_context": {
+    "org_full": "Общество с ограниченной ответственностью «Голд-Линк»",
+    "org_short": "ООО «Голд-Линк»",
+    "org_inn_kpp": "7224078140/720301001",
+    "org_address": "625016, Россия, Тюменская область, город Тюмень, улица Александра Логунова, дом 11/5",
+    "org_phone_email": "Телефон: +7 (3452) 58-20-90 E-mail: info@gold-link.ru",
+    "approver_title": "Руководитель группы",
+    "approver_name": "Грязнов Е.Е.",
+    "developer_title": "Главный специалист",
+    "developer_title2": "технической группы",
+    "developer_name": "Кудря Н.Ю.",
+    "date_str": "12.05.25",
+    "system_name_nom": "Комплексная система безопасности",
+    "system_name_rod": "комплексной системы безопасности",
+    "category": "II (вторая)",
+    "coef_kuf": "1.0",
+    "coef_kms": "1.0",
+    "coef_kinf": "1.52",
+    "sheet_stage": "",
+    "sheet_page": "",
+    "sheet_pages": "",
+    "auto_pass_results": false
+  },
+  "auto_pass_results": false,
+  "project": {
+    "project_code": "12021-81-2100-КСБ1",
+    "project_title": "Комплексная система безопасности. Шифр 12021-81-2100-КСБ1",
+    "site_title": "Горно-перерабатывающее предприятие «Кекура». Второй этап строительства. Сети связи. Промплощадка ЗИФ. Контрольно-пропускной пункт №1",
+    "designer": null,
+    "customer": null,
+    "executor": "ООО «Голд-Линк»",
+    "category": "II"
+  },
+  "equipment": [
+    {
+      "equipment_type": "access_control",
+      "priority": 1,
+      "vendor": "Inner Range",
+      "name": "Integriti SLAM 2 Door/Reader Module PCB&K — Контроллер двух дверей",
+      "model_or_code": "INTG-996012PCBK",
+      "description": "Контроллер двух дверей Integriti SLAM 2 Door/Reader Module PCB&K",
+      "quantity": 37,
+      "port_count": 0,
+      "ferp": [
+        {
+          "code": "ФЕРп 02-03-002-02",
+          "title": "Дополнительная точка системы контроля и управления доступом"
+        }
+      ],
+      "work": "ПНР, проверка, настройка и функциональные испытания контроллеров СКУД",
+      "attributes": {
+        "unit": "шт.",
+        "source_file": "92_12021-81-2100-КСБ1.СО_Изм1_РевА.xlsx",
+        "source_sheet": "1",
+        "position": "1.2",
+        "ki": 0,
+        "ku": 37,
+        "rationale": "Контроллер: оконечные каналы учитываются на считывателях; 1 канал управления × 37 шт.",
+        "channel_rule": "controller_management_only",
+        "channel_ruleset_version": "2026-07-30.2"
+      }
+    },
+    {
+      "equipment_type": "access_control",
+      "priority": 2,
+      "vendor": "Rosslare",
+      "name": "Считыватель 13,56 МГц RFID прокси-карт и брелоков, CSN",
+      "model_or_code": "AY-K6255 (rev.B)",
+      "description": "Считыватель 13,56 МГц RFID прокси-карт и брелоков, CSN. Формат Wiegand 26-bit, IP65",
+      "quantity": 71,
+      "port_count": 0,
+      "ferp": [
+        {
+          "code": "ФЕРп 02-03-002-02",
+          "title": "Дополнительная точка системы контроля и управления доступом"
+        }
+      ],
+      "work": "ПНР, проверка, настройка и функциональные испытания считывателей СКУД",
+      "attributes": {
+        "unit": "шт.",
+        "source_file": "92_12021-81-2100-КСБ1.СО_Изм1_РевА.xlsx",
+        "source_sheet": "1",
+        "position": "1.7, 2.5",
+        "ki": 71,
+        "ku": 0,
+        "rationale": "Считыватель: 1 информационный канал × 71 шт.; на контроллере повторно не учитывается.",
+        "channel_rule": "reader_single_channel",
+        "channel_ruleset_version": "2026-07-30.2"
+      }
+    },
+    {
+      "equipment_type": "access_control",
+      "priority": 3,
+      "vendor": "Aleko",
+      "name": "Электромагнитный замок",
+      "model_or_code": "ALM-350FB-G-12/24V",
+      "description": "Электромагнитный замок, -50…+50ºC, IP67, 12V",
+      "quantity": 48,
+      "port_count": 0,
+      "ferp": [
+        {
+          "code": "ФЕРп 02-03-002-02",
+          "title": "Дополнительная точка системы контроля и управления доступом"
+        }
+      ],
+      "work": "ПНР, проверка срабатывания и регулировка электромагнитных замков",
+      "attributes": {
+        "unit": "шт.",
+        "source_file": "92_12021-81-2100-КСБ1.СО_Изм1_РевА.xlsx",
+        "source_sheet": "1",
+        "position": "1.8",
+        "ki": 48,
+        "ku": 48,
+        "rationale": "48 исполнительных замков скуд. 1 информационный сигнал состояния и 1 управляющий канал реле на замок.",
+        "channel_rule": "preserve_existing",
+        "channel_ruleset_version": "2026-07-30.2"
+      }
+    },
+    {
+      "equipment_type": "access_control",
+      "priority": 4,
+      "vendor": "ELTIS",
+      "name": "Кнопка выхода",
+      "model_or_code": "В-72",
+      "description": "Кнопка выхода В-72",
+      "quantity": 26,
+      "port_count": 0,
+      "ferp": [
+        {
+          "code": "ФЕРп 02-03-002-02",
+          "title": "Дополнительная точка системы контроля и управления доступом"
+        }
+      ],
+      "work": "ПНР, проверка прохождения сигналов кнопок выхода",
+      "attributes": {
+        "unit": "шт.",
+        "source_file": "92_12021-81-2100-КСБ1.СО_Изм1_РевА.xlsx",
+        "source_sheet": "1",
+        "position": "1.11",
+        "ki": 26,
+        "ku": 26,
+        "rationale": "26 кнопок выхода. 1 информационный и 1 управляющий канал на кнопку.",
+        "channel_rule": "preserve_existing",
+        "channel_ruleset_version": "2026-07-30.2"
+      }
+    },
+    {
+      "equipment_type": "detector",
+      "priority": 5,
+      "vendor": "Optex",
+      "name": "Пассивный ИК извещатель с зоной детекции (15х15м)",
+      "model_or_code": "CDX-AM",
+      "description": "Пассивный оптико-электронный извещатель CDX-AM",
+      "quantity": 7,
+      "port_count": 0,
+      "ferp": [
+        {
+          "code": "ФЕРп 02-04-001-02",
+          "title": "Дополнительный шлейф автоматической пожарной сигнализации"
+        }
+      ],
+      "work": "ПНР, настройка зоны обнаружения и тестирование шлейфа сигнализации",
+      "attributes": {
+        "unit": "шт.",
+        "source_file": "92_12021-81-2100-КСБ1.СО_Изм1_РевА.xlsx",
+        "source_sheet": "1",
+        "position": "2.6",
+        "ki": 7,
+        "ku": 7,
+        "rationale": "7 оптико-электронных извещателей охранной сигнализации. по 1 ki и 1 ku на устройство.",
+        "channel_rule": "preserve_existing",
+        "channel_ruleset_version": "2026-07-30.2"
+      }
+    },
+    {
+      "equipment_type": "detector",
+      "priority": 6,
+      "vendor": "ООО НПО \"Сибирский Арсенал\"",
+      "name": "Извещатель охранный поверхностный звуковой",
+      "model_or_code": "Сонар",
+      "description": "Звуковой поверхностный извещатель Сонар",
+      "quantity": 2,
+      "port_count": 0,
+      "ferp": [
+        {
+          "code": "ФЕРп 02-04-001-02",
+          "title": "Дополнительный шлейф автоматической пожарной сигнализации"
+        }
+      ],
+      "work": "ПНР, настройка чувствительности и функциональное тестирование",
+      "attributes": {
+        "unit": "шт.",
+        "source_file": "92_12021-81-2100-КСБ1.СО_Изм1_РевА.xlsx",
+        "source_sheet": "1",
+        "position": "2.8",
+        "ki": 2,
+        "ku": 2,
+        "rationale": "2 акустических извещателя разрушения стекла. по 1 ki и 1 ku на устройство.",
+        "channel_rule": "preserve_existing",
+        "channel_ruleset_version": "2026-07-30.2"
+      }
+    }
+  ],
+  "summaries": {
+    "total_switch_ports": 0,
+    "channel_totals": {
+      "ki": 154,
+      "ku": 120,
+      "total": 274
+    },
+    "channel_components": {
+      "switch_data_ports": 0,
+      "logical_mgmt_ports": 0,
+      "voip_phones": 0,
+      "ups_units": 0,
+      "other_channels": 274
+    },
+    "ferp_channels_summary": {
+      "category": "II",
+      "base_code": "ФЕРп 02-01-002-11",
+      "base_limit": 160,
+      "extra_code": "ФЕРп 02-01-002-12",
+      "extra_channels": 114,
+      "notes": "Единый расчет каналов 2026-07-30.2: K_total=274; база 160, дополнительных каналов 114."
+    },
+    "cable_sections_totals": {
+      "scs_lines": 2,
+      "insulation_sections": 5,
+      "link_lines": 0,
+      "video_coax_lines": 0,
+      "optical_lines": 0
+    },
+    "notes": "Расчет выполнен строго по имеющимся в проекте позициям активного оборудования и кабельной продукции."
+  },
+  "tables": {
+    "equipment_3_1": [
+      {
+        "n": 1,
+        "title": "Integriti SLAM 2 Door/Reader Module PCB&K — Контроллер двух дверей",
+        "type_or_model": "INTG-996012PCBK",
+        "work": "ПНР, проверка, настройка и функциональные испытания (ФЕРп 02-03-002-02)"
+      },
+      {
+        "n": 2,
+        "title": "Считыватель 13,56 МГц RFID прокси-карт и брелоков, CSN",
+        "type_or_model": "AY-K6255 (rev.B)",
+        "work": "ПНР, проверка, настройка и функциональные испытания (ФЕРп 02-03-002-02)"
+      },
+      {
+        "n": 3,
+        "title": "Электромагнитный замок",
+        "type_or_model": "ALM-350FB-G-12/24V",
+        "work": "ПНР, проверка срабатывания и регулировка (ФЕРп 02-03-002-02)"
+      },
+      {
+        "n": 4,
+        "title": "Кнопка выхода",
+        "type_or_model": "В-72",
+        "work": "ПНР, проверка прохождения сигналов (ФЕРп 02-03-002-02)"
+      },
+      {
+        "n": 5,
+        "title": "Пассивный ИК извещатель с зоной детекции (15х15м)",
+        "type_or_model": "CDX-AM",
+        "work": "ПНР, настройка зоны обнаружения и тестирование шлейфа (ФЕРп 02-04-001-02)"
+      },
+      {
+        "n": 6,
+        "title": "Извещатель охранный поверхностный звуковой",
+        "type_or_model": "Сонар",
+        "work": "ПНР, настройка чувствительности и функциональное тестирование (ФЕРп 02-04-001-02)"
+      }
+    ],
+    "calc_4_1": [
+      {
+        "n": 1,
+        "item": "Integriti SLAM 2 Door/Reader Module PCB&K — Контроллер двух дверей",
+        "qty": 37,
+        "rationale": "Контроллер: оконечные каналы учитываются на считывателях; 1 канал управления × 37 шт.",
+        "ki": 0,
+        "ku": 37
+      },
+      {
+        "n": 2,
+        "item": "Считыватель 13,56 МГц RFID прокси-карт и брелоков, CSN",
+        "qty": 71,
+        "rationale": "Считыватель: 1 информационный канал × 71 шт.; на контроллере повторно не учитывается.",
+        "ki": 71,
+        "ku": 0
+      },
+      {
+        "n": 3,
+        "item": "Электромагнитный замок",
+        "qty": 48,
+        "rationale": "48 исполнительных замков скуд. 1 информационный сигнал состояния и 1 управляющий канал реле на замок.",
+        "ki": 48,
+        "ku": 48
+      },
+      {
+        "n": 4,
+        "item": "Кнопка выхода",
+        "qty": 26,
+        "rationale": "26 кнопок выхода. 1 информационный и 1 управляющий канал на кнопку.",
+        "ki": 26,
+        "ku": 26
+      },
+      {
+        "n": 5,
+        "item": "Пассивный ИК извещатель с зоной детекции (15х15м)",
+        "qty": 7,
+        "rationale": "7 оптико-электронных извещателей охранной сигнализации. по 1 ki и 1 ku на устройство.",
+        "ki": 7,
+        "ku": 7
+      },
+      {
+        "n": 6,
+        "item": "Извещатель охранный поверхностный звуковой",
+        "qty": 2,
+        "rationale": "2 акустических извещателя разрушения стекла. по 1 ki и 1 ku на устройство.",
+        "ki": 2,
+        "ku": 2
+      }
+    ],
+    "ferp_4_2": [
+      {
+        "code": "ФЕРп 02-01-002-11",
+        "title": "Автоматизированная система управления II категории технической сложности, Кобщ = 160",
+        "unit": "система",
+        "qty": 1,
+        "rationale": "По единому расчету K_total=274."
+      },
+      {
+        "code": "ФЕРп 02-01-002-12",
+        "title": "Автоматизированная система управления II категории технической сложности, добавляется каждый канал сверх базы",
+        "unit": "канал",
+        "qty": 114,
+        "rationale": "274 - 160 = 114 каналов."
+      },
+      {
+        "code": "ФЕРп 02-03-002-02",
+        "title": "Дополнительная точка системы контроля и управления доступом",
+        "unit": "шт.",
+        "qty": 182,
+        "rationale": "Позиции сформированы по оборудованию СКУД, имеющему самостоятельные операции ПНР."
+      },
+      {
+        "code": "ФЕРп 02-04-001-02",
+        "title": "Дополнительный шлейф автоматической пожарной сигнализации",
+        "unit": "шт.",
+        "qty": 9,
+        "rationale": "Позиции сформированы по извещателям охранно-пожарной сигнализации."
+      }
+    ],
+    "cable_sections": [
+      {
+        "id": 1,
+        "trace_id": "W1",
+        "system": "СКУД / Сети связи",
+        "cable_type": "Кабель категории 5e U/UTP 4 пары 19C-U5-12WT-B305",
+        "length_m": 1684,
+        "pairs_or_cores": 4,
+        "endpoints": "Коммутаторы / Модули — контроллеры СКУД",
+        "is_scs_line": true,
+        "needs_insulation_test": false,
+        "rationale": "СКС линия связи Ethernet UTP cat 5e."
+      },
+      {
+        "id": 2,
+        "trace_id": "W2",
+        "system": "СКУД / СОС",
+        "cable_type": "Кабель КПСВВнг(А)-LS 1x2x0,5",
+        "length_m": 1353,
+        "pairs_or_cores": 2,
+        "endpoints": "Контроллеры СКУД — извещатели / считыватели",
+        "is_scs_line": false,
+        "needs_insulation_test": true,
+        "rationale": "Сигнальная линия связи и контроля."
+      },
+      {
+        "id": 3,
+        "trace_id": "W3",
+        "system": "СКУД",
+        "cable_type": "Кабель КПСВВнг(А)-LS 1x2x0,75",
+        "length_m": 734,
+        "pairs_or_cores": 2,
+        "endpoints": "Контроллеры СКУД — замки / кнопки",
+        "is_scs_line": false,
+        "needs_insulation_test": true,
+        "rationale": "Линия питания и управления СКУД."
+      },
+      {
+        "id": 4,
+        "trace_id": "W4",
+        "system": "СКУД",
+        "cable_type": "Кабель КПСВВнг(А)-LS 1x2x1,0",
+        "length_m": 438,
+        "pairs_or_cores": 2,
+        "endpoints": "Источники питания — контроллеры СКУД",
+        "is_scs_line": false,
+        "needs_insulation_test": true,
+        "rationale": "Линия электропитания СКУД."
+      },
+      {
+        "id": 5,
+        "trace_id": "W5",
+        "system": "СКУД / СОС",
+        "cable_type": "Кабель КПСВВнг(А)-LS 2x2x0,5",
+        "length_m": 637,
+        "pairs_or_cores": 4,
+        "endpoints": "Модули расширения — извещатели",
+        "is_scs_line": false,
+        "needs_insulation_test": true,
+        "rationale": "Шлейфы охранно-пожарной сигнализации."
+      },
+      {
+        "id": 6,
+        "trace_id": "W6",
+        "system": "СКУД",
+        "cable_type": "Кабель КПСВВнг(А)-LS 2x2x0,75",
+        "length_m": 121,
+        "pairs_or_cores": 4,
+        "endpoints": "Контроллеры — исполнительные устройства",
+        "is_scs_line": false,
+        "needs_insulation_test": true,
+        "rationale": "Линия управления и питания устройств."
+      },
+      {
+        "id": 7,
+        "trace_id": "W7",
+        "system": "СКУД",
+        "cable_type": "Кабель F/UTP cat 6 19P-F6-67BL-R500",
+        "length_m": 78,
+        "pairs_or_cores": 4,
+        "endpoints": "Внешние подсоединения СКУД",
+        "is_scs_line": true,
+        "needs_insulation_test": false,
+        "rationale": "Промышленная экранированная линия Ethernet."
+      }
+    ],
+    "cable_journal": []
+  }
+}

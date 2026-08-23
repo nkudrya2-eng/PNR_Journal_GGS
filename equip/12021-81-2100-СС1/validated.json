@@ -1,0 +1,549 @@
+{
+  "document_context": {
+    "org_full": "Общество с ограниченной ответственностью «Голд-Линк»",
+    "org_short": "ООО «Голд-Линк»",
+    "org_inn_kpp": "7224078140/720301001",
+    "org_address": "625016, Россия, Тюменская область, город Тюмень, улица Александра Логунова, дом 11/5",
+    "org_phone_email": "Телефон: +7 (3452) 58-20-90 E-mail: info@gold-link.ru",
+    "approver_title": "Руководитель группы",
+    "approver_name": "Грязнов Е.Е.",
+    "developer_title": "Главный специалист",
+    "developer_title2": "технической группы",
+    "developer_name": "Кудря Н.Ю.",
+    "date_str": "12.05.25",
+    "system_name_nom": "Сети связи",
+    "system_name_rod": "сетей связи",
+    "category": "II (вторая)",
+    "coef_kuf": "1.0",
+    "coef_kms": "1.0",
+    "coef_kinf": "1.52",
+    "sheet_stage": "РД",
+    "sheet_page": "",
+    "sheet_pages": "",
+    "auto_pass_results": true
+  },
+  "auto_pass_results": true,
+  "project": {
+    "project_code": "12021-81-2100-СС1",
+    "project_title": "Сети связи. 12021-81-2100-СС1",
+    "site_title": null,
+    "designer": null,
+    "customer": null,
+    "executor": "ООО «Голд-Линк»",
+    "category": "II"
+  },
+  "equipment": [
+    {
+      "equipment_type": "din_panel",
+      "priority": 1,
+      "vendor": "ЦМО",
+      "name": "Панель 19\" с DIN-рейкой регулируемая по глубине для установки коммутаторов",
+      "model_or_code": "STK-RACKMNT-704KA",
+      "description": "Панель 19\" с DIN-рейкой регулируемая по глубине для установки коммутаторов",
+      "quantity": 1,
+      "port_count": 0,
+      "ferp": [
+        {
+          "code": "ФЕРп 02-01-002-09",
+          "title": "Автоматизированная система управления II категории технической сложности, Кобщ = 80"
+        }
+      ],
+      "work": "ПНР, настройка, проверка работоспособности и испытания.",
+      "attributes": {
+        "source_file": "12021-81-2100-CC1.СО1_изм.1.doc",
+        "source_sheet": "table 1",
+        "source_rows": [
+          9
+        ],
+        "ki": 0,
+        "ku": 0,
+        "rationale": "Пассивное изделие или пакет ПО: самостоятельные каналы не образует.",
+        "channel_rule": "passive_accessory_no_channels",
+        "channel_ruleset_version": "2026-07-30.2"
+      }
+    },
+    {
+      "equipment_type": "switch",
+      "priority": 2,
+      "vendor": "Eltex",
+      "name": "Ethernet-коммутатор MES2324P, 24 порта 10/100/1000 Base-T (PoE/PoE+), 4 порта 10GBase-R (SFP+)/1000Base-X (SFP), L3, 220 V AC",
+      "model_or_code": "MES2324P AC",
+      "description": "Ethernet-коммутатор MES2324P, 24 порта 10/100/1000 Base-T (PoE/PoE+), 4 порта 10GBase-R (SFP+)/1000Base-X (SFP), L3, 220 V AC",
+      "quantity": 3,
+      "port_count": 28,
+      "ferp": [
+        {
+          "code": "ФЕРп 02-01-002-09",
+          "title": "Автоматизированная система управления II категории технической сложности, Кобщ = 80"
+        }
+      ],
+      "work": "ПНР, настройка, проверка работоспособности и испытания.",
+      "attributes": {
+        "source_file": "12021-81-2100-CC1.СО2_изм.1.doc",
+        "source_sheet": "table 1",
+        "source_rows": [
+          4
+        ],
+        "ki": 84,
+        "ku": 3,
+        "rationale": "Коммутатор: 28 настраиваемых портов × 3 шт.; 1 канал управления × 3 шт.",
+        "channel_rule": "managed_switch_all_ports",
+        "channel_ruleset_version": "2026-07-30.2"
+      }
+    },
+    {
+      "equipment_type": "sfp",
+      "priority": 3,
+      "vendor": "НПП «Русмодуль»",
+      "name": "Оптический SFP модуль, 1.25G, WDM, TX 1310 нм, RX 1550 нм, 3 км, LC",
+      "model_or_code": "RSM1W36L3",
+      "description": "Оптический SFP модуль, 1.25G, WDM, TX 1310 нм, RX 1550 нм, 3 км, LC",
+      "quantity": 2,
+      "port_count": 0,
+      "ferp": [],
+      "work": "ПНР, настройка, проверка работоспособности и испытания.",
+      "attributes": {
+        "source_file": "12021-81-2100-CC1.СО2_изм.1.doc",
+        "source_sheet": "table 1",
+        "source_rows": [
+          6
+        ],
+        "ki": 0,
+        "ku": 0,
+        "rationale": "sfp-модуль не создает самостоятельный канал; канал создает порт коммутатора.",
+        "channel_rule": "preserve_existing",
+        "channel_ruleset_version": "2026-07-30.2"
+      }
+    },
+    {
+      "equipment_type": "sfp",
+      "priority": 4,
+      "vendor": "НПП «Русмодуль»",
+      "name": "Оптический SFP модуль, 1.25G, WDM, TX 1550 нм, RX 1310 нм, 3 км, LC",
+      "model_or_code": "RSM1W63L3",
+      "description": "Оптический SFP модуль, 1.25G, WDM, TX 1550 нм, RX 1310 нм, 3 км, LC",
+      "quantity": 2,
+      "port_count": 0,
+      "ferp": [],
+      "work": "ПНР, настройка, проверка работоспособности и испытания.",
+      "attributes": {
+        "source_file": "12021-81-2100-CC1.СО2_изм.1.doc",
+        "source_sheet": "table 1",
+        "source_rows": [
+          7
+        ],
+        "ki": 0,
+        "ku": 0,
+        "rationale": "sfp-модуль не создает самостоятельный канал; канал создает порт коммутатора.",
+        "channel_rule": "preserve_existing",
+        "channel_ruleset_version": "2026-07-30.2"
+      }
+    },
+    {
+      "equipment_type": "switch",
+      "priority": 5,
+      "vendor": "Eltex",
+      "name": "Ethernet-коммутатор MES3508, 8х10/100/1000Base-T, 2хcombo 10/100/1000Base-T/1000Base-X, L3, 20-70 VDC",
+      "model_or_code": "MES3508",
+      "description": "Ethernet-коммутатор MES3508, 8х10/100/1000Base-T, 2хcombo 10/100/1000Base-T/1000Base-X, L3, 20-70 VDC",
+      "quantity": 1,
+      "port_count": 10,
+      "ferp": [
+        {
+          "code": "ФЕРп 02-01-002-09",
+          "title": "Автоматизированная система управления II категории технической сложности, Кобщ = 80"
+        }
+      ],
+      "work": "ПНР, настройка, проверка работоспособности и испытания.",
+      "attributes": {
+        "source_file": "12021-81-2100-CC1.СО2_изм.1.doc",
+        "source_sheet": "table 1",
+        "source_rows": [
+          11
+        ],
+        "ki": 10,
+        "ku": 1,
+        "rationale": "Коммутатор: 10 настраиваемых портов × 1 шт.; 1 канал управления × 1 шт.",
+        "channel_rule": "managed_switch_all_ports",
+        "channel_ruleset_version": "2026-07-30.2"
+      }
+    },
+    {
+      "equipment_type": "power_supply",
+      "priority": 6,
+      "vendor": "Eltex",
+      "name": "Модуль питания для промышленных коммутаторов 115-240 В AC, 270 Вт",
+      "model_or_code": "DRS-270-56",
+      "description": "Модуль питания для промышленных коммутаторов 115-240 В AC, 270 Вт",
+      "quantity": 2,
+      "port_count": 0,
+      "ferp": [
+        {
+          "code": "ФЕРп 02-01-002-09",
+          "title": "Автоматизированная система управления II категории технической сложности, Кобщ = 80"
+        }
+      ],
+      "work": "ПНР, настройка, проверка работоспособности и испытания.",
+      "attributes": {
+        "source_file": "12021-81-2100-CC1.СО2_изм.1.doc",
+        "source_sheet": "table 1",
+        "source_rows": [
+          12
+        ],
+        "ki": 0,
+        "ku": 2,
+        "rationale": "модуль питания: 0 ki; управление/контроль = 1 ku на устройство (2 ku).",
+        "channel_rule": "preserve_existing",
+        "channel_ruleset_version": "2026-07-30.2"
+      }
+    },
+    {
+      "equipment_type": "sfp",
+      "priority": 7,
+      "vendor": "НПП «Русмодуль»",
+      "name": "Оптический SFP модуль, 1.25G, WDM, TX 1310 нм, RX 1550 нм, 3 км, LC",
+      "model_or_code": "RSM1W36L3",
+      "description": "Оптический SFP модуль, 1.25G, WDM, TX 1310 нм, RX 1550 нм, 3 км, LC",
+      "quantity": 2,
+      "port_count": 0,
+      "ferp": [],
+      "work": "ПНР, настройка, проверка работоспособности и испытания.",
+      "attributes": {
+        "source_file": "12021-81-2100-CC1.СО2_изм.1.doc",
+        "source_sheet": "table 1",
+        "source_rows": [
+          13
+        ],
+        "ki": 0,
+        "ku": 0,
+        "rationale": "sfp-модуль не создает самостоятельный канал; канал создает порт коммутатора.",
+        "channel_rule": "preserve_existing",
+        "channel_ruleset_version": "2026-07-30.2"
+      }
+    },
+    {
+      "equipment_type": "sfp",
+      "priority": 8,
+      "vendor": "НПП «Русмодуль»",
+      "name": "Оптический SFP модуль, 1.25G, WDM, TX 1550 нм, RX 1310 нм, 3 км, LC",
+      "model_or_code": "RSM1W63L3",
+      "description": "Оптический SFP модуль, 1.25G, WDM, TX 1550 нм, RX 1310 нм, 3 км, LC",
+      "quantity": 2,
+      "port_count": 0,
+      "ferp": [],
+      "work": "ПНР, настройка, проверка работоспособности и испытания.",
+      "attributes": {
+        "source_file": "12021-81-2100-CC1.СО2_изм.1.doc",
+        "source_sheet": "table 1",
+        "source_rows": [
+          14
+        ],
+        "ki": 0,
+        "ku": 0,
+        "rationale": "sfp-модуль не создает самостоятельный канал; канал создает порт коммутатора.",
+        "channel_rule": "preserve_existing",
+        "channel_ruleset_version": "2026-07-30.2"
+      }
+    },
+    {
+      "equipment_type": "voip_phone",
+      "priority": 9,
+      "vendor": "Cisco",
+      "name": "VoIP телефон, 2 линии SIP, 2 программируемые клавиши, графический LCD дисплей 3,5\" 396х162, 2 порта 10/100BASE-T (LAN/PC), PoE 802.3af",
+      "model_or_code": "CP-7821-K9",
+      "description": "VoIP телефон, 2 линии SIP, 2 программируемые клавиши, графический LCD дисплей 3,5\" 396х162, 2 порта 10/100BASE-T (LAN/PC), PoE 802.3af",
+      "quantity": 11,
+      "port_count": 2,
+      "ferp": [
+        {
+          "code": "ФЕРп 02-01-002-09",
+          "title": "Автоматизированная система управления II категории технической сложности, Кобщ = 80"
+        }
+      ],
+      "work": "ПНР, настройка, проверка работоспособности и испытания.",
+      "attributes": {
+        "source_file": "12021-81-2100-CC1.СО2_изм.1.doc",
+        "source_sheet": "table 1",
+        "source_rows": [
+          18
+        ],
+        "ki": 11,
+        "ku": 0,
+        "rationale": "оконечное устройство учтено как один информационный канал на устройство (11 ki).",
+        "channel_rule": "preserve_existing",
+        "channel_ruleset_version": "2026-07-30.2"
+      }
+    },
+    {
+      "equipment_type": "voip_phone",
+      "priority": 10,
+      "vendor": "Cisco",
+      "name": "VoIP телефон, 5 линии SIP, 5 программируемые клавиши, графический LCD дисплей 5\" 800х480, 2 порта Fast Ethernet (LAN/PC), PoE 802.3af",
+      "model_or_code": "CP-8841-K9",
+      "description": "VoIP телефон, 5 линии SIP, 5 программируемые клавиши, графический LCD дисплей 5\" 800х480, 2 порта Fast Ethernet (LAN/PC), PoE 802.3af",
+      "quantity": 1,
+      "port_count": 2,
+      "ferp": [
+        {
+          "code": "ФЕРп 02-01-002-09",
+          "title": "Автоматизированная система управления II категории технической сложности, Кобщ = 80"
+        }
+      ],
+      "work": "ПНР, настройка, проверка работоспособности и испытания.",
+      "attributes": {
+        "source_file": "12021-81-2100-CC1.СО2_изм.1.doc",
+        "source_sheet": "table 1",
+        "source_rows": [
+          20
+        ],
+        "ki": 1,
+        "ku": 0,
+        "rationale": "оконечное устройство учтено как один информационный канал на устройство (1 ki).",
+        "channel_rule": "preserve_existing",
+        "channel_ruleset_version": "2026-07-30.2"
+      }
+    },
+    {
+      "equipment_type": "ntp-clock",
+      "priority": 11,
+      "vendor": "ООО «Хронотрон»",
+      "name": "Часы вторичные цифровые 6-разрядные с высотой знака 100 мм PoE-NTP",
+      "model_or_code": "ЦВС.6.100",
+      "description": "Часы вторичные цифровые 6-разрядные с высотой знака 100 мм PoE-NTP",
+      "quantity": 1,
+      "port_count": 0,
+      "ferp": [],
+      "work": "ПНР, настройка, проверка работоспособности и испытания.",
+      "attributes": {
+        "source_file": "12021-81-2100-CC1.СО2_изм.1.doc",
+        "source_sheet": "table 1",
+        "source_rows": [
+          22
+        ],
+        "ki": 1,
+        "ku": 0,
+        "rationale": "оконечное устройство учтено как один информационный канал на устройство (1 ki).",
+        "channel_rule": "preserve_existing",
+        "channel_ruleset_version": "2026-07-30.2"
+      }
+    },
+    {
+      "equipment_type": "ups",
+      "priority": 12,
+      "vendor": "ГК «ШТИЛЬ»",
+      "name": "Однофазный онлайн ИБП серии STR мощностью 3000 ВА, вх. - C20, вых. - C13 (8 шт.), C19 (1 шт.) Габаритные размеры ВхШхГ (без упаковки), мм; 88х482х447 (в стойку)",
+      "model_or_code": "STR1103L",
+      "description": "Однофазный онлайн ИБП серии STR мощностью 3000 ВА, вх. - C20, вых. - C13 (8 шт.), C19 (1 шт.) Габаритные размеры ВхШхГ (без упаковки), мм; 88х482х447 (в стойку)",
+      "quantity": 1,
+      "port_count": 0,
+      "ferp": [
+        {
+          "code": "ФЕРп 01-06-023-01",
+          "title": "Устройство контроля уровня напряжения переменного или выпрямленного оперативного тока"
+        }
+      ],
+      "work": "ПНР, настройка, проверка работоспособности и испытания.",
+      "attributes": {
+        "source_file": "12021-81-2100-CC1.СО2_изм.1.doc",
+        "source_sheet": "table 1",
+        "source_rows": [
+          24
+        ],
+        "ki": 0,
+        "ku": 1,
+        "rationale": "оборудование питания учтено как проверяемые каналы контроля/управления (1 ku).",
+        "channel_rule": "preserve_existing",
+        "channel_ruleset_version": "2026-07-30.2"
+      }
+    }
+  ],
+  "summaries": {
+    "total_switch_ports": 94,
+    "channel_totals": {
+      "ki": 107,
+      "ku": 7,
+      "total": 114
+    },
+    "channel_components": {
+      "switch_data_ports": 94,
+      "logical_mgmt_ports": 4,
+      "voip_phones": 12,
+      "ups_units": 1,
+      "other_channels": 16
+    },
+    "ferp_channels_summary": {
+      "category": "II",
+      "base_code": "ФЕРп 02-01-002-09",
+      "base_limit": 80,
+      "extra_code": "ФЕРп 02-01-002-10",
+      "extra_channels": 34,
+      "notes": "Единый расчет каналов 2026-07-30.2: K_total=114; база 80, дополнительных каналов 34."
+    },
+    "cable_sections_totals": {
+      "scs_lines": 0,
+      "insulation_sections": 0,
+      "link_lines": 0,
+      "video_coax_lines": 0,
+      "optical_lines": 0
+    },
+    "notes": "JSON сформирован по DOC-спецификациям СО1/СО2. Включение пассивных и кабельно-проводниковых позиций в каналы ПНР исключено."
+  },
+  "tables": {
+    "equipment_3_1": [
+      {
+        "n": 1,
+        "title": "Панель 19\" с DIN-рейкой регулируемая по глубине для установки коммутаторов",
+        "type_or_model": "STK-RACKMNT-704KA",
+        "work": "ПНР, настройка, испытания по ФЕРп 02-01-002-09."
+      },
+      {
+        "n": 2,
+        "title": "Ethernet-коммутатор MES2324P, 24 порта 10/100/1000 Base-T (PoE/PoE+), 4 порта 10GBase-R (SFP+)/1000Base-X (SFP), L3, 220 V AC",
+        "type_or_model": "MES2324P AC",
+        "work": "ПНР, настройка, испытания по ФЕРп 02-01-002-09."
+      },
+      {
+        "n": 3,
+        "title": "Оптический SFP модуль, 1.25G, WDM, TX 1310 нм, RX 1550 нм, 3 км, LC",
+        "type_or_model": "RSM1W36L3",
+        "work": "ПНР, настройка, испытания."
+      },
+      {
+        "n": 4,
+        "title": "Оптический SFP модуль, 1.25G, WDM, TX 1550 нм, RX 1310 нм, 3 км, LC",
+        "type_or_model": "RSM1W63L3",
+        "work": "ПНР, настройка, испытания."
+      },
+      {
+        "n": 5,
+        "title": "Ethernet-коммутатор MES3508, 8х10/100/1000Base-T, 2хcombo 10/100/1000Base-T/1000Base-X, L3, 20-70 VDC",
+        "type_or_model": "MES3508",
+        "work": "ПНР, настройка, испытания по ФЕРп 02-01-002-09."
+      },
+      {
+        "n": 6,
+        "title": "Модуль питания для промышленных коммутаторов 115-240 В AC, 270 Вт",
+        "type_or_model": "DRS-270-56",
+        "work": "ПНР, настройка, испытания по ФЕРп 02-01-002-09."
+      },
+      {
+        "n": 7,
+        "title": "Оптический SFP модуль, 1.25G, WDM, TX 1310 нм, RX 1550 нм, 3 км, LC",
+        "type_or_model": "RSM1W36L3",
+        "work": "ПНР, настройка, испытания."
+      },
+      {
+        "n": 8,
+        "title": "Оптический SFP модуль, 1.25G, WDM, TX 1550 нм, RX 1310 нм, 3 км, LC",
+        "type_or_model": "RSM1W63L3",
+        "work": "ПНР, настройка, испытания."
+      },
+      {
+        "n": 9,
+        "title": "VoIP телефон, 2 линии SIP, 2 программируемые клавиши, графический LCD дисплей 3,5\" 396х162, 2 порта 10/100BASE-T (LAN/PC), PoE 802.3af",
+        "type_or_model": "CP-7821-K9",
+        "work": "ПНР, настройка, испытания по ФЕРп 02-01-002-09."
+      },
+      {
+        "n": 10,
+        "title": "VoIP телефон, 5 линии SIP, 5 программируемые клавиши, графический LCD дисплей 5\" 800х480, 2 порта Fast Ethernet (LAN/PC), PoE 802.3af",
+        "type_or_model": "CP-8841-K9",
+        "work": "ПНР, настройка, испытания по ФЕРп 02-01-002-09."
+      },
+      {
+        "n": 11,
+        "title": "Часы вторичные цифровые 6-разрядные с высотой знака 100 мм PoE-NTP",
+        "type_or_model": "ЦВС.6.100",
+        "work": "ПНР, настройка, испытания."
+      },
+      {
+        "n": 12,
+        "title": "Однофазный онлайн ИБП серии STR мощностью 3000 ВА, вх. - C20, вых. - C13 (8 шт.), C19 (1 шт.) Габаритные размеры ВхШхГ (без упаковки), мм; 88х482х447 (в стойку)",
+        "type_or_model": "STR1103L",
+        "work": "ПНР, настройка, испытания по ФЕРп 01-06-023-01."
+      }
+    ],
+    "calc_4_1": [
+      {
+        "n": 1,
+        "item": "Ethernet-коммутатор MES2324P, 24 порта 10/100/1000 Base-T (PoE/PoE+), 4 порта 10GBase-R (SFP+)/1000Base-X (SFP), L3, 220 V AC",
+        "qty": 3,
+        "rationale": "Коммутатор: 28 настраиваемых портов × 3 шт.; 1 канал управления × 3 шт.",
+        "ki": 84,
+        "ku": 3
+      },
+      {
+        "n": 2,
+        "item": "Ethernet-коммутатор MES3508, 8х10/100/1000Base-T, 2хcombo 10/100/1000Base-T/1000Base-X, L3, 20-70 VDC",
+        "qty": 1,
+        "rationale": "Коммутатор: 10 настраиваемых портов × 1 шт.; 1 канал управления × 1 шт.",
+        "ki": 10,
+        "ku": 1
+      },
+      {
+        "n": 3,
+        "item": "Модуль питания для промышленных коммутаторов 115-240 В AC, 270 Вт",
+        "qty": 2,
+        "rationale": "модуль питания: 0 ki; управление/контроль = 1 ku на устройство (2 ku).",
+        "ki": 0,
+        "ku": 2
+      },
+      {
+        "n": 4,
+        "item": "VoIP телефон, 2 линии SIP, 2 программируемые клавиши, графический LCD дисплей 3,5\" 396х162, 2 порта 10/100BASE-T (LAN/PC), PoE 802.3af",
+        "qty": 11,
+        "rationale": "оконечное устройство учтено как один информационный канал на устройство (11 ki).",
+        "ki": 11,
+        "ku": 0
+      },
+      {
+        "n": 5,
+        "item": "VoIP телефон, 5 линии SIP, 5 программируемые клавиши, графический LCD дисплей 5\" 800х480, 2 порта Fast Ethernet (LAN/PC), PoE 802.3af",
+        "qty": 1,
+        "rationale": "оконечное устройство учтено как один информационный канал на устройство (1 ki).",
+        "ki": 1,
+        "ku": 0
+      },
+      {
+        "n": 6,
+        "item": "Часы вторичные цифровые 6-разрядные с высотой знака 100 мм PoE-NTP",
+        "qty": 1,
+        "rationale": "оконечное устройство учтено как один информационный канал на устройство (1 ki).",
+        "ki": 1,
+        "ku": 0
+      },
+      {
+        "n": 7,
+        "item": "Однофазный онлайн ИБП серии STR мощностью 3000 ВА, вх. - C20, вых. - C13 (8 шт.), C19 (1 шт.) Габаритные размеры ВхШхГ (без упаковки), мм; 88х482х447 (в стойку)",
+        "qty": 1,
+        "rationale": "оборудование питания учтено как проверяемые каналы контроля/управления (1 ku).",
+        "ki": 0,
+        "ku": 1
+      }
+    ],
+    "ferp_4_2": [
+      {
+        "code": "ФЕРп 02-01-002-09",
+        "title": "Автоматизированная система управления II категории технической сложности, Кобщ = 80",
+        "unit": "система",
+        "qty": 1,
+        "rationale": "По единому расчету K_total=114."
+      },
+      {
+        "code": "ФЕРп 02-01-002-10",
+        "title": "Автоматизированная система управления II категории технической сложности, добавляется каждый канал сверх базы",
+        "unit": "канал",
+        "qty": 34,
+        "rationale": "114 - 80 = 34 каналов."
+      },
+      {
+        "code": "ФЕРп 01-06-023-01",
+        "title": "Устройство контроля уровня напряжения переменного или выпрямленного оперативного тока",
+        "unit": "шт.",
+        "qty": 1,
+        "rationale": "В спецификации присутствует онлайн ИБП."
+      }
+    ],
+    "cable_sections": []
+  }
+}

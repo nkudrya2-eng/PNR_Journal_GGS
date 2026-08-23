@@ -1,0 +1,967 @@
+{
+  "document_context": {
+    "org_full": "Общество с ограниченной ответственностью «Голд-Линк»",
+    "org_short": "ООО «Голд-Линк»",
+    "org_inn_kpp": "7224078140/720301001",
+    "org_address": "625016, Россия, Тюменская область, город Тюмень, улица Александра Логунова, дом 11/5",
+    "org_phone_email": "Телефон: +7 (3452) 58-20-90 E-mail: info@gold-link.ru",
+    "approver_title": "Руководитель группы",
+    "approver_name": "Грязнов Е.Е.",
+    "developer_title": "Главный специалист",
+    "developer_title2": "технической группы",
+    "developer_name": "Кудря Н.Ю.",
+    "date_str": "12.05.25",
+    "system_name_nom": "Сети связи",
+    "system_name_rod": "сетей связи",
+    "category": "II (вторая)",
+    "coef_kuf": "1.0",
+    "coef_kms": "1.0",
+    "coef_kinf": "1.52",
+    "sheet_stage": "РД",
+    "sheet_page": "",
+    "sheet_pages": "",
+    "auto_pass_results": true
+  },
+  "auto_pass_results": true,
+  "project": {
+    "project_code": "12005-81-0500-СС1",
+    "project_title": "Площадка склада горюче-смазочных материалов. СКС, ЛВС, КСПД, ТСПД, часофикация",
+    "site_title": "Култуминский горно-обогатительный комбинат",
+    "designer": "ООО «АйДи Инжиниринг»",
+    "customer": null,
+    "executor": "ООО «Голд-Линк»",
+    "category": "II"
+  },
+  "equipment": [
+    {
+      "equipment_type": "other",
+      "priority": 1,
+      "vendor": "Hyperline",
+      "name": "Модуль вентиляторный потолочный с 2-мя вентиляторами",
+      "model_or_code": "TFAB-T2FR-RAL9004",
+      "description": "Модуль вентиляторный потолочный с 2-мя вентиляторами для установки в шкафы серий TTB, TTR, TWB, TWL",
+      "quantity": 7,
+      "port_count": 0,
+      "ferp": [],
+      "work": "ПНР, настройка, проверка работоспособности и испытания.",
+      "attributes": {
+        "source_file": "12005-81-0500-СС1 изм.1.pdf",
+        "source_sheet": "page 1",
+        "source_rows": [
+          6
+        ],
+        "ki": 0,
+        "ku": 0,
+        "rationale": "вспомогательное оборудование шкафа без самостоятельного расчета каналов.",
+        "channel_rule": "preserve_existing",
+        "channel_ruleset_version": "2026-07-30.2"
+      }
+    },
+    {
+      "equipment_type": "din_panel",
+      "priority": 2,
+      "vendor": "ЦМО",
+      "name": "Панель 19' с DIN-рейкой для установки коммутаторов",
+      "model_or_code": "STK-RACKMNT-2955",
+      "description": "Панель 19' с DIN-рейкой для установки коммутаторов",
+      "quantity": 3,
+      "port_count": 0,
+      "ferp": [
+        {
+          "code": "ФЕРп 02-01-002-11",
+          "title": "Автоматизированная система управления II категории технической сложности, Кобщ = 160"
+        }
+      ],
+      "work": "ПНР, настройка, проверка работоспособности и испытания.",
+      "attributes": {
+        "source_file": "12005-81-0500-СС1 изм.1.pdf",
+        "source_sheet": "page 2",
+        "source_rows": [
+          2
+        ],
+        "ki": 0,
+        "ku": 0,
+        "rationale": "Пассивное изделие или пакет ПО: самостоятельные каналы не образует.",
+        "channel_rule": "passive_accessory_no_channels",
+        "channel_ruleset_version": "2026-07-30.2"
+      }
+    },
+    {
+      "equipment_type": "other",
+      "priority": 3,
+      "vendor": "Eurolan",
+      "name": "Модуль UTP категории 5е keystone, белый",
+      "model_or_code": "16B-U5-03WT",
+      "description": "Модуль UTP категории 5е keystone, белый",
+      "quantity": 30,
+      "port_count": 0,
+      "ferp": [],
+      "work": "ПНР, настройка, проверка работоспособности и испытания.",
+      "attributes": {
+        "source_file": "12005-81-0500-СС1 изм.1.pdf",
+        "source_sheet": "page 2",
+        "source_rows": [
+          21
+        ],
+        "ki": 0,
+        "ku": 0,
+        "rationale": "пассивный элемент скс.",
+        "channel_rule": "preserve_existing",
+        "channel_ruleset_version": "2026-07-30.2"
+      }
+    },
+    {
+      "equipment_type": "ntp-clock",
+      "priority": 4,
+      "vendor": "ООО «Хронотрон»",
+      "name": "Часы вторичные цифровые 6-разрядные PoE-NTP",
+      "model_or_code": "ЦВС.6.100",
+      "description": "Часы вторичные цифровые 6-разрядные с высотой знака 100 мм PoE-NTP",
+      "quantity": 3,
+      "port_count": 0,
+      "ferp": [],
+      "work": "ПНР, настройка, проверка работоспособности и испытания.",
+      "attributes": {
+        "source_file": "12005-81-0500-СС1 изм.1.pdf",
+        "source_sheet": "page 4",
+        "source_rows": [
+          4
+        ],
+        "ki": 0,
+        "ku": 0,
+        "rationale": "оконечное устройство синхронизации времени по ntp.",
+        "channel_rule": "preserve_existing",
+        "channel_ruleset_version": "2026-07-30.2"
+      }
+    },
+    {
+      "equipment_type": "switch",
+      "priority": 5,
+      "vendor": "Eltex",
+      "name": "Ethernet-коммутатор MES3316F",
+      "model_or_code": "MES3316F",
+      "description": "Ethernet-коммутатор MES3316F, 12x1000Base-X, 4xCombo, 4x10GBase-R, L3",
+      "quantity": 4,
+      "port_count": 20,
+      "ferp": [
+        {
+          "code": "ФЕРп 02-01-002-11",
+          "title": "Автоматизированная система управления II категории технической сложности, Кобщ = 160"
+        }
+      ],
+      "work": "ПНР, настройка, проверка работоспособности и испытания.",
+      "attributes": {
+        "source_file": "12005-81-0500-СС1 изм.1.pdf",
+        "source_sheet": "page 6",
+        "source_rows": [
+          4,
+          18
+        ],
+        "ki": 80,
+        "ku": 4,
+        "rationale": "Коммутатор: 20 настраиваемых портов × 4 шт.; 1 канал управления × 4 шт.",
+        "channel_rule": "managed_switch_all_ports",
+        "channel_ruleset_version": "2026-07-30.2"
+      }
+    },
+    {
+      "equipment_type": "power_supply",
+      "priority": 6,
+      "vendor": "Eltex",
+      "name": "Модуль питания PM160-220/12",
+      "model_or_code": "PM160-220/12",
+      "description": "Модуль питания PM160-220/12, 220V AC, 160W",
+      "quantity": 10,
+      "port_count": 0,
+      "ferp": [],
+      "work": "ПНР, настройка, проверка работоспособности и испытания.",
+      "attributes": {
+        "source_file": "12005-81-0500-СС1 изм.1.pdf",
+        "source_sheet": "page 6",
+        "source_rows": [
+          5,
+          19
+        ],
+        "ki": 0,
+        "ku": 0,
+        "rationale": "внутренний модуль питания коммутатора.",
+        "channel_rule": "preserve_existing",
+        "channel_ruleset_version": "2026-07-30.2"
+      }
+    },
+    {
+      "equipment_type": "sfp",
+      "priority": 7,
+      "vendor": "НПП \"Русмодуль\"",
+      "name": "Модуль SFP+ Direct Attached Cable (DAC) 1 м",
+      "model_or_code": "RSM10PDAC1",
+      "description": "Модуль SFP+ Direct Attached Cable (DAC), скорость 10 Гбит/с, 1 м",
+      "quantity": 4,
+      "port_count": 0,
+      "ferp": [],
+      "work": "ПНР, настройка, проверка работоспособности и испытания.",
+      "attributes": {
+        "source_file": "12005-81-0500-СС1 изм.1.pdf",
+        "source_sheet": "page 6",
+        "source_rows": [
+          6,
+          20
+        ],
+        "ki": 0,
+        "ku": 0,
+        "rationale": "пассивный оптический кабельный модуль.",
+        "channel_rule": "preserve_existing",
+        "channel_ruleset_version": "2026-07-30.2"
+      }
+    },
+    {
+      "equipment_type": "sfp",
+      "priority": 8,
+      "vendor": "НПП \"Русмодуль\"",
+      "name": "Оптический SFP+ модуль, 10G, WDM, TX 1270нм, RX 1330нм, 3 км, LC",
+      "model_or_code": "RSM10W24L3",
+      "description": "Оптический SFP+ модуль, 10G, WDM, TX 1270нм, RX 1330нм, 3 км, LC",
+      "quantity": 8,
+      "port_count": 0,
+      "ferp": [],
+      "work": "ПНР, настройка, проверка работоспособности и испытания.",
+      "attributes": {
+        "source_file": "12005-81-0500-СС1 изм.1.pdf",
+        "source_sheet": "page 6",
+        "source_rows": [
+          7,
+          21
+        ],
+        "ki": 0,
+        "ku": 0,
+        "rationale": "sfp-трансивер.",
+        "channel_rule": "preserve_existing",
+        "channel_ruleset_version": "2026-07-30.2"
+      }
+    },
+    {
+      "equipment_type": "sfp",
+      "priority": 9,
+      "vendor": "НПП \"Русмодуль\"",
+      "name": "Оптический SFP+ модуль, 10G, WDM, TX 1330нм, RX 1270нм, 3 км, LC",
+      "model_or_code": "RSM10W42L3",
+      "description": "Оптический SFP+ модуль, 10G, WDM, TX 1330нм, RX 1270нм, 3 км, LC",
+      "quantity": 8,
+      "port_count": 0,
+      "ferp": [],
+      "work": "ПНР, настройка, проверка работоспособности и испытания.",
+      "attributes": {
+        "source_file": "12005-81-0500-СС1 изм.1.pdf",
+        "source_sheet": "page 6",
+        "source_rows": [
+          8,
+          23
+        ],
+        "ki": 0,
+        "ku": 0,
+        "rationale": "sfp-трансивер.",
+        "channel_rule": "preserve_existing",
+        "channel_ruleset_version": "2026-07-30.2"
+      }
+    },
+    {
+      "equipment_type": "switch",
+      "priority": 10,
+      "vendor": "Eltex",
+      "name": "Ethernet-коммутатор MES2324P",
+      "model_or_code": "MES2324P AC",
+      "description": "Ethernet-коммутатор MES2324P, 24x10/100/1000 Base-T (PoE+), 4x10GBase-R, L3",
+      "quantity": 2,
+      "port_count": 24,
+      "ferp": [
+        {
+          "code": "ФЕРп 02-01-002-11",
+          "title": "Автоматизированная система управления II категории технической сложности, Кобщ = 160"
+        }
+      ],
+      "work": "ПНР, настройка, проверка работоспособности и испытания.",
+      "attributes": {
+        "source_file": "12005-81-0500-СС1 изм.1.pdf",
+        "source_sheet": "page 6",
+        "source_rows": [
+          11
+        ],
+        "ki": 48,
+        "ku": 2,
+        "rationale": "Коммутатор: 24 настраиваемых портов × 2 шт.; 1 канал управления × 2 шт.",
+        "channel_rule": "managed_switch_all_ports",
+        "channel_ruleset_version": "2026-07-30.2"
+      }
+    },
+    {
+      "equipment_type": "sfp",
+      "priority": 11,
+      "vendor": "НПП \"Русмодуль\"",
+      "name": "Оптический SFP модуль, 1.25G, WDM, TX 1310 нм, RX 1550 нм, 3 км, LC",
+      "model_or_code": "RSM1W36L3",
+      "description": "Оптический SFP модуль, 1.25G, WDM, TX 1310 нм, RX 1550 нм, 3 км, LC",
+      "quantity": 14,
+      "port_count": 0,
+      "ferp": [],
+      "work": "ПНР, настройка, проверка работоспособности и испытания.",
+      "attributes": {
+        "source_file": "12005-81-0500-СС1 изм.1.pdf",
+        "source_sheet": "page 6",
+        "source_rows": [
+          12,
+          7
+        ],
+        "ki": 0,
+        "ku": 0,
+        "rationale": "sfp-трансивер.",
+        "channel_rule": "preserve_existing",
+        "channel_ruleset_version": "2026-07-30.2"
+      }
+    },
+    {
+      "equipment_type": "sfp",
+      "priority": 12,
+      "vendor": "НПП \"Русмодуль\"",
+      "name": "Оптический SFP модуль, 1.25G, WDM, TX 1550 нм, RX 1310 нм, 3 км, LC",
+      "model_or_code": "RSM1W63L3",
+      "description": "Оптический SFP модуль, 1.25G, WDM, TX 1550 нм, RX 1310 нм, 3 км, LC",
+      "quantity": 14,
+      "port_count": 0,
+      "ferp": [],
+      "work": "ПНР, настройка, проверка работоспособности и испытания.",
+      "attributes": {
+        "source_file": "12005-81-0500-СС1 изм.1.pdf",
+        "source_sheet": "page 6",
+        "source_rows": [
+          13,
+          8
+        ],
+        "ki": 0,
+        "ku": 0,
+        "rationale": "sfp-трансивер.",
+        "channel_rule": "preserve_existing",
+        "channel_ruleset_version": "2026-07-30.2"
+      }
+    },
+    {
+      "equipment_type": "switch",
+      "priority": 13,
+      "vendor": "Eltex",
+      "name": "Ethernet-коммутатор MES3508",
+      "model_or_code": "MES3508",
+      "description": "Промышленный Ethernet-коммутатор MES3508, 8х10/100/1000Base-T, 2хcombo 1G, L3",
+      "quantity": 4,
+      "port_count": 8,
+      "ferp": [
+        {
+          "code": "ФЕРп 02-01-002-11",
+          "title": "Автоматизированная система управления II категории технической сложности, Кобщ = 160"
+        }
+      ],
+      "work": "ПНР, настройка, проверка работоспособности и испытания.",
+      "attributes": {
+        "source_file": "12005-81-0500-СС1 изм.1.pdf",
+        "source_sheet": "page 7",
+        "source_rows": [
+          3
+        ],
+        "ki": 32,
+        "ku": 4,
+        "rationale": "Коммутатор: 8 настраиваемых портов × 4 шт.; 1 канал управления × 4 шт.",
+        "channel_rule": "managed_switch_all_ports",
+        "channel_ruleset_version": "2026-07-30.2"
+      }
+    },
+    {
+      "equipment_type": "power_supply",
+      "priority": 14,
+      "vendor": "Eltex",
+      "name": "Модуль питания DRS-270-56",
+      "model_or_code": "DRS-270-56",
+      "description": "Модуль питания для промышленных коммутаторов 115-240В AC, 270 Вт",
+      "quantity": 8,
+      "port_count": 0,
+      "ferp": [
+        {
+          "code": "ФЕРп 02-01-002-11",
+          "title": "Автоматизированная система управления II категории технической сложности, Кобщ = 160"
+        }
+      ],
+      "work": "ПНР, настройка, проверка работоспособности и испытания.",
+      "attributes": {
+        "source_file": "12005-81-0500-СС1 изм.1.pdf",
+        "source_sheet": "page 7",
+        "source_rows": [
+          4
+        ],
+        "ki": 0,
+        "ku": 8,
+        "rationale": "управляемый модуль питания коммутатора: 1 ku на устройство.",
+        "channel_rule": "preserve_existing",
+        "channel_ruleset_version": "2026-07-30.2"
+      }
+    },
+    {
+      "equipment_type": "switch",
+      "priority": 15,
+      "vendor": "Eltex",
+      "name": "Ethernet-коммутатор MES3324",
+      "model_or_code": "MES3324",
+      "description": "Ethernet-коммутатор MES3324, 20x10/100/1000Base-T, 4xCombo, 4x10GBase-R, L3",
+      "quantity": 1,
+      "port_count": 20,
+      "ferp": [
+        {
+          "code": "ФЕРп 02-01-002-11",
+          "title": "Автоматизированная система управления II категории технической сложности, Кобщ = 160"
+        }
+      ],
+      "work": "ПНР, настройка, проверка работоспособности и испытания.",
+      "attributes": {
+        "source_file": "12005-81-0500-СС1 изм.1.pdf",
+        "source_sheet": "page 7",
+        "source_rows": [
+          5
+        ],
+        "ki": 20,
+        "ku": 1,
+        "rationale": "Коммутатор: 20 настраиваемых портов × 1 шт.; 1 канал управления × 1 шт.",
+        "channel_rule": "managed_switch_all_ports",
+        "channel_ruleset_version": "2026-07-30.2"
+      }
+    },
+    {
+      "equipment_type": "voip_phone",
+      "priority": 16,
+      "vendor": "Cisco",
+      "name": "VoIP телефон CP-7821-K9",
+      "model_or_code": "CP-7821-K9",
+      "description": "VoIP телефон, 2 линии SIP, LCD дисплей, 2 порта 10/100BASE-T, PoE",
+      "quantity": 4,
+      "port_count": 0,
+      "ferp": [
+        {
+          "code": "ФЕРп 02-01-002-11",
+          "title": "Автоматизированная система управления II категории технической сложности, Кобщ = 160"
+        }
+      ],
+      "work": "ПНР, настройка, проверка работоспособности и испытания.",
+      "attributes": {
+        "source_file": "12005-81-0500-СС1 изм.1.pdf",
+        "source_sheet": "page 7",
+        "source_rows": [
+          12
+        ],
+        "ki": 4,
+        "ku": 0,
+        "rationale": "оконечное абонентское устройство: 1 ki на телефон.",
+        "channel_rule": "preserve_existing",
+        "channel_ruleset_version": "2026-07-30.2"
+      }
+    },
+    {
+      "equipment_type": "ups",
+      "priority": 17,
+      "vendor": "ГК «ШТИЛЬ»",
+      "name": "Однофазный онлайн ИБП STR1103L",
+      "model_or_code": "STR1103L",
+      "description": "Однофазный онлайн ИБП серии STR мощностью 3000 ВА",
+      "quantity": 2,
+      "port_count": 0,
+      "ferp": [
+        {
+          "code": "ФЕРп 01-06-023-01",
+          "title": "Устройство контроля уровня напряжения переменного или выпрямленного оперативного тока"
+        }
+      ],
+      "work": "ПНР, настройка, проверка работоспособности и испытания.",
+      "attributes": {
+        "source_file": "12005-81-0500-СС1 изм.1.pdf",
+        "source_sheet": "page 7",
+        "source_rows": [
+          15
+        ],
+        "ki": 0,
+        "ku": 2,
+        "rationale": "контролируемый узел электропитания: 1 ku на устройство.",
+        "channel_rule": "preserve_existing",
+        "channel_ruleset_version": "2026-07-30.2"
+      }
+    },
+    {
+      "equipment_type": "ups",
+      "priority": 18,
+      "vendor": "ГК «ШТИЛЬ»",
+      "name": "Батарейный модуль BMRT-72-18",
+      "model_or_code": "BMRT-72-18",
+      "description": "Батарейный модуль BMRT-72-18, АКБ 12 В 12х9 Ач",
+      "quantity": 3,
+      "port_count": 0,
+      "ferp": [
+        {
+          "code": "ФЕРп 01-06-023-01",
+          "title": "Устройство контроля уровня напряжения переменного или выпрямленного оперативного тока"
+        }
+      ],
+      "work": "ПНР, настройка, проверка работоспособности и испытания.",
+      "attributes": {
+        "source_file": "12005-81-0500-СС1 изм.1.pdf",
+        "source_sheet": "page 7",
+        "source_rows": [
+          16
+        ],
+        "ki": 0,
+        "ku": 3,
+        "rationale": "контролируемый батарейный модуль: 1 ku на устройство.",
+        "channel_rule": "preserve_existing",
+        "channel_ruleset_version": "2026-07-30.2"
+      }
+    },
+    {
+      "equipment_type": "ups",
+      "priority": 19,
+      "vendor": "ГК «ШТИЛЬ»",
+      "name": "Однофазный онлайн ИБП STR1101L",
+      "model_or_code": "STR1101L",
+      "description": "Однофазный онлайн ИБП серии STR мощностью 1000 ВА",
+      "quantity": 2,
+      "port_count": 0,
+      "ferp": [
+        {
+          "code": "ФЕРп 01-06-023-01",
+          "title": "Устройство контроля уровня напряжения переменного или выпрямленного оперативного тока"
+        }
+      ],
+      "work": "ПНР, настройка, проверка работоспособности и испытания.",
+      "attributes": {
+        "source_file": "12005-81-0500-СС1 изм.1.pdf",
+        "source_sheet": "page 7",
+        "source_rows": [
+          17
+        ],
+        "ki": 0,
+        "ku": 2,
+        "rationale": "контролируемый узел электропитания: 1 ku на устройство.",
+        "channel_rule": "preserve_existing",
+        "channel_ruleset_version": "2026-07-30.2"
+      }
+    },
+    {
+      "equipment_type": "ups",
+      "priority": 20,
+      "vendor": "ГК «ШТИЛЬ»",
+      "name": "Батарейный модуль BMRT-36-18",
+      "model_or_code": "BMRT-36-18",
+      "description": "Батарейный модуль BMRT-36-18, АКБ 12 В 6х9 Ач",
+      "quantity": 2,
+      "port_count": 0,
+      "ferp": [
+        {
+          "code": "ФЕРп 01-06-023-01",
+          "title": "Устройство контроля уровня напряжения переменного или выпрямленного оперативного тока"
+        }
+      ],
+      "work": "ПНР, настройка, проверка работоспособности и испытания.",
+      "attributes": {
+        "source_file": "12005-81-0500-СС1 изм.1.pdf",
+        "source_sheet": "page 7",
+        "source_rows": [
+          18
+        ],
+        "ki": 0,
+        "ku": 2,
+        "rationale": "контролируемый батарейный модуль: 1 ku на устройство.",
+        "channel_rule": "preserve_existing",
+        "channel_ruleset_version": "2026-07-30.2"
+      }
+    },
+    {
+      "equipment_type": "other",
+      "priority": 21,
+      "vendor": "ГК «ШТИЛЬ»",
+      "name": "Карта мониторинга IC-SNMP/mini-USB",
+      "model_or_code": "IC-SNMP/mini-USB",
+      "description": "Карта мониторинга IC-SNMP/mini-USB с интерфейсами 4P4C, Ethernet, RS-485",
+      "quantity": 4,
+      "port_count": 0,
+      "ferp": [
+        {
+          "code": "ФЕРп 02-02-003-01",
+          "title": "Настройка специализированного программного обеспечения АС"
+        }
+      ],
+      "work": "ПНР, настройка, проверка работоспособности и испытания.",
+      "attributes": {
+        "source_file": "12005-81-0500-СС1 изм.1.pdf",
+        "source_sheet": "page 7",
+        "source_rows": [
+          19
+        ],
+        "ki": 0,
+        "ku": 0,
+        "rationale": "модуль сетевого мониторинга ибп.",
+        "channel_rule": "preserve_existing",
+        "channel_ruleset_version": "2026-07-30.2"
+      }
+    },
+    {
+      "equipment_type": "ups",
+      "priority": 22,
+      "vendor": "Faraday Electronics",
+      "name": "Блок питания с функцией UPS, 48 В",
+      "model_or_code": "UPS 300W/48V/DIN",
+      "description": "Блок питания с функцией UPS, 48 В",
+      "quantity": 1,
+      "port_count": 0,
+      "ferp": [
+        {
+          "code": "ФЕРп 01-06-023-01",
+          "title": "Устройство контроля уровня напряжения переменного или выпрямленного оперативного тока"
+        }
+      ],
+      "work": "ПНР, настройка, проверка работоспособности и испытания.",
+      "attributes": {
+        "source_file": "12005-81-0500-СС1 изм.1.pdf",
+        "source_sheet": "page 7",
+        "source_rows": [
+          24
+        ],
+        "ki": 0,
+        "ku": 1,
+        "rationale": "управляемый источник резервного питания: 1 ku на устройство.",
+        "channel_rule": "preserve_existing",
+        "channel_ruleset_version": "2026-07-30.2"
+      }
+    }
+  ],
+  "summaries": {
+    "total_switch_ports": 180,
+    "channel_totals": {
+      "ki": 184,
+      "ku": 29,
+      "total": 213
+    },
+    "channel_components": {
+      "switch_data_ports": 180,
+      "logical_mgmt_ports": 11,
+      "voip_phones": 4,
+      "ups_units": 10,
+      "other_channels": 22
+    },
+    "ferp_channels_summary": {
+      "category": "II",
+      "base_code": "ФЕРп 02-01-002-11",
+      "base_limit": 160,
+      "extra_code": "ФЕРп 02-01-002-12",
+      "extra_channels": 53,
+      "notes": "Единый расчет каналов 2026-07-30.2: K_total=213; база 160, дополнительных каналов 53."
+    },
+    "cable_sections_totals": {
+      "scs_lines": 3,
+      "insulation_sections": 0,
+      "link_lines": 4,
+      "video_coax_lines": 0,
+      "optical_lines": 1
+    },
+    "notes": "Расчет пусконаладочных работ выполнен на основе комплекта 12005-81-0500-СС1 изм.1."
+  },
+  "tables": {
+    "equipment_3_1": [
+      {
+        "n": 1,
+        "title": "Модуль вентиляторный потолочный с 2-мя вентиляторами",
+        "type_or_model": "TFAB-T2FR-RAL9004",
+        "work": "ПНР, настройка, испытания."
+      },
+      {
+        "n": 2,
+        "title": "Панель 19' с DIN-рейкой для установки коммутаторов",
+        "type_or_model": "STK-RACKMNT-2955",
+        "work": "ПНР, настройка, испытания по ФЕРп 02-01-002-09."
+      },
+      {
+        "n": 3,
+        "title": "Модуль UTP категории 5е keystone, белый",
+        "type_or_model": "16B-U5-03WT",
+        "work": "ПНР, настройка, испытания."
+      },
+      {
+        "n": 4,
+        "title": "Часы вторичные цифровые 6-разрядные PoE-NTP",
+        "type_or_model": "ЦВС.6.100",
+        "work": "ПНР, настройка, испытания."
+      },
+      {
+        "n": 5,
+        "title": "Ethernet-коммутатор MES3316F",
+        "type_or_model": "MES3316F",
+        "work": "ПНР, настройка, испытания по ФЕРп 02-01-002-09."
+      },
+      {
+        "n": 6,
+        "title": "Модуль питания PM160-220/12",
+        "type_or_model": "PM160-220/12",
+        "work": "ПНР, настройка, испытания."
+      },
+      {
+        "n": 7,
+        "title": "Модуль SFP+ Direct Attached Cable (DAC) 1 м",
+        "type_or_model": "RSM10PDAC1",
+        "work": "ПНР, настройка, испытания."
+      },
+      {
+        "n": 8,
+        "title": "Оптический SFP+ модуль, 10G, WDM, TX 1270нм, RX 1330нм, 3 км, LC",
+        "type_or_model": "RSM10W24L3",
+        "work": "ПНР, настройка, испытания."
+      },
+      {
+        "n": 9,
+        "title": "Оптический SFP+ модуль, 10G, WDM, TX 1330нм, RX 1270нм, 3 км, LC",
+        "type_or_model": "RSM10W42L3",
+        "work": "ПНР, настройка, испытания."
+      },
+      {
+        "n": 10,
+        "title": "Ethernet-коммутатор MES2324P",
+        "type_or_model": "MES2324P AC",
+        "work": "ПНР, настройка, испытания по ФЕРп 02-01-002-09."
+      },
+      {
+        "n": 11,
+        "title": "Оптический SFP модуль, 1.25G, WDM, TX 1310 нм, RX 1550 нм, 3 км, LC",
+        "type_or_model": "RSM1W36L3",
+        "work": "ПНР, настройка, испытания."
+      },
+      {
+        "n": 12,
+        "title": "Оптический SFP модуль, 1.25G, WDM, TX 1550 нм, RX 1310 нм, 3 км, LC",
+        "type_or_model": "RSM1W63L3",
+        "work": "ПНР, настройка, испытания."
+      },
+      {
+        "n": 13,
+        "title": "Ethernet-коммутатор MES3508",
+        "type_or_model": "MES3508",
+        "work": "ПНР, настройка, испытания по ФЕРп 02-01-002-09."
+      },
+      {
+        "n": 14,
+        "title": "Модуль питания DRS-270-56",
+        "type_or_model": "DRS-270-56",
+        "work": "ПНР, настройка, испытания по ФЕРп 02-01-002-09."
+      },
+      {
+        "n": 15,
+        "title": "Ethernet-коммутатор MES3324",
+        "type_or_model": "MES3324",
+        "work": "ПНР, настройка, испытания по ФЕРп 02-01-002-09."
+      },
+      {
+        "n": 16,
+        "title": "VoIP телефон CP-7821-K9",
+        "type_or_model": "CP-7821-K9",
+        "work": "ПНР, настройка, испытания по ФЕРп 02-01-002-09."
+      },
+      {
+        "n": 17,
+        "title": "Однофазный онлайн ИБП STR1103L",
+        "type_or_model": "STR1103L",
+        "work": "ПНР, настройка, испытания по ФЕРп 01-06-023-01."
+      },
+      {
+        "n": 18,
+        "title": "Батарейный модуль BMRT-72-18",
+        "type_or_model": "BMRT-72-18",
+        "work": "ПНР, настройка, испытания по ФЕРп 01-06-023-01."
+      },
+      {
+        "n": 19,
+        "title": "Однофазный онлайн ИБП STR1101L",
+        "type_or_model": "STR1101L",
+        "work": "ПНР, настройка, испытания по ФЕРп 01-06-023-01."
+      },
+      {
+        "n": 20,
+        "title": "Батарейный модуль BMRT-36-18",
+        "type_or_model": "BMRT-36-18",
+        "work": "ПНР, настройка, испытания по ФЕРп 01-06-023-01."
+      },
+      {
+        "n": 21,
+        "title": "Карта мониторинга IC-SNMP/mini-USB",
+        "type_or_model": "IC-SNMP/mini-USB",
+        "work": "ПНР, настройка, испытания по ФЕРп 02-02-003-01."
+      },
+      {
+        "n": 22,
+        "title": "Блок питания с функцией UPS, 48 В",
+        "type_or_model": "UPS 300W/48V/DIN",
+        "work": "ПНР, настройка, испытания по ФЕРп 01-06-023-01."
+      }
+    ],
+    "calc_4_1": [
+      {
+        "n": 1,
+        "item": "Ethernet-коммутатор MES3316F",
+        "qty": 4,
+        "rationale": "Коммутатор: 20 настраиваемых портов × 4 шт.; 1 канал управления × 4 шт.",
+        "ki": 80,
+        "ku": 4
+      },
+      {
+        "n": 2,
+        "item": "Ethernet-коммутатор MES2324P",
+        "qty": 2,
+        "rationale": "Коммутатор: 24 настраиваемых портов × 2 шт.; 1 канал управления × 2 шт.",
+        "ki": 48,
+        "ku": 2
+      },
+      {
+        "n": 3,
+        "item": "Ethernet-коммутатор MES3508",
+        "qty": 4,
+        "rationale": "Коммутатор: 8 настраиваемых портов × 4 шт.; 1 канал управления × 4 шт.",
+        "ki": 32,
+        "ku": 4
+      },
+      {
+        "n": 4,
+        "item": "Модуль питания DRS-270-56",
+        "qty": 8,
+        "rationale": "управляемый модуль питания коммутатора: 1 ku на устройство.",
+        "ki": 0,
+        "ku": 8
+      },
+      {
+        "n": 5,
+        "item": "Ethernet-коммутатор MES3324",
+        "qty": 1,
+        "rationale": "Коммутатор: 20 настраиваемых портов × 1 шт.; 1 канал управления × 1 шт.",
+        "ki": 20,
+        "ku": 1
+      },
+      {
+        "n": 6,
+        "item": "VoIP телефон CP-7821-K9",
+        "qty": 4,
+        "rationale": "оконечное абонентское устройство: 1 ki на телефон.",
+        "ki": 4,
+        "ku": 0
+      },
+      {
+        "n": 7,
+        "item": "Однофазный онлайн ИБП STR1103L",
+        "qty": 2,
+        "rationale": "контролируемый узел электропитания: 1 ku на устройство.",
+        "ki": 0,
+        "ku": 2
+      },
+      {
+        "n": 8,
+        "item": "Батарейный модуль BMRT-72-18",
+        "qty": 3,
+        "rationale": "контролируемый батарейный модуль: 1 ku на устройство.",
+        "ki": 0,
+        "ku": 3
+      },
+      {
+        "n": 9,
+        "item": "Однофазный онлайн ИБП STR1101L",
+        "qty": 2,
+        "rationale": "контролируемый узел электропитания: 1 ku на устройство.",
+        "ki": 0,
+        "ku": 2
+      },
+      {
+        "n": 10,
+        "item": "Батарейный модуль BMRT-36-18",
+        "qty": 2,
+        "rationale": "контролируемый батарейный модуль: 1 ku на устройство.",
+        "ki": 0,
+        "ku": 2
+      },
+      {
+        "n": 11,
+        "item": "Блок питания с функцией UPS, 48 В",
+        "qty": 1,
+        "rationale": "управляемый источник резервного питания: 1 ku на устройство.",
+        "ki": 0,
+        "ku": 1
+      }
+    ],
+    "ferp_4_2": [
+      {
+        "code": "ФЕРп 02-01-002-11",
+        "title": "Автоматизированная система управления II категории технической сложности, Кобщ = 160",
+        "unit": "система",
+        "qty": 1,
+        "rationale": "По единому расчету K_total=213."
+      },
+      {
+        "code": "ФЕРп 02-01-002-12",
+        "title": "Автоматизированная система управления II категории технической сложности, добавляется каждый канал сверх базы",
+        "unit": "канал",
+        "qty": 53,
+        "rationale": "213 - 160 = 53 каналов."
+      },
+      {
+        "code": "ФЕРп 01-06-023-01",
+        "title": "Устройство контроля уровня напряжения переменного или выпрямленного оперативного тока",
+        "unit": "шт.",
+        "qty": 10,
+        "rationale": "Пусконаладка устройств контроля и мониторинга электропитания (ИБП, АКБ, БП)."
+      }
+    ],
+    "cable_sections": [
+      {
+        "id": 1,
+        "trace_id": "0530-SCS",
+        "system": "СКС",
+        "cable_type": "F/UTP 4x2x24AWG Cat.5e",
+        "length_m": 511,
+        "pairs_or_cores": 4,
+        "endpoints": "MTR5.3 - Розеточные модули (Здание 0530)",
+        "is_scs_line": true,
+        "needs_insulation_test": false,
+        "rationale": "Горизонтальная подсистема СКС здания Операторной"
+      },
+      {
+        "id": 2,
+        "trace_id": "0540-SCS",
+        "system": "СКС",
+        "cable_type": "F/UTP 4x2x24AWG Cat.5e",
+        "length_m": 200,
+        "pairs_or_cores": 4,
+        "endpoints": "TR5.4 - Розеточные модули (Здание 0540)",
+        "is_scs_line": true,
+        "needs_insulation_test": false,
+        "rationale": "Горизонтальная подсистема СКС Склада масел"
+      },
+      {
+        "id": 3,
+        "trace_id": "0513-SCS",
+        "system": "СКС",
+        "cable_type": "F/UTP 4x2x24AWG Cat.5e",
+        "length_m": 164,
+        "pairs_or_cores": 4,
+        "endpoints": "TR5.13 - Розеточные модули (Здание 0513)",
+        "is_scs_line": true,
+        "needs_insulation_test": false,
+        "rationale": "Горизонтальная подсистема СКС КПП"
+      },
+      {
+        "id": 4,
+        "trace_id": "VOLS-MAIN",
+        "system": "ВОЛС",
+        "cable_type": "ДПД-нг(А)-HF-16У (2х8)",
+        "length_m": 1277,
+        "pairs_or_cores": 16,
+        "endpoints": "MTR5.3 - TR5.13, TR5.7, TR5.8, TR5.4",
+        "is_scs_line": false,
+        "needs_insulation_test": false,
+        "rationale": "Магистральная оптическая подсистема площадки ГСМ"
+      }
+    ]
+  }
+}

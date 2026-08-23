@@ -1,0 +1,337 @@
+{
+  "document_context": {
+    "org_full": "Общество с ограниченной ответственностью «Голд-Линк»",
+    "org_short": "ООО «Голд-Линк»",
+    "org_inn_kpp": "7224078140/720301001",
+    "org_address": "625016, Россия, Тюменская область, город Тюмень, улица Александра Логунова, дом 11/5",
+    "org_phone_email": "Телефон: +7 (3452) 58-20-90 E-mail: info@gold-link.ru",
+    "approver_title": "Руководитель группы",
+    "approver_name": "Грязнов Е.Е.",
+    "developer_title": "Главный специалист",
+    "developer_title2": "технической группы",
+    "developer_name": "Кудря Н.Ю.",
+    "date_str": "12.05.25",
+    "system_name_nom": "Сети производственно-технологической радиосвязи",
+    "system_name_rod": "сетей производственно-технологической радиосвязи",
+    "category": "II (вторая)",
+    "coef_kuf": "1.0",
+    "coef_kms": "1.0",
+    "coef_kinf": "1.52",
+    "sheet_stage": "РД",
+    "sheet_page": "1",
+    "sheet_pages": "25",
+    "auto_pass_results": true
+  },
+  "auto_pass_results": true,
+  "project": {
+    "project_code": "КЛТ2024/02-7-М-1-СС1",
+    "project_title": "Сети производственно-технологической радиосвязи ГОК «Култуминский»",
+    "site_title": "Площадка М-1",
+    "designer": "ООО «ТюменьСвязь»",
+    "customer": "ООО «Култуминское»",
+    "executor": "ООО «Голд-Линк»",
+    "category": "II"
+  },
+  "equipment": [
+    {
+      "equipment_type": "other",
+      "priority": 1,
+      "vendor": "",
+      "name": "Мобильная базовая станция с ДГУ на базе прицепа",
+      "model_or_code": "КЛТ202402-7-ИОС5-ОЛ2",
+      "description": "Мобильная базовая станция с ДГУ на базе прицепа",
+      "quantity": 4,
+      "port_count": 0,
+      "ferp": [],
+      "work": "ПНР, настройка, проверка работоспособности и испытания.",
+      "attributes": {
+        "source_file": "КЛТ2024/02-7-М-1-СС1 (rev.6).pdf",
+        "ki": 0,
+        "ku": 0,
+        "rationale": "позиция включена в состав оборудования без самостоятельного расчета каналов.",
+        "channel_rule": "preserve_existing",
+        "channel_ruleset_version": "2026-07-30.2"
+      }
+    },
+    {
+      "equipment_type": "vms_server",
+      "priority": 2,
+      "vendor": "Эмилинк",
+      "name": "Стойка серверная 19\" NTSS OR двухрамная 37U 600-1000мм, комплект ножек, черный RAL 9005",
+      "model_or_code": "NTSS-2POR37U/600-1000-BL",
+      "description": "Стойка серверная 19\" NTSS OR двухрамная 37U 600-1000мм",
+      "quantity": 8,
+      "port_count": 0,
+      "ferp": [
+        {
+          "code": "ФЕРп 02-02-003-01",
+          "title": "Функциональная настройка специального программного обеспечения АС"
+        }
+      ],
+      "work": "ПНР, настройка, проверка работоспособности и испытания по ФЕРп 02-02-003-01.",
+      "attributes": {
+        "source_file": "КЛТ2024/02-7-М-1-СС1 (rev.6).pdf",
+        "ki": 8,
+        "ku": 8,
+        "rationale": "программно-аппаратная позиция учтена как информационный и управляющий канал на устройство/комплекс.",
+        "channel_rule": "preserve_existing",
+        "channel_ruleset_version": "2026-07-30.2"
+      }
+    },
+    {
+      "equipment_type": "power_supply",
+      "priority": 3,
+      "vendor": "Hytera",
+      "name": "Источник питания DC/DC 48/13,6В 64А DC Power",
+      "model_or_code": "DS-6211 PSU-PDB100 main unit",
+      "description": "Источник питания DC/DC 48/13,6В 64А",
+      "quantity": 8,
+      "port_count": 0,
+      "ferp": [
+        {
+          "code": "ФЕРп 01-06-010-03",
+          "title": "Выпрямительный блок питания до 1 кВА со стабилизацией выходного напряжения"
+        }
+      ],
+      "work": "ПНР, настройка, проверка работоспособности и испытания по ФЕРп 01-06-010-03.",
+      "attributes": {
+        "source_file": "КЛТ2024/02-7-М-1-СС1 (rev.6).pdf",
+        "ki": 0,
+        "ku": 8,
+        "rationale": "оборудование питания учтено как проверяемые каналы контроля/управления.",
+        "channel_rule": "preserve_existing",
+        "channel_ruleset_version": "2026-07-30.2"
+      }
+    },
+    {
+      "equipment_type": "access_control",
+      "priority": 4,
+      "vendor": "Hytera",
+      "name": "Контроллер ретрансляторов BSCU",
+      "model_or_code": "DS-6211 Hytera BSC-P2B01",
+      "description": "Контроллер ретрансляторов BSCU",
+      "quantity": 4,
+      "port_count": 0,
+      "ferp": [],
+      "work": "ПНР, настройка, проверка работоспособности и испытания.",
+      "attributes": {
+        "source_file": "КЛТ2024/02-7-М-1-СС1 (rev.6).pdf",
+        "ki": 0,
+        "ku": 4,
+        "rationale": "Контроллер: оконечные каналы учитываются на считывателях; 1 канал управления × 4 шт.",
+        "channel_rule": "controller_management_only",
+        "channel_ruleset_version": "2026-07-30.2"
+      }
+    },
+    {
+      "equipment_type": "access_control",
+      "priority": 5,
+      "vendor": "Hytera",
+      "name": "ПО контроллера ретрансляторов BSCU Application",
+      "model_or_code": "Hytera (Harbin branch) BSCU application V1.0",
+      "description": "ПО контроллера ретрансляторов BSCU Application",
+      "quantity": 4,
+      "port_count": 0,
+      "ferp": [],
+      "work": "ПНР, настройка, проверка работоспособности и испытания.",
+      "attributes": {
+        "source_file": "КЛТ2024/02-7-М-1-СС1 (rev.6).pdf",
+        "ki": 0,
+        "ku": 0,
+        "rationale": "Пассивное изделие или пакет ПО: самостоятельные каналы не образует.",
+        "channel_rule": "passive_accessory_no_channels",
+        "channel_ruleset_version": "2026-07-30.2"
+      }
+    },
+    {
+      "equipment_type": "switch",
+      "priority": 6,
+      "vendor": "Eltex",
+      "name": "Ethernet-коммутатор MES2324, 24 порта 10/100/1000 Base-T, 4 порта 10GBase-R",
+      "model_or_code": "MES2324_DC",
+      "description": "Ethernet-коммутатор MES2324, 24 порта, L3, 48V DC",
+      "quantity": 4,
+      "port_count": 28,
+      "ferp": [
+        {
+          "code": "ФЕРп 02-01-002-09",
+          "title": "Автоматизированная система управления II категории технической сложности, Кобщ = 80"
+        }
+      ],
+      "work": "ПНР, настройка, проверка работоспособности и испытания по ФЕРп 02-01-002-09.",
+      "attributes": {
+        "source_file": "КЛТ2024/02-7-М-1-СС1 (rev.6).pdf",
+        "ki": 112,
+        "ku": 4,
+        "rationale": "Коммутатор: 28 настраиваемых портов × 4 шт.; 1 канал управления × 4 шт.",
+        "channel_rule": "managed_switch_all_ports",
+        "channel_ruleset_version": "2026-07-30.2"
+      }
+    },
+    {
+      "equipment_type": "access_control",
+      "priority": 7,
+      "vendor": "Enetek power",
+      "name": "Система электропитания 2U Moduflex R-MA + 8KW 48Vdc",
+      "model_or_code": "SPC30402.XXX",
+      "description": "Система электропитания 2U Moduflex R-MA + 8KW 48Vdc",
+      "quantity": 4,
+      "port_count": 0,
+      "ferp": [],
+      "work": "ПНР, настройка, проверка работоспособности и испытания.",
+      "attributes": {
+        "source_file": "КЛТ2024/02-7-М-1-СС1 (rev.6).pdf",
+        "ki": 4,
+        "ku": 0,
+        "rationale": "устройство питания учтено как проверяемая точка/канал системы.",
+        "channel_rule": "preserve_existing",
+        "channel_ruleset_version": "2026-07-30.2"
+      }
+    }
+  ],
+  "summaries": {
+    "total_switch_ports": 112,
+    "channel_totals": {
+      "ki": 124,
+      "ku": 24,
+      "total": 148
+    },
+    "channel_components": {
+      "switch_data_ports": 112,
+      "logical_mgmt_ports": 4,
+      "voip_phones": 0,
+      "ups_units": 0,
+      "other_channels": 32
+    },
+    "ferp_channels_summary": {
+      "category": "II",
+      "base_code": "ФЕРп 02-01-002-09",
+      "base_limit": 80,
+      "extra_code": "ФЕРп 02-01-002-10",
+      "extra_channels": 68,
+      "notes": "Единый расчет каналов 2026-07-30.2: K_total=148; база 80, дополнительных каналов 68."
+    },
+    "cable_sections_totals": {
+      "scs_lines": 0,
+      "insulation_sections": 0,
+      "link_lines": 0,
+      "video_coax_lines": 0,
+      "optical_lines": 0
+    },
+    "notes": "JSON сформирован по спецификациям проекта."
+  },
+  "tables": {
+    "equipment_3_1": [
+      {
+        "n": 1,
+        "title": "Мобильная базовая станция с ДГУ на базе прицепа",
+        "type_or_model": "КЛТ202402-7-ИОС5-ОЛ2",
+        "work": "ПНР, настройка, испытания."
+      },
+      {
+        "n": 2,
+        "title": "Стойка серверная 19\" NTSS OR двухрамная 37U 600-1000мм",
+        "type_or_model": "NTSS-2POR37U/600-1000-BL",
+        "work": "ПНР, настройка, испытания по ФЕРп 02-02-003-01."
+      },
+      {
+        "n": 3,
+        "title": "Источник питания DC/DC 48/13,6В 64А DC Power",
+        "type_or_model": "DS-6211 PSU-PDB100 main unit",
+        "work": "ПНР, настройка, испытания по ФЕРп 01-06-010-03."
+      },
+      {
+        "n": 4,
+        "title": "Контроллер ретрансляторов BSCU",
+        "type_or_model": "DS-6211 Hytera BSC-P2B01",
+        "work": "ПНР, настройка, испытания."
+      },
+      {
+        "n": 5,
+        "title": "ПО контроллера ретрансляторов BSCU Application",
+        "type_or_model": "Hytera (Harbin branch) BSCU application V1.0",
+        "work": "ПНР, настройка, испытания."
+      },
+      {
+        "n": 6,
+        "title": "Ethernet-коммутатор MES2324",
+        "type_or_model": "MES2324_DC",
+        "work": "ПНР, настройка, испытания по ФЕРп 02-01-002-09."
+      },
+      {
+        "n": 7,
+        "title": "Система электропитания 2U Moduflex R-MA + 8KW 48Vdc",
+        "type_or_model": "SPC30402.XXX",
+        "work": "ПНР, настройка, испытания."
+      }
+    ],
+    "calc_4_1": [
+      {
+        "n": 1,
+        "item": "Стойка серверная 19\" NTSS OR двухрамная 37U 600-1000мм, комплект ножек, черный RAL 9005",
+        "qty": 8,
+        "rationale": "программно-аппаратная позиция учтена как информационный и управляющий канал на устройство/комплекс.",
+        "ki": 8,
+        "ku": 8
+      },
+      {
+        "n": 2,
+        "item": "Источник питания DC/DC 48/13,6В 64А DC Power",
+        "qty": 8,
+        "rationale": "оборудование питания учтено как проверяемые каналы контроля/управления.",
+        "ki": 0,
+        "ku": 8
+      },
+      {
+        "n": 3,
+        "item": "Контроллер ретрансляторов BSCU",
+        "qty": 4,
+        "rationale": "Контроллер: оконечные каналы учитываются на считывателях; 1 канал управления × 4 шт.",
+        "ki": 0,
+        "ku": 4
+      },
+      {
+        "n": 4,
+        "item": "Ethernet-коммутатор MES2324, 24 порта 10/100/1000 Base-T, 4 порта 10GBase-R",
+        "qty": 4,
+        "rationale": "Коммутатор: 28 настраиваемых портов × 4 шт.; 1 канал управления × 4 шт.",
+        "ki": 112,
+        "ku": 4
+      },
+      {
+        "n": 5,
+        "item": "Система электропитания 2U Moduflex R-MA + 8KW 48Vdc",
+        "qty": 4,
+        "rationale": "устройство питания учтено как проверяемая точка/канал системы.",
+        "ki": 4,
+        "ku": 0
+      }
+    ],
+    "ferp_4_2": [
+      {
+        "code": "ФЕРп 02-01-002-09",
+        "title": "Автоматизированная система управления II категории технической сложности, Кобщ = 80",
+        "unit": "система",
+        "qty": 1,
+        "rationale": "По единому расчету K_total=148."
+      },
+      {
+        "code": "ФЕРп 02-01-002-10",
+        "title": "Автоматизированная система управления II категории технической сложности, добавляется каждый канал сверх базы",
+        "unit": "канал",
+        "qty": 68,
+        "rationale": "148 - 80 = 68 каналов."
+      },
+      {
+        "code": "ФЕРп 01-06-010-03",
+        "title": "Выпрямительный блок питания до 1 кВА со стабилизацией выходного напряжения",
+        "unit": "шт.",
+        "qty": 8,
+        "rationale": "В спецификации присутствуют блоки/источники питания."
+      }
+    ],
+    "cable_sections": [],
+    "cable_journal": [],
+    "channel_tests": []
+  }
+}

@@ -1,0 +1,217 @@
+{
+  "document_context": {
+    "org_full": "Общество с ограниченной ответственностью «Голд-Линк»",
+    "org_short": "ООО «Голд-Линк»",
+    "org_inn_kpp": "7224078140/720301001",
+    "org_address": "625016, Россия, Тюменская область, город Тюмень, улица Александра Логунова, дом 11/5",
+    "org_phone_email": "Телефон: +7 (3452) 58-20-90 E-mail: info@gold-link.ru",
+    "approver_title": "Руководитель группы",
+    "approver_name": "Грязнов Е.Е.",
+    "developer_title": "Главный специалист",
+    "developer_title2": "технической группы",
+    "developer_name": "Кудря Н.Ю.",
+    "date_str": "12.05.25",
+    "system_name_nom": "Сети связи",
+    "system_name_rod": "сетей связи",
+    "category": "II (вторая)",
+    "coef_kuf": "1.0",
+    "coef_kms": "1.0",
+    "coef_kinf": "1.52",
+    "sheet_stage": "РД",
+    "sheet_page": 1,
+    "sheet_pages": 8,
+    "auto_pass_results": true
+  },
+  "auto_pass_results": true,
+  "project": {
+    "project_code": "12002-81-0220-СС1",
+    "project_title": "Градирня. СКС, ЛВС, КСПД, ТСПД, часофикация",
+    "site_title": "Култуминский горно-обогатительный комбинат. Перерабатывающий комплекс. Площадка обогатительной фабрики.",
+    "designer": "ООО \"АйДи Инжиниринг\"",
+    "customer": "Заказчик",
+    "executor": "ООО «Голд-Линк»",
+    "category": "II"
+  },
+  "equipment": [
+    {
+      "equipment_type": "switch",
+      "priority": 1,
+      "vendor": "Eltex",
+      "name": "Ethernet-коммутатор MES3508p, 8 портов 10/100/1000Base-T с поддержкой PoE+, 2х100BASE-FX/1000BASE-X (SFP), L3",
+      "model_or_code": "MES3508P",
+      "description": "Промышленный коммутатор доступа КСПД",
+      "quantity": 1,
+      "serial_numbers": [],
+      "port_count": 10,
+      "ferp": [
+        {
+          "code": "ФЕРп 02-01-002-05",
+          "title": "Автоматизированная система управления II категории технической сложности, Кобщ = 20"
+        }
+      ],
+      "work": "ПНР, настройка, проверка работоспособности и испытания.",
+      "attributes": {
+        "ki": 10,
+        "ku": 1,
+        "rationale": "Коммутатор: 10 настраиваемых портов × 1 шт.; 1 канал управления × 1 шт.",
+        "channel_rule": "managed_switch_all_ports",
+        "channel_ruleset_version": "2026-07-30.2"
+      }
+    },
+    {
+      "equipment_type": "switch",
+      "priority": 2,
+      "vendor": "Eltex",
+      "name": "Ethernet-коммутатор MES3508, 8х10/100/1000Base-T, 2хcombo 10/100/1000Base-T/1000Base-X, L3, 20-70 VDC",
+      "model_or_code": "MES3508",
+      "description": "Промышленный коммутатор доступа ТСПД",
+      "quantity": 1,
+      "serial_numbers": [],
+      "port_count": 10,
+      "ferp": [
+        {
+          "code": "ФЕРп 02-01-002-05",
+          "title": "Автоматизированная система управления II категории технической сложности, Кобщ = 20"
+        }
+      ],
+      "work": "ПНР, настройка, проверка работоспособности и испытания.",
+      "attributes": {
+        "ki": 10,
+        "ku": 1,
+        "rationale": "Коммутатор: 10 настраиваемых портов × 1 шт.; 1 канал управления × 1 шт.",
+        "channel_rule": "managed_switch_all_ports",
+        "channel_ruleset_version": "2026-07-30.2"
+      }
+    },
+    {
+      "equipment_type": "ups",
+      "priority": 3,
+      "vendor": "ГК «ШТИЛЬ»",
+      "name": "Однофазный онлайн ИБП серии STR мощностью 1000 ВА",
+      "model_or_code": "STR1101SL",
+      "description": "Однофазный онлайн ИБП",
+      "quantity": 1,
+      "serial_numbers": [],
+      "port_count": 0,
+      "ferp": [
+        {
+          "code": "ФЕРп 01-06-023-01",
+          "title": "Устройство контроля уровня напряжения переменного или выпрямленного оперативного тока"
+        }
+      ],
+      "work": "ПНР, настройка, проверка работоспособности и испытания.",
+      "attributes": {
+        "ki": 1,
+        "ku": 1,
+        "rationale": "ибп с цифровым контролем/мониторингом: 1 ki и 1 ku.",
+        "channel_rule": "preserve_existing",
+        "channel_ruleset_version": "2026-07-30.2"
+      }
+    }
+  ],
+  "summaries": {
+    "total_switch_ports": 20,
+    "channel_totals": {
+      "ki": 21,
+      "ku": 3,
+      "total": 24
+    },
+    "channel_components": {
+      "switch_data_ports": 20,
+      "logical_mgmt_ports": 2,
+      "voip_phones": 0,
+      "ups_units": 1,
+      "other_channels": 2
+    },
+    "ferp_channels_summary": {
+      "category": "II",
+      "base_code": "ФЕРп 02-01-002-05",
+      "base_limit": 20,
+      "extra_code": "ФЕРп 02-01-002-06",
+      "extra_channels": 4,
+      "notes": "Единый расчет каналов 2026-07-30.2: K_total=24; база 20, дополнительных каналов 4."
+    },
+    "cable_sections_totals": {
+      "scs_lines": 0,
+      "insulation_sections": 0,
+      "link_lines": 0,
+      "video_coax_lines": 0,
+      "optical_lines": 0
+    },
+    "notes": "Расчет каналов выполнен по спецификации оборудования и схемам соединений проекта."
+  },
+  "tables": {
+    "equipment_3_1": [
+      {
+        "n": 1,
+        "title": "Ethernet-коммутатор MES3508p",
+        "type_or_model": "MES3508P",
+        "work": "ПНР, настройка, испытания по ФЕРп 02-01-002-04."
+      },
+      {
+        "n": 2,
+        "title": "Ethernet-коммутатор MES3508",
+        "type_or_model": "MES3508",
+        "work": "ПНР, настройка, испытания по ФЕРп 02-01-002-04."
+      },
+      {
+        "n": 3,
+        "title": "Однофазный онлайн ИБП серии STR мощностью 1000 ВА",
+        "type_or_model": "STR1101SL",
+        "work": "ПНР, настройка, испытания по ФЕРп 01-06-023-01."
+      }
+    ],
+    "calc_4_1": [
+      {
+        "n": 1,
+        "item": "Ethernet-коммутатор MES3508p, 8 портов 10/100/1000Base-T с поддержкой PoE+, 2х100BASE-FX/1000BASE-X (SFP), L3",
+        "qty": 1,
+        "rationale": "Коммутатор: 10 настраиваемых портов × 1 шт.; 1 канал управления × 1 шт.",
+        "ki": 10,
+        "ku": 1
+      },
+      {
+        "n": 2,
+        "item": "Ethernet-коммутатор MES3508, 8х10/100/1000Base-T, 2хcombo 10/100/1000Base-T/1000Base-X, L3, 20-70 VDC",
+        "qty": 1,
+        "rationale": "Коммутатор: 10 настраиваемых портов × 1 шт.; 1 канал управления × 1 шт.",
+        "ki": 10,
+        "ku": 1
+      },
+      {
+        "n": 3,
+        "item": "Однофазный онлайн ИБП серии STR мощностью 1000 ВА",
+        "qty": 1,
+        "rationale": "ибп с цифровым контролем/мониторингом: 1 ki и 1 ku.",
+        "ki": 1,
+        "ku": 1
+      }
+    ],
+    "ferp_4_2": [
+      {
+        "code": "ФЕРп 02-01-002-05",
+        "title": "Автоматизированная система управления II категории технической сложности, Кобщ = 20",
+        "unit": "система",
+        "qty": 1,
+        "rationale": "По единому расчету K_total=24."
+      },
+      {
+        "code": "ФЕРп 02-01-002-06",
+        "title": "Автоматизированная система управления II категории технической сложности, добавляется каждый канал сверх базы",
+        "unit": "канал",
+        "qty": 4,
+        "rationale": "24 - 20 = 4 каналов."
+      },
+      {
+        "code": "ФЕРп 01-06-023-01",
+        "title": "Устройство контроля уровня напряжения переменного или выпрямленного оперативного тока",
+        "unit": "шт.",
+        "qty": 1,
+        "rationale": "Наличие ИБП с контролем питания."
+      }
+    ],
+    "cable_sections": [],
+    "cable_journal": [],
+    "channel_tests": []
+  }
+}

@@ -1,0 +1,736 @@
+{
+  "document_context": {
+    "org_full": "Общество с ограниченной ответственностью «Голд-Линк»",
+    "org_short": "ООО «Голд-Линк»",
+    "org_inn_kpp": "7224078140/720301001",
+    "org_address": "625016, Россия, Тюменская область, город Тюмень, улица Александра Логунова, дом 11/5",
+    "org_phone_email": "Телефон: +7 (3452) 58-20-90 E-mail: info@gold-link.ru",
+    "approver_title": "Руководитель группы",
+    "approver_name": "Грязнов Е.Е.",
+    "developer_title": "Главный специалист",
+    "developer_title2": "технической группы",
+    "developer_name": "Кудря Н.Ю.",
+    "date_str": "12.05.25",
+    "system_name_nom": "Система передачи данных и часофикации",
+    "system_name_rod": "системы передачи данных и часофикации",
+    "category": "II (вторая)",
+    "coef_kuf": "1.0",
+    "coef_kms": "1.0",
+    "coef_kinf": "1.52",
+    "sheet_stage": "РД",
+    "sheet_page": "",
+    "sheet_pages": "",
+    "auto_pass_results": true
+  },
+  "auto_pass_results": true,
+  "project": {
+    "project_code": "12006-81-0600-СС1.1",
+    "project_title": "Объекты вспомогательных цехов. Площадка обслуживания вспомогательного транспорта. Система передачи данных. Структурированная кабельная система",
+    "site_title": "Площадка обслуживания вспомогательного транспорта",
+    "designer": "ООО «АйДи Инжиниринг»",
+    "customer": null,
+    "executor": "ООО «Голд-Линк»",
+    "category": "II"
+  },
+  "equipment": [
+    {
+      "equipment_type": "switch",
+      "priority": 1,
+      "vendor": "Eltex",
+      "name": "Ethernet-коммутатор MES2348P",
+      "model_or_code": "MES2348P",
+      "description": "Ethernet-коммутатор 48 портов 10/100/1000BASE-T PoE+, 4 порта 10GBASE-R/1000BASE-X",
+      "quantity": 2,
+      "port_count": 48,
+      "ferp": [
+        {
+          "code": "ФЕРп 02-01-002-13",
+          "title": "Автоматизированная система управления II категории технической сложности, Кобщ = 320"
+        }
+      ],
+      "work": "ПНР, настройка, проверка работоспособности и испытания.",
+      "attributes": {
+        "source_file": "12006-81-0600-CC1.1_Изм.4.pdf",
+        "source_sheet": "page 2",
+        "ki": 96,
+        "ku": 2,
+        "rationale": "Коммутатор: 48 настраиваемых портов × 2 шт.; 1 канал управления × 2 шт.",
+        "channel_rule": "managed_switch_all_ports",
+        "channel_ruleset_version": "2026-07-30.2"
+      }
+    },
+    {
+      "equipment_type": "switch",
+      "priority": 2,
+      "vendor": "Eltex",
+      "name": "Ethernet-коммутатор MES2324P",
+      "model_or_code": "MES2324P_AC",
+      "description": "Ethernet-коммутатор 24 порта 10/100/1000BASE-T PoE+, 4 порта 10GBASE-R/1000BASE-X",
+      "quantity": 1,
+      "port_count": 24,
+      "ferp": [
+        {
+          "code": "ФЕРп 02-01-002-13",
+          "title": "Автоматизированная система управления II категории технической сложности, Кобщ = 320"
+        }
+      ],
+      "work": "ПНР, настройка, проверка работоспособности и испытания.",
+      "attributes": {
+        "source_file": "12006-81-0600-CC1.1_Изм.4.pdf",
+        "source_sheet": "page 2",
+        "ki": 24,
+        "ku": 1,
+        "rationale": "Коммутатор: 24 настраиваемых портов × 1 шт.; 1 канал управления × 1 шт.",
+        "channel_rule": "managed_switch_all_ports",
+        "channel_ruleset_version": "2026-07-30.2"
+      }
+    },
+    {
+      "equipment_type": "switch",
+      "priority": 3,
+      "vendor": "Eltex",
+      "name": "Ethernet-коммутатор MES2300-24",
+      "model_or_code": "MES2300-24_AC",
+      "description": "Ethernet-коммутатор 24 порта 10/100/1000BASE-T, 4 порта 10GBASE-R/1000BASE-X",
+      "quantity": 1,
+      "port_count": 24,
+      "ferp": [
+        {
+          "code": "ФЕРп 02-01-002-13",
+          "title": "Автоматизированная система управления II категории технической сложности, Кобщ = 320"
+        }
+      ],
+      "work": "ПНР, настройка, проверка работоспособности и испытания.",
+      "attributes": {
+        "source_file": "12006-81-0600-CC1.1_Изм.4.pdf",
+        "source_sheet": "page 2",
+        "ki": 24,
+        "ku": 1,
+        "rationale": "Коммутатор: 24 настраиваемых портов × 1 шт.; 1 канал управления × 1 шт.",
+        "channel_rule": "managed_switch_all_ports",
+        "channel_ruleset_version": "2026-07-30.2"
+      }
+    },
+    {
+      "equipment_type": "switch",
+      "priority": 4,
+      "vendor": "Eltex",
+      "name": "Ethernet-коммутатор MES2300-24P",
+      "model_or_code": "MES2300-24P_AC",
+      "description": "Ethernet-коммутатор 24 порта 10/100/1000BASE-T PoE+, 4 порта 10GBASE-R/1000BASE-X",
+      "quantity": 3,
+      "port_count": 24,
+      "ferp": [
+        {
+          "code": "ФЕРп 02-01-002-13",
+          "title": "Автоматизированная система управления II категории технической сложности, Кобщ = 320"
+        }
+      ],
+      "work": "ПНР, настройка, проверка работоспособности и испытания.",
+      "attributes": {
+        "source_file": "12006-81-0600-CC1.1_Изм.4.pdf",
+        "source_sheet": "page 2",
+        "ki": 72,
+        "ku": 3,
+        "rationale": "Коммутатор: 24 настраиваемых портов × 3 шт.; 1 канал управления × 3 шт.",
+        "channel_rule": "managed_switch_all_ports",
+        "channel_ruleset_version": "2026-07-30.2"
+      }
+    },
+    {
+      "equipment_type": "switch",
+      "priority": 5,
+      "vendor": "Eltex",
+      "name": "Ethernet-коммутатор MES3316F",
+      "model_or_code": "MES3316F",
+      "description": "Ethernet-коммутатор 12 портов 1000Base-X, 4 комбо-порта, 4 порта 10GBase-X",
+      "quantity": 4,
+      "port_count": 20,
+      "ferp": [
+        {
+          "code": "ФЕРп 02-01-002-13",
+          "title": "Автоматизированная система управления II категории технической сложности, Кобщ = 320"
+        }
+      ],
+      "work": "ПНР, настройка, проверка работоспособности и испытания.",
+      "attributes": {
+        "source_file": "12006-81-0600-CC1.1_Изм.4.pdf",
+        "source_sheet": "page 2",
+        "ki": 80,
+        "ku": 4,
+        "rationale": "Коммутатор: 20 настраиваемых портов × 4 шт.; 1 канал управления × 4 шт.",
+        "channel_rule": "managed_switch_all_ports",
+        "channel_ruleset_version": "2026-07-30.2"
+      }
+    },
+    {
+      "equipment_type": "switch",
+      "priority": 6,
+      "vendor": "Eltex",
+      "name": "Ethernet-коммутатор MES3508",
+      "model_or_code": "MES3508",
+      "description": "Коммутатор уровня L3, 8 портов 10/100/1000BASE-T, 2 порта Combo",
+      "quantity": 1,
+      "port_count": 8,
+      "ferp": [
+        {
+          "code": "ФЕРп 02-01-002-13",
+          "title": "Автоматизированная система управления II категории технической сложности, Кобщ = 320"
+        }
+      ],
+      "work": "ПНР, настройка, проверка работоспособности и испытания.",
+      "attributes": {
+        "source_file": "12006-81-0600-CC1.1_Изм.4.pdf",
+        "source_sheet": "page 18",
+        "ki": 8,
+        "ku": 1,
+        "rationale": "Коммутатор: 8 настраиваемых портов × 1 шт.; 1 канал управления × 1 шт.",
+        "channel_rule": "managed_switch_all_ports",
+        "channel_ruleset_version": "2026-07-30.2"
+      }
+    },
+    {
+      "equipment_type": "voip_phone",
+      "priority": 7,
+      "vendor": "Cisco",
+      "name": "IP-телефон CP-7821-K9",
+      "model_or_code": "CP-7821-K9",
+      "description": "Настольный VoIP-телефон",
+      "quantity": 26,
+      "port_count": 0,
+      "ferp": [
+        {
+          "code": "ФЕРп 02-01-002-13",
+          "title": "Автоматизированная система управления II категории технической сложности, Кобщ = 320"
+        }
+      ],
+      "work": "ПНР, настройка, проверка работоспособности и испытания.",
+      "attributes": {
+        "source_file": "12006-81-0600-CC1.1_Изм.4.pdf",
+        "source_sheet": "page 6",
+        "ki": 26,
+        "ku": 0,
+        "rationale": "оконечное устройство: 1 информационный канал на ip-телефон x 26 шт. = 26 ki.",
+        "channel_rule": "preserve_existing",
+        "channel_ruleset_version": "2026-07-30.2"
+      }
+    },
+    {
+      "equipment_type": "voip_phone",
+      "priority": 8,
+      "vendor": "Cisco",
+      "name": "IP-телефон CP-8841-K9",
+      "model_or_code": "CP-8841-K9",
+      "description": "Настольный VoIP-телефон",
+      "quantity": 14,
+      "port_count": 0,
+      "ferp": [
+        {
+          "code": "ФЕРп 02-01-002-13",
+          "title": "Автоматизированная система управления II категории технической сложности, Кобщ = 320"
+        }
+      ],
+      "work": "ПНР, настройка, проверка работоспособности и испытания.",
+      "attributes": {
+        "source_file": "12006-81-0600-CC1.1_Изм.4.pdf",
+        "source_sheet": "page 6",
+        "ki": 14,
+        "ku": 0,
+        "rationale": "оконечное устройство: 1 информационный канал на ip-телефон x 14 шт. = 14 ki.",
+        "channel_rule": "preserve_existing",
+        "channel_ruleset_version": "2026-07-30.2"
+      }
+    },
+    {
+      "equipment_type": "ntp-clock",
+      "priority": 9,
+      "vendor": "ООО «Хронотрон»",
+      "name": "Часы вторичные цифровые ЦВС.6.100",
+      "model_or_code": "ЦВС.6.100",
+      "description": "Часы вторичные цифровые 6-разрядные с поддержкой PoE, NTP",
+      "quantity": 2,
+      "port_count": 0,
+      "ferp": [
+        {
+          "code": "ФЕРп 02-01-002-13",
+          "title": "Автоматизированная система управления II категории технической сложности, Кобщ = 320"
+        }
+      ],
+      "work": "ПНР, настройка, проверка работоспособности и испытания.",
+      "attributes": {
+        "source_file": "12006-81-0600-CC1.1_Изм.4.pdf",
+        "source_sheet": "page 13",
+        "ki": 2,
+        "ku": 0,
+        "rationale": "оконечное устройство часофикации: 1 канал ntp синхронизации x 2 шт. = 2 ki.",
+        "channel_rule": "preserve_existing",
+        "channel_ruleset_version": "2026-07-30.2"
+      }
+    },
+    {
+      "equipment_type": "ups",
+      "priority": 10,
+      "vendor": "Штиль",
+      "name": "Источник бесперебойного питания Штиль 10000 ВА",
+      "model_or_code": "SR1110L",
+      "description": "Онлайн ИБП 10000 ВА",
+      "quantity": 1,
+      "port_count": 0,
+      "ferp": [
+        {
+          "code": "ФЕРп 01-06-023-01",
+          "title": "Устройство контроля уровня напряжения переменного или выпрямленного оперативного тока"
+        }
+      ],
+      "work": "ПНР, настройка, проверка работоспособности и испытания.",
+      "attributes": {
+        "source_file": "12006-81-0600-CC1.1_Изм.4.pdf",
+        "source_sheet": "page 2",
+        "ki": 0,
+        "ku": 1,
+        "rationale": "оборудование гарантированного питания: 1 канал контроля/управления ибп.",
+        "channel_rule": "preserve_existing",
+        "channel_ruleset_version": "2026-07-30.2"
+      }
+    },
+    {
+      "equipment_type": "ups",
+      "priority": 11,
+      "vendor": "Штиль",
+      "name": "ИБП Штиль 2000 ВА с ЖК-дисплеем",
+      "model_or_code": "SR1102L",
+      "description": "Онлайн ИБП 2000 ВА",
+      "quantity": 3,
+      "port_count": 0,
+      "ferp": [
+        {
+          "code": "ФЕРп 01-06-023-01",
+          "title": "Устройство контроля уровня напряжения переменного или выпрямленного оперативного тока"
+        }
+      ],
+      "work": "ПНР, настройка, проверка работоспособности и испытания.",
+      "attributes": {
+        "source_file": "12006-81-0600-CC1.1_Изм.4.pdf",
+        "source_sheet": "page 3",
+        "ki": 0,
+        "ku": 3,
+        "rationale": "оборудование питания: 1 канал контроля/управления на устройство x 3 шт. = 3 ku.",
+        "channel_rule": "preserve_existing",
+        "channel_ruleset_version": "2026-07-30.2"
+      }
+    },
+    {
+      "equipment_type": "ups",
+      "priority": 12,
+      "vendor": "Штиль",
+      "name": "Онлайн ИБП «Штиль» SW500L",
+      "model_or_code": "SW500L",
+      "description": "Онлайн ИБП 500 ВА / 400 Вт",
+      "quantity": 1,
+      "port_count": 0,
+      "ferp": [
+        {
+          "code": "ФЕРп 01-06-023-01",
+          "title": "Устройство контроля уровня напряжения переменного или выпрямленного оперативного тока"
+        }
+      ],
+      "work": "ПНР, настройка, проверка работоспособности и испытания.",
+      "attributes": {
+        "source_file": "12006-81-0600-CC1.1_Изм.4.pdf",
+        "source_sheet": "page 19",
+        "ki": 0,
+        "ku": 1,
+        "rationale": "оборудование питания: 1 канал контроля/управления ибп.",
+        "channel_rule": "preserve_existing",
+        "channel_ruleset_version": "2026-07-30.2"
+      }
+    },
+    {
+      "equipment_type": "power_supply",
+      "priority": 13,
+      "vendor": "Eltex",
+      "name": "Блок питания DRS-270-56",
+      "model_or_code": "DRS-270-56",
+      "description": "Источник питания 56 В DC",
+      "quantity": 1,
+      "port_count": 0,
+      "ferp": [
+        {
+          "code": "ФЕРп 01-06-010-03",
+          "title": "Выпрямительный блок питания до 1 кВА со стабилизацией выходного напряжения"
+        }
+      ],
+      "work": "ПНР, настройка, проверка работоспособности и испытания.",
+      "attributes": {
+        "source_file": "12006-81-0600-CC1.1_Изм.4.pdf",
+        "source_sheet": "page 18",
+        "ki": 0,
+        "ku": 1,
+        "rationale": "источник питания с регулировкой: 1 канал управления/стабилизации.",
+        "channel_rule": "preserve_existing",
+        "channel_ruleset_version": "2026-07-30.2"
+      }
+    }
+  ],
+  "summaries": {
+    "total_switch_ports": 304,
+    "channel_totals": {
+      "ki": 346,
+      "ku": 18,
+      "total": 364
+    },
+    "channel_components": {
+      "switch_data_ports": 304,
+      "logical_mgmt_ports": 12,
+      "voip_phones": 40,
+      "ups_units": 5,
+      "other_channels": 48
+    },
+    "ferp_channels_summary": {
+      "category": "II",
+      "base_code": "ФЕРп 02-01-002-13",
+      "base_limit": 320,
+      "extra_code": "ФЕРп 02-01-002-14",
+      "extra_channels": 44,
+      "notes": "Единый расчет каналов 2026-07-30.2: K_total=364; база 320, дополнительных каналов 44."
+    },
+    "cable_sections_totals": {
+      "scs_lines": 3,
+      "insulation_sections": 2,
+      "link_lines": 4,
+      "video_coax_lines": 0,
+      "optical_lines": 4
+    },
+    "notes": "JSON сформирован строго по ведомостям и спецификациям проекта. Пассивные коммутационные материалы, кабельная продукция и трассы исключены из оборудования ПНР."
+  },
+  "tables": {
+    "equipment_3_1": [
+      {
+        "n": 1,
+        "title": "Ethernet-коммутатор MES2348P",
+        "type_or_model": "MES2348P",
+        "work": "ПНР, настройка, испытания по ФЕРп 02-01-002-09."
+      },
+      {
+        "n": 2,
+        "title": "Ethernet-коммутатор MES2324P",
+        "type_or_model": "MES2324P_AC",
+        "work": "ПНР, настройка, испытания по ФЕРп 02-01-002-09."
+      },
+      {
+        "n": 3,
+        "title": "Ethernet-коммутатор MES2300-24",
+        "type_or_model": "MES2300-24_AC",
+        "work": "ПНР, настройка, испытания по ФЕРп 02-01-002-09."
+      },
+      {
+        "n": 4,
+        "title": "Ethernet-коммутатор MES2300-24P",
+        "type_or_model": "MES2300-24P_AC",
+        "work": "ПНР, настройка, испытания по ФЕРп 02-01-002-09."
+      },
+      {
+        "n": 5,
+        "title": "Ethernet-коммутатор MES3316F",
+        "type_or_model": "MES3316F",
+        "work": "ПНР, настройка, испытания по ФЕРп 02-01-002-09."
+      },
+      {
+        "n": 6,
+        "title": "Ethernet-коммутатор MES3508",
+        "type_or_model": "MES3508",
+        "work": "ПНР, настройка, испытания по ФЕРп 02-01-002-09."
+      },
+      {
+        "n": 7,
+        "title": "IP-телефон CP-7821-K9",
+        "type_or_model": "CP-7821-K9",
+        "work": "ПНР, настройка, испытания по ФЕРп 02-01-002-09."
+      },
+      {
+        "n": 8,
+        "title": "IP-телефон CP-8841-K9",
+        "type_or_model": "CP-8841-K9",
+        "work": "ПНР, настройка, испытания по ФЕРп 02-01-002-09."
+      },
+      {
+        "n": 9,
+        "title": "Часы вторичные цифровые ЦВС.6.100",
+        "type_or_model": "ЦВС.6.100",
+        "work": "ПНР, настройка, испытания по ФЕРп 02-01-002-09."
+      },
+      {
+        "n": 10,
+        "title": "Источник бесперебойного питания Штиль 10000 ВА",
+        "type_or_model": "SR1110L",
+        "work": "ПНР, настройка, испытания по ФЕРп 01-06-023-01."
+      },
+      {
+        "n": 11,
+        "title": "ИБП Штиль 2000 ВА с ЖК-дисплеем",
+        "type_or_model": "SR1102L",
+        "work": "ПНР, настройка, испытания по ФЕРп 01-06-023-01."
+      },
+      {
+        "n": 12,
+        "title": "Онлайн ИБП «Штиль» SW500L",
+        "type_or_model": "SW500L",
+        "work": "ПНР, настройка, испытания по ФЕРп 01-06-023-01."
+      },
+      {
+        "n": 13,
+        "title": "Блок питания DRS-270-56",
+        "type_or_model": "DRS-270-56",
+        "work": "ПНР, настройка, испытания по ФЕРп 01-06-010-03."
+      }
+    ],
+    "calc_4_1": [
+      {
+        "n": 1,
+        "item": "Ethernet-коммутатор MES2348P",
+        "qty": 2,
+        "rationale": "Коммутатор: 48 настраиваемых портов × 2 шт.; 1 канал управления × 2 шт.",
+        "ki": 96,
+        "ku": 2
+      },
+      {
+        "n": 2,
+        "item": "Ethernet-коммутатор MES2324P",
+        "qty": 1,
+        "rationale": "Коммутатор: 24 настраиваемых портов × 1 шт.; 1 канал управления × 1 шт.",
+        "ki": 24,
+        "ku": 1
+      },
+      {
+        "n": 3,
+        "item": "Ethernet-коммутатор MES2300-24",
+        "qty": 1,
+        "rationale": "Коммутатор: 24 настраиваемых портов × 1 шт.; 1 канал управления × 1 шт.",
+        "ki": 24,
+        "ku": 1
+      },
+      {
+        "n": 4,
+        "item": "Ethernet-коммутатор MES2300-24P",
+        "qty": 3,
+        "rationale": "Коммутатор: 24 настраиваемых портов × 3 шт.; 1 канал управления × 3 шт.",
+        "ki": 72,
+        "ku": 3
+      },
+      {
+        "n": 5,
+        "item": "Ethernet-коммутатор MES3316F",
+        "qty": 4,
+        "rationale": "Коммутатор: 20 настраиваемых портов × 4 шт.; 1 канал управления × 4 шт.",
+        "ki": 80,
+        "ku": 4
+      },
+      {
+        "n": 6,
+        "item": "Ethernet-коммутатор MES3508",
+        "qty": 1,
+        "rationale": "Коммутатор: 8 настраиваемых портов × 1 шт.; 1 канал управления × 1 шт.",
+        "ki": 8,
+        "ku": 1
+      },
+      {
+        "n": 7,
+        "item": "IP-телефон CP-7821-K9",
+        "qty": 26,
+        "rationale": "оконечное устройство: 1 информационный канал на ip-телефон x 26 шт. = 26 ki.",
+        "ki": 26,
+        "ku": 0
+      },
+      {
+        "n": 8,
+        "item": "IP-телефон CP-8841-K9",
+        "qty": 14,
+        "rationale": "оконечное устройство: 1 информационный канал на ip-телефон x 14 шт. = 14 ki.",
+        "ki": 14,
+        "ku": 0
+      },
+      {
+        "n": 9,
+        "item": "Часы вторичные цифровые ЦВС.6.100",
+        "qty": 2,
+        "rationale": "оконечное устройство часофикации: 1 канал ntp синхронизации x 2 шт. = 2 ki.",
+        "ki": 2,
+        "ku": 0
+      },
+      {
+        "n": 10,
+        "item": "Источник бесперебойного питания Штиль 10000 ВА",
+        "qty": 1,
+        "rationale": "оборудование гарантированного питания: 1 канал контроля/управления ибп.",
+        "ki": 0,
+        "ku": 1
+      },
+      {
+        "n": 11,
+        "item": "ИБП Штиль 2000 ВА с ЖК-дисплеем",
+        "qty": 3,
+        "rationale": "оборудование питания: 1 канал контроля/управления на устройство x 3 шт. = 3 ku.",
+        "ki": 0,
+        "ku": 3
+      },
+      {
+        "n": 12,
+        "item": "Онлайн ИБП «Штиль» SW500L",
+        "qty": 1,
+        "rationale": "оборудование питания: 1 канал контроля/управления ибп.",
+        "ki": 0,
+        "ku": 1
+      },
+      {
+        "n": 13,
+        "item": "Блок питания DRS-270-56",
+        "qty": 1,
+        "rationale": "источник питания с регулировкой: 1 канал управления/стабилизации.",
+        "ki": 0,
+        "ku": 1
+      }
+    ],
+    "ferp_4_2": [
+      {
+        "code": "ФЕРп 02-01-002-13",
+        "title": "Автоматизированная система управления II категории технической сложности, Кобщ = 320",
+        "unit": "система",
+        "qty": 1,
+        "rationale": "По единому расчету K_total=364."
+      },
+      {
+        "code": "ФЕРп 02-01-002-14",
+        "title": "Автоматизированная система управления II категории технической сложности, добавляется каждый канал сверх базы",
+        "unit": "канал",
+        "qty": 44,
+        "rationale": "364 - 320 = 44 каналов."
+      },
+      {
+        "code": "ФЕРп 01-06-023-01",
+        "title": "Устройство контроля уровня напряжения переменного или выпрямленного оперативного тока",
+        "unit": "шт.",
+        "qty": 5,
+        "rationale": "Проверка устройств контроля состояния и параметров ИБП (10 кВА, 2 кВА x 3, 500 ВА)."
+      },
+      {
+        "code": "ФЕРп 01-06-010-03",
+        "title": "Выпрямительный блок питания до 1 кВА со стабилизацией выходного напряжения",
+        "unit": "шт.",
+        "qty": 1,
+        "rationale": "Проверка и наладка источника питания DRS-270-56."
+      }
+    ],
+    "cable_sections": [
+      {
+        "id": 1,
+        "trace_id": "СКС-РММ-U/UTP",
+        "system": "СКС КСПД/ТСПД РММ",
+        "cable_type": "U/UTP Cat.5e нг(A)-LS",
+        "length_m": 4000,
+        "pairs_or_cores": 4,
+        "endpoints": "TR6.2.2 / TR6.2.4 — розетки рабочих мест РММ",
+        "is_scs_line": true,
+        "needs_insulation_test": false,
+        "rationale": "Горизонтальная кабельная подсистема СКС в здании РММ."
+      },
+      {
+        "id": 2,
+        "trace_id": "СКС-КПП-U/UTP",
+        "system": "СКС КСПД КПП",
+        "cable_type": "U/UTP Cat.5e нг(A)-LS",
+        "length_m": 42,
+        "pairs_or_cores": 4,
+        "endpoints": "TR6.3.1 — розетки рабочих мест КПП",
+        "is_scs_line": true,
+        "needs_insulation_test": false,
+        "rationale": "Горизонтальная кабельная подсистема СКС в здании КПП."
+      },
+      {
+        "id": 3,
+        "trace_id": "СКС-АБК-U/UTP",
+        "system": "СКС КСПД АБК",
+        "cable_type": "U/UTP Cat.5e нг(A)-LS",
+        "length_m": 80,
+        "pairs_or_cores": 4,
+        "endpoints": "TR6.8.1 — розетки рабочих мест АБК",
+        "is_scs_line": true,
+        "needs_insulation_test": false,
+        "rationale": "Горизонтальная кабельная подсистема СКС в здании АБК."
+      },
+      {
+        "id": 4,
+        "trace_id": "ВОЛС-РММ-2F6.2.4",
+        "system": "Магистральная сеть",
+        "cable_type": "ДПО-нг(А)-HF-16У(1х8) 1.5кН",
+        "length_m": 150,
+        "pairs_or_cores": 16,
+        "endpoints": "TR6.2.4 (пом. 110) — TR6.2.1 (пом. 105)",
+        "is_scs_line": false,
+        "needs_insulation_test": false,
+        "rationale": "Магистральная волоконно-оптическая линия связи в здании РММ."
+      },
+      {
+        "id": 5,
+        "trace_id": "ВОЛС-КПП-2F6.3.1",
+        "system": "Магистральная сеть",
+        "cable_type": "ДПО-нг(А)-HF-16У(1х8) 1.5кН",
+        "length_m": 490,
+        "pairs_or_cores": 16,
+        "endpoints": "TR6.3.1 (КПП) — TR6.2.1 (РММ)",
+        "is_scs_line": false,
+        "needs_insulation_test": false,
+        "rationale": "Межплощадочная волоконно-оптическая линия связи КПП - РММ."
+      },
+      {
+        "id": 6,
+        "trace_id": "ВОЛС-АБК-2F6.8.1",
+        "system": "Магистральная сеть",
+        "cable_type": "ДПО-нг(А)-HF-16У(1х8) 1.5кН",
+        "length_m": 295,
+        "pairs_or_cores": 16,
+        "endpoints": "TR6.8.1 (АБК) — TR6.2.1 (РММ)",
+        "is_scs_line": false,
+        "needs_insulation_test": false,
+        "rationale": "Межплощадочная волоконно-оптическая линия связи АБК - РММ."
+      },
+      {
+        "id": 7,
+        "trace_id": "ВОЛС-6КТПН-2F6.6.1",
+        "system": "Магистральная сеть",
+        "cable_type": "ДПО-нг(А)-HF-16У(1х8) 1.5кН",
+        "length_m": 70,
+        "pairs_or_cores": 16,
+        "endpoints": "TR6.6.1 (6КТПН-1) — TR6.2.1 (РММ)",
+        "is_scs_line": false,
+        "needs_insulation_test": false,
+        "rationale": "Межплощадочная волоконно-оптическая линия связи 6КТПН-1 - РММ."
+      },
+      {
+        "id": 8,
+        "trace_id": "ЭЛ-РММ-ВВГнг",
+        "system": "Электропитание ИБП",
+        "cable_type": "ВВГнг(А)-LS 3х10 / 3х2.5",
+        "length_m": 14,
+        "pairs_or_cores": 3,
+        "endpoints": "Щит питания — TR6.2.1 / TR6.2.2",
+        "is_scs_line": false,
+        "needs_insulation_test": true,
+        "rationale": "Кабели силовой сети электропитания ИБП в РММ."
+      },
+      {
+        "id": 9,
+        "trace_id": "ЭЛ-АБК-ВВГнг",
+        "system": "Электропитание ИБП",
+        "cable_type": "ВВГнг(А)-LS 3х1.5",
+        "length_m": 10,
+        "pairs_or_cores": 3,
+        "endpoints": "ВРУ АБК — TR6.8.1",
+        "is_scs_line": false,
+        "needs_insulation_test": true,
+        "rationale": "Кабель силового питания ИБП в здании АБК."
+      }
+    ],
+    "cable_journal": [],
+    "channel_tests": []
+  }
+}

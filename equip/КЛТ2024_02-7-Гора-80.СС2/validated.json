@@ -1,0 +1,246 @@
+{
+  "document_context": {
+    "org_full": "Общество с ограниченной ответственностью «Голд-Линк»",
+    "org_short": "ООО «Голд-Линк»",
+    "org_inn_kpp": "7224078140/720301001",
+    "org_address": "625016, Россия, Тюменская область, город Тюмень, улица Александра Логунова, дом 11/5",
+    "org_phone_email": "Телефон: +7 (3452) 58-20-90 E-mail: info@gold-link.ru",
+    "approver_title": "Руководитель группы",
+    "approver_name": "Грязнов Е.Е.",
+    "developer_title": "Главный специалист",
+    "developer_title2": "технической группы",
+    "developer_name": "Кудря Н.Ю.",
+    "date_str": "12.05.25",
+    "system_name_nom": "Система беспроводного широкополосного доступа",
+    "system_name_rod": "системы беспроводного широкополосного доступа",
+    "category": "II (вторая)",
+    "coef_kuf": "1.0",
+    "coef_kms": "1.0",
+    "coef_kinf": "1.52",
+    "sheet_stage": "РД",
+    "sheet_page": "",
+    "sheet_pages": "",
+    "auto_pass_results": true
+  },
+  "auto_pass_results": true,
+  "project": {
+    "project_code": "КЛТ2024/02-7-Гора-80-СС2",
+    "project_title": "Система беспроводного широкополосного доступа. КЛТ2024/02-7-Гора-80-СС2",
+    "site_title": "Площадка Гора-80",
+    "designer": "ООО «ТюменьСвязь»",
+    "customer": "ООО «Култуминское»",
+    "executor": "ООО «Голд-Линк»",
+    "category": "II"
+  },
+  "equipment": [
+    {
+      "equipment_type": "wireless_ap",
+      "priority": 1,
+      "vendor": "Infinet",
+      "name": "Комплект БШПД Vector V6 (внешний блок V6-25)",
+      "model_or_code": "V6-25/07401t",
+      "description": "Беспроводное устройство передачи данных Vector V6",
+      "quantity": 3,
+      "serial_numbers": [],
+      "port_count": 1,
+      "ferp": [
+        {
+          "code": "ФЕРп 02-01-002-03",
+          "title": "Автоматизированная система управления II категории технической сложности, Кобщ = 10"
+        }
+      ],
+      "work": "ПНР, настройка радиоканала, проверка параметров связи и испытания.",
+      "attributes": {
+        "ki": 3,
+        "ku": 3,
+        "rationale": "Радиоустройство: 1 физический радиоканал и 1 канал управления × 3 шт.",
+        "channel_rule": "radio_link_physical_and_management",
+        "channel_ruleset_version": "2026-07-30.2"
+      }
+    },
+    {
+      "equipment_type": "wireless_ap",
+      "priority": 2,
+      "vendor": "Infinet",
+      "name": "Сектор базовой станции InfiMAN Evolution",
+      "model_or_code": "E5-BSI/05600t",
+      "description": "Сектор базовой станции беспроводного доступа E5-BSI",
+      "quantity": 2,
+      "serial_numbers": [],
+      "port_count": 1,
+      "ferp": [
+        {
+          "code": "ФЕРп 02-01-002-03",
+          "title": "Автоматизированная система управления II категории технической сложности, Кобщ = 10"
+        }
+      ],
+      "work": "ПНР, настройка базовой станции, проверка секторов и испытания.",
+      "attributes": {
+        "ki": 2,
+        "ku": 2,
+        "rationale": "Радиоустройство: 1 физический радиоканал и 1 канал управления × 2 шт.",
+        "channel_rule": "radio_link_physical_and_management",
+        "channel_ruleset_version": "2026-07-30.2"
+      }
+    },
+    {
+      "equipment_type": "switch",
+      "priority": 3,
+      "vendor": "Infinet",
+      "name": "Сетевой коммутатор Infimux 6G",
+      "model_or_code": "Infimux 6G",
+      "description": "Сетевой коммутатор Infimux 6G, 6x10/100/1000BASE-T",
+      "quantity": 1,
+      "serial_numbers": [],
+      "port_count": 6,
+      "ferp": [
+        {
+          "code": "ФЕРп 02-01-002-03",
+          "title": "Автоматизированная система управления II категории технической сложности, Кобщ = 10"
+        }
+      ],
+      "work": "ПНР, конфигурирование сетевых параметров, VLAN, проверка коммутации.",
+      "attributes": {
+        "ki": 6,
+        "ku": 1,
+        "rationale": "Коммутатор: 6 настраиваемых портов × 1 шт.; 1 канал управления × 1 шт.",
+        "channel_rule": "managed_switch_all_ports",
+        "channel_ruleset_version": "2026-07-30.2"
+      }
+    },
+    {
+      "equipment_type": "power_supply",
+      "priority": 4,
+      "vendor": "MEAN WELL",
+      "name": "DC/DC преобразователь DDR-60L-12",
+      "model_or_code": "DDR-60L-12",
+      "description": "DC/DC преобразователь для питания Ethernet сервера",
+      "quantity": 1,
+      "serial_numbers": [],
+      "port_count": 0,
+      "ferp": [
+        {
+          "code": "ФЕРп 01-06-010-03",
+          "title": "Выпрямительный блок питания до 1 кВА со стабилизацией выходного напряжения"
+        }
+      ],
+      "work": "ПНР, проверка выходного напряжения, стабилизации и интеграции в систему питания.",
+      "attributes": {
+        "ki": 0,
+        "ku": 0,
+        "rationale": "Пассивное изделие или пакет ПО: самостоятельные каналы не образует.",
+        "channel_rule": "passive_accessory_no_channels",
+        "channel_ruleset_version": "2026-07-30.2"
+      }
+    }
+  ],
+  "summaries": {
+    "total_switch_ports": 6,
+    "channel_totals": {
+      "ki": 11,
+      "ku": 6,
+      "total": 17
+    },
+    "channel_components": {
+      "switch_data_ports": 6,
+      "logical_mgmt_ports": 1,
+      "voip_phones": 0,
+      "ups_units": 0,
+      "other_channels": 10
+    },
+    "ferp_channels_summary": {
+      "category": "II",
+      "base_code": "ФЕРп 02-01-002-03",
+      "base_limit": 10,
+      "extra_code": "ФЕРп 02-01-002-04",
+      "extra_channels": 7,
+      "notes": "Единый расчет каналов 2026-07-30.2: K_total=17; база 10, дополнительных каналов 7."
+    },
+    "cable_sections_totals": {
+      "scs_lines": 0,
+      "insulation_sections": 0,
+      "link_lines": 0,
+      "video_coax_lines": 0,
+      "optical_lines": 0
+    },
+    "notes": "JSON сформирован по спецификации проекта. Кабельная продукция, крепеж и пассивные элементы исключены из состава оборудования ПНР."
+  },
+  "tables": {
+    "equipment_3_1": [
+      {
+        "n": 1,
+        "title": "Комплект БШПД Vector V6",
+        "type_or_model": "V6-25/07401t",
+        "work": "ПНР, настройка, испытания по ФЕРп 02-01-002-03."
+      },
+      {
+        "n": 2,
+        "title": "Сектор базовой станции InfiMAN Evolution",
+        "type_or_model": "E5-BSI/05600t",
+        "work": "ПНР, настройка, испытания по ФЕРп 02-01-002-03."
+      },
+      {
+        "n": 3,
+        "title": "Сетевой коммутатор Infimux 6G",
+        "type_or_model": "Infimux 6G",
+        "work": "ПНР, настройка, испытания по ФЕРп 02-01-002-03."
+      },
+      {
+        "n": 4,
+        "title": "DC/DC преобразователь DDR-60L-12",
+        "type_or_model": "DDR-60L-12",
+        "work": "ПНР, настройка, испытания по ФЕРп 01-06-010-03."
+      }
+    ],
+    "calc_4_1": [
+      {
+        "n": 1,
+        "item": "Комплект БШПД Vector V6 (внешний блок V6-25)",
+        "qty": 3,
+        "rationale": "Радиоустройство: 1 физический радиоканал и 1 канал управления × 3 шт.",
+        "ki": 3,
+        "ku": 3
+      },
+      {
+        "n": 2,
+        "item": "Сектор базовой станции InfiMAN Evolution",
+        "qty": 2,
+        "rationale": "Радиоустройство: 1 физический радиоканал и 1 канал управления × 2 шт.",
+        "ki": 2,
+        "ku": 2
+      },
+      {
+        "n": 3,
+        "item": "Сетевой коммутатор Infimux 6G",
+        "qty": 1,
+        "rationale": "Коммутатор: 6 настраиваемых портов × 1 шт.; 1 канал управления × 1 шт.",
+        "ki": 6,
+        "ku": 1
+      }
+    ],
+    "ferp_4_2": [
+      {
+        "code": "ФЕРп 02-01-002-03",
+        "title": "Автоматизированная система управления II категории технической сложности, Кобщ = 10",
+        "unit": "система",
+        "qty": 1,
+        "rationale": "По единому расчету K_total=17."
+      },
+      {
+        "code": "ФЕРп 02-01-002-04",
+        "title": "Автоматизированная система управления II категории технической сложности, добавляется каждый канал сверх базы",
+        "unit": "канал",
+        "qty": 7,
+        "rationale": "17 - 10 = 7 каналов."
+      },
+      {
+        "code": "ФЕРп 01-06-010-03",
+        "title": "Выпрямительный блок питания до 1 кВА со стабилизацией выходного напряжения",
+        "unit": "шт.",
+        "qty": 1,
+        "rationale": "ПНР преобразователя питания DC/DC DDR-60L-12."
+      }
+    ],
+    "cable_sections": []
+  }
+}

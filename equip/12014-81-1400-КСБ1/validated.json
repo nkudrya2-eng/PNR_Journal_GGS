@@ -1,0 +1,817 @@
+{
+  "document_context": {
+    "org_full": "Общество с ограниченной ответственностью «Голд-Линк»",
+    "org_short": "ООО «Голд-Линк»",
+    "org_inn_kpp": "7224078140/720301001",
+    "org_address": "625016, Россия, Тюменская область, город Тюмень, улица Александра Логунова, дом 11/5",
+    "org_phone_email": "Телефон: +7 (3452) 58-20-90 E-mail: info@gold-link.ru",
+    "approver_title": "Руководитель группы",
+    "approver_name": "Грязнов Е.Е.",
+    "developer_title": "Главный специалист",
+    "developer_title2": "технической группы",
+    "developer_name": "Кудря Н.Ю.",
+    "date_str": "12.05.25",
+    "system_name_nom": "Комплексная система безопасности",
+    "system_name_rod": "комплексной системы безопасности",
+    "category": "II (вторая)",
+    "coef_kuf": "1.0",
+    "coef_kms": "1.0",
+    "coef_kinf": "1.52",
+    "sheet_stage": "РД",
+    "sheet_page": "",
+    "sheet_pages": "",
+    "auto_pass_results": true
+  },
+  "auto_pass_results": true,
+  "project": {
+    "project_code": "12014-81-1400-КСБ1",
+    "project_title": "Комплексная система безопасности. 12014-81-1400-КСБ1",
+    "site_title": null,
+    "designer": null,
+    "customer": null,
+    "executor": "ООО «Голд-Линк»",
+    "category": "II"
+  },
+  "equipment": [
+    {
+      "equipment_type": "access_control",
+      "priority": 1,
+      "vendor": "Inner Range",
+      "name": "Модуль Integriti Access Controller (IAC)",
+      "model_or_code": "INTG-996035PCBK",
+      "description": "Центральный контроллер СКУД системы Integriti (IAC). Плата и коннекторы. 32bit ARM CPU, Ethernet, UniBus, Web-server, LAN, 4 входа Weigand, RS485, 2 реле замка.",
+      "quantity": 1,
+      "port_count": 0,
+      "ferp": [
+        {
+          "code": "ФЕРп 02-02-003-01",
+          "title": "Функциональная настройка специального программного обеспечения АС"
+        }
+      ],
+      "work": "ПНР, настройка, проверка работоспособности и испытания.",
+      "attributes": {
+        "source_file": "12014-81-1400-КСБ1.СО Изм.1.xlsx",
+        "source_sheet": "Спецификация",
+        "source_rows": [
+          3
+        ],
+        "ki": 0,
+        "ku": 1,
+        "rationale": "Контроллер: оконечные каналы учитываются на считывателях; 1 канал управления × 1 шт.",
+        "channel_rule": "controller_management_only",
+        "channel_ruleset_version": "2026-07-30.2"
+      }
+    },
+    {
+      "equipment_type": "access_control",
+      "priority": 2,
+      "vendor": "Inner Range",
+      "name": "Модуль Integriti ILAM Intelligent 2 Door/Reader Module PCB&K",
+      "model_or_code": "INTG-996018PCBK",
+      "description": "Модуль Integriti ILAM Intelligent 2 Door/Reader Module PCB&K",
+      "quantity": 1,
+      "port_count": 0,
+      "ferp": [],
+      "work": "ПНР, настройка, проверка работоспособности и испытания.",
+      "attributes": {
+        "source_file": "12014-81-1400-КСБ1.СО Изм.1.xlsx",
+        "source_sheet": "Спецификация",
+        "source_rows": [
+          4
+        ],
+        "ki": 0,
+        "ku": 1,
+        "rationale": "Контроллер: оконечные каналы учитываются на считывателях; 1 канал управления × 1 шт.",
+        "channel_rule": "controller_management_only",
+        "channel_ruleset_version": "2026-07-30.2"
+      }
+    },
+    {
+      "equipment_type": "access_control",
+      "priority": 3,
+      "vendor": "Inner Range",
+      "name": "Модуль расширения Integriti UniBus 2 Door Expander PCB & Accessories",
+      "model_or_code": "INTG-996535PCBK",
+      "description": "Модуль расширения Integriti UniBus 2 Door Expander PCB & Accessories",
+      "quantity": 3,
+      "port_count": 0,
+      "ferp": [],
+      "work": "ПНР, настройка, проверка работоспособности и испытания.",
+      "attributes": {
+        "source_file": "12014-81-1400-КСБ1.СО Изм.1.xlsx",
+        "source_sheet": "Спецификация",
+        "source_rows": [
+          5
+        ],
+        "ki": 0,
+        "ku": 0,
+        "rationale": "позиция включена в состав оборудования без самостоятельного расчета каналов.",
+        "channel_rule": "preserve_existing",
+        "channel_ruleset_version": "2026-07-30.2"
+      }
+    },
+    {
+      "equipment_type": "access_control",
+      "priority": 4,
+      "vendor": "Inner Range",
+      "name": "Модуль Integriti SLAM 2 Door/Reader Module PCB&K",
+      "model_or_code": "INTG-996012PCBK",
+      "description": "Модуль Integriti SLAM 2 Door/Reader Module PCB&K",
+      "quantity": 42,
+      "port_count": 0,
+      "ferp": [],
+      "work": "ПНР, настройка, проверка работоспособности и испытания.",
+      "attributes": {
+        "source_file": "12014-81-1400-КСБ1.СО Изм.1.xlsx",
+        "source_sheet": "Спецификация",
+        "source_rows": [
+          6,
+          87
+        ],
+        "ki": 0,
+        "ku": 42,
+        "rationale": "Контроллер: оконечные каналы учитываются на считывателях; 1 канал управления × 42 шт.",
+        "channel_rule": "controller_management_only",
+        "channel_ruleset_version": "2026-07-30.2"
+      }
+    },
+    {
+      "equipment_type": "access_control",
+      "priority": 5,
+      "vendor": "Inner Range",
+      "name": "Модуль Ethernet Bridge Module",
+      "model_or_code": "INTG-996088",
+      "description": "Модуль Ethernet Bridge Module",
+      "quantity": 2,
+      "port_count": 0,
+      "ferp": [],
+      "work": "ПНР, настройка, проверка работоспособности и испытания.",
+      "attributes": {
+        "source_file": "12014-81-1400-КСБ1.СО Изм.1.xlsx",
+        "source_sheet": "Спецификация",
+        "source_rows": [
+          7,
+          88
+        ],
+        "ki": 2,
+        "ku": 2,
+        "rationale": "Ethernet-мост: 1 канал RS-485 и 1 канал управления × 2 шт.",
+        "channel_rule": "ksb_ethernet_bridge",
+        "channel_ruleset_version": "2026-07-30.2"
+      }
+    },
+    {
+      "equipment_type": "access_control",
+      "priority": 6,
+      "vendor": "Торговая сеть",
+      "name": "Считыватель 13,56МГц RFID прокси-карт и брелков, CSN",
+      "model_or_code": "AY-K6255 (rev.B)",
+      "description": "Считыватель 13,56МГц RFID прокси-карт и брелков, CSN. Формат Weigand 26-бит, всепогодный, IP-65",
+      "quantity": 83,
+      "port_count": 0,
+      "ferp": [],
+      "work": "ПНР, настройка, проверка работоспособности и испытания.",
+      "attributes": {
+        "source_file": "12014-81-1400-КСБ1.СО Изм.1.xlsx",
+        "source_sheet": "Спецификация",
+        "source_rows": [
+          14
+        ],
+        "ki": 83,
+        "ku": 0,
+        "rationale": "Считыватель: 1 информационный канал × 83 шт.; на контроллере повторно не учитывается.",
+        "channel_rule": "reader_single_channel",
+        "channel_ruleset_version": "2026-07-30.2"
+      }
+    },
+    {
+      "equipment_type": "ups",
+      "priority": 7,
+      "vendor": "Торговая сеть",
+      "name": "Источник питания резервированный 12В, под АКБ 17Ач",
+      "model_or_code": "ББП-80 исп.1",
+      "description": "Источник питания резервированный 12В, под АКБ 17Ач",
+      "quantity": 2,
+      "port_count": 0,
+      "ferp": [
+        {
+          "code": "ФЕРп 01-06-023-01",
+          "title": "Устройство контроля уровня напряжения переменного или выпрямленного оперативного тока"
+        }
+      ],
+      "work": "ПНР, настройка, проверка работоспособности и испытания.",
+      "attributes": {
+        "source_file": "12014-81-1400-КСБ1.СО Изм.1.xlsx",
+        "source_sheet": "Спецификация",
+        "source_rows": [
+          18
+        ],
+        "ki": 0,
+        "ku": 2,
+        "rationale": "оборудование питания учтено как проверяемые каналы контроля/управления.",
+        "channel_rule": "preserve_existing",
+        "channel_ruleset_version": "2026-07-30.2"
+      }
+    },
+    {
+      "equipment_type": "access_control",
+      "priority": 8,
+      "vendor": "Inner Range",
+      "name": "Модуль расширения на 8 зон Integriti 8 Zone Expander PCB&K",
+      "model_or_code": "INTG-996005PCBKIT",
+      "description": "Модуль расширения на 8 зон Integriti 8 Zone Expander PCB&K",
+      "quantity": 7,
+      "port_count": 0,
+      "ferp": [],
+      "work": "ПНР, настройка, проверка работоспособности и испытания.",
+      "attributes": {
+        "source_file": "12014-81-1400-КСБ1.СО Изм.1.xlsx",
+        "source_sheet": "Спецификация",
+        "source_rows": [
+          21
+        ],
+        "ki": 0,
+        "ku": 0,
+        "rationale": "позиция включена в состав оборудования без самостоятельного расчета каналов.",
+        "channel_rule": "preserve_existing",
+        "channel_ruleset_version": "2026-07-30.2"
+      }
+    },
+    {
+      "equipment_type": "detector",
+      "priority": 9,
+      "vendor": "Торговая сеть",
+      "name": "Извещатель охранный точечный магнитоконтактный ИО 102-20 Б2М (З)",
+      "model_or_code": "ИО 102-20 Б2М (З)",
+      "description": "Извещатель охранный точечный магнитоконтактный для магнитопроводящих конструкций",
+      "quantity": 53,
+      "port_count": 0,
+      "ferp": [],
+      "work": "ПНР, настройка, проверка работоспособности и испытания.",
+      "attributes": {
+        "source_file": "12014-81-1400-КСБ1.СО Изм.1.xlsx",
+        "source_sheet": "Спецификация",
+        "source_rows": [
+          22
+        ],
+        "ki": 53,
+        "ku": 0,
+        "rationale": "устройство безопасности учтено как проверяемая точка/канал системы.",
+        "channel_rule": "preserve_existing",
+        "channel_ruleset_version": "2026-07-30.2"
+      }
+    },
+    {
+      "equipment_type": "detector",
+      "priority": 10,
+      "vendor": "Торговая сеть",
+      "name": "Извещатель охранный точечный магнитоконтактный ИО 102-52",
+      "model_or_code": "ИО 102-52 (белый)",
+      "description": "Извещатель охранный точечный магнитоконтактный для немагнитопроводящих конструкций",
+      "quantity": 14,
+      "port_count": 0,
+      "ferp": [],
+      "work": "ПНР, настройка, проверка работоспособности и испытания.",
+      "attributes": {
+        "source_file": "12014-81-1400-КСБ1.СО Изм.1.xlsx",
+        "source_sheet": "Спецификация",
+        "source_rows": [
+          24
+        ],
+        "ki": 14,
+        "ku": 0,
+        "rationale": "устройство безопасности учтено как проверяемая точка/канал системы.",
+        "channel_rule": "preserve_existing",
+        "channel_ruleset_version": "2026-07-30.2"
+      }
+    },
+    {
+      "equipment_type": "access_control",
+      "priority": 11,
+      "vendor": "Торговая сеть",
+      "name": "Станция авторизации карт Insight Card Enrolment Station",
+      "model_or_code": "994500BLANKEU",
+      "description": "Станция авторизации карт Insight Card Enrolment Station для оперативного занесения информации о картах доступа в ПК Integriti.",
+      "quantity": 4,
+      "port_count": 0,
+      "ferp": [],
+      "work": "ПНР, настройка, проверка работоспособности и испытания.",
+      "attributes": {
+        "source_file": "12014-81-1400-КСБ1.СО Изм.1.xlsx",
+        "source_sheet": "Спецификация",
+        "source_rows": [
+          31
+        ],
+        "ki": 4,
+        "ku": 0,
+        "rationale": "устройство безопасности учтено как проверяемая точка/канал системы.",
+        "channel_rule": "preserve_existing",
+        "channel_ruleset_version": "2026-07-30.2"
+      }
+    },
+    {
+      "equipment_type": "access_control",
+      "priority": 12,
+      "vendor": "Торговая сеть",
+      "name": "Уличный считыватель 13,56 МГц RFID прокси-карт AY-K6255",
+      "model_or_code": "AY-K6255 (rev.B)",
+      "description": "Уличный считыватель 13,56 МГц RFID прокси-карт и брелоков, CSN. Формат Weigand 26-bit. Всепогодный (IP65).",
+      "quantity": 4,
+      "port_count": 0,
+      "ferp": [],
+      "work": "ПНР, настройка, проверка работоспособности и испытания.",
+      "attributes": {
+        "source_file": "12014-81-1400-КСБ1.СО Изм.1.xlsx",
+        "source_sheet": "Спецификация",
+        "source_rows": [
+          32
+        ],
+        "ki": 4,
+        "ku": 0,
+        "rationale": "Считыватель: 1 информационный канал × 4 шт.; на контроллере повторно не учитывается.",
+        "channel_rule": "reader_single_channel",
+        "channel_ruleset_version": "2026-07-30.2"
+      }
+    },
+    {
+      "equipment_type": "arm_workstation",
+      "priority": 13,
+      "vendor": "Inner Range",
+      "name": "Лицензия оператора Integriti Extra Client",
+      "model_or_code": "INTG-996911",
+      "description": "ПО. Лицензия оператора Inner для АРМ: Integriti Extra Client - дополнительная лицензия на 1 рабочее место оператора.",
+      "quantity": 10,
+      "port_count": 0,
+      "ferp": [],
+      "work": "ПНР, настройка, проверка работоспособности и испытания.",
+      "attributes": {
+        "source_file": "12014-81-1400-КСБ1.СО Изм.1.xlsx",
+        "source_sheet": "Спецификация",
+        "source_rows": [
+          34
+        ],
+        "ki": 10,
+        "ku": 0,
+        "rationale": "оконечное устройство учтено как один информационный канал на устройство.",
+        "channel_rule": "preserve_existing",
+        "channel_ruleset_version": "2026-07-30.2"
+      }
+    },
+    {
+      "equipment_type": "access_control",
+      "priority": 14,
+      "vendor": "Inner Range",
+      "name": "Модуль расширения Integriti 8 Zone Expander (14КТПН-1)",
+      "model_or_code": "INTG-996005PCBKIT",
+      "description": "Модуль расширения на 8 зон Integriti 8 Zone Expander PCB&K - Универсальный LAN-модуль расширения",
+      "quantity": 1,
+      "port_count": 0,
+      "ferp": [],
+      "work": "ПНР, настройка, проверка работоспособности и испытания.",
+      "attributes": {
+        "source_file": "12014-81-1400-КСБ1.СО Изм.1.xlsx",
+        "source_sheet": "Спецификация",
+        "source_rows": [
+          89
+        ],
+        "ki": 0,
+        "ku": 0,
+        "rationale": "позиция включена в состав оборудования без самостоятельного расчета каналов.",
+        "channel_rule": "preserve_existing",
+        "channel_ruleset_version": "2026-07-30.2"
+      }
+    },
+    {
+      "equipment_type": "access_control",
+      "priority": 15,
+      "vendor": "Rosslare",
+      "name": "Считыватель AY-K6255 (rev.B) (14КТПН-1)",
+      "model_or_code": "AY-K6255 (rev.B)",
+      "description": "Считыватель 13,56МГц RFID прокси-карт и брелков, CSN. Формат Weigand 26-бит, всепогодный, IP-65",
+      "quantity": 6,
+      "port_count": 0,
+      "ferp": [],
+      "work": "ПНР, настройка, проверка работоспособности и испытания.",
+      "attributes": {
+        "source_file": "12014-81-1400-КСБ1.СО Изм.1.xlsx",
+        "source_sheet": "Спецификация",
+        "source_rows": [
+          90
+        ],
+        "ki": 6,
+        "ku": 0,
+        "rationale": "Считыватель: 1 информационный канал × 6 шт.; на контроллере повторно не учитывается.",
+        "channel_rule": "reader_single_channel",
+        "channel_ruleset_version": "2026-07-30.2"
+      }
+    },
+    {
+      "equipment_type": "detector",
+      "priority": 16,
+      "vendor": "Магнито-Контакт",
+      "name": "Извещатель охранный ИО 102-20 Б2М (З) (14КТПН-1)",
+      "model_or_code": "ИО 102-20 Б2М (З)",
+      "description": "Извещатель охранный точечный магнитоконтактный для магнитопроводящих конструкций",
+      "quantity": 3,
+      "port_count": 0,
+      "ferp": [],
+      "work": "ПНР, настройка, проверка работоспособности и испытания.",
+      "attributes": {
+        "source_file": "12014-81-1400-КСБ1.СО Изм.1.xlsx",
+        "source_sheet": "Спецификация",
+        "source_rows": [
+          94
+        ],
+        "ki": 3,
+        "ku": 0,
+        "rationale": "устройство безопасности учтено как проверяемая точка/канал системы.",
+        "channel_rule": "preserve_existing",
+        "channel_ruleset_version": "2026-07-30.2"
+      }
+    },
+    {
+      "equipment_type": "detector",
+      "priority": 17,
+      "vendor": "Магнито-Контакт",
+      "name": "Извещатель охранный ИО 102-40 Б2М (4) (14КТПН-1)",
+      "model_or_code": "ИО 102-40 Б2М (4)",
+      "description": "Извещатель охранный точечный магнитоконтактный, кабель в металлорукаве",
+      "quantity": 4,
+      "port_count": 0,
+      "ferp": [],
+      "work": "ПНР, настройка, проверка работоспособности и испытания.",
+      "attributes": {
+        "source_file": "12014-81-1400-КСБ1.СО Изм.1.xlsx",
+        "source_sheet": "Спецификация",
+        "source_rows": [
+          96
+        ],
+        "ki": 4,
+        "ku": 0,
+        "rationale": "устройство безопасности учтено как проверяемая точка/канал системы.",
+        "channel_rule": "preserve_existing",
+        "channel_ruleset_version": "2026-07-30.2"
+      }
+    },
+    {
+      "equipment_type": "detector",
+      "priority": 18,
+      "vendor": "Optex",
+      "name": "Пассивный ИК-извещатель FLX-S-ST (14КТПН-1)",
+      "model_or_code": "FLX-S-ST",
+      "description": "Пассивный оптико-электронный ИК-извещатель",
+      "quantity": 2,
+      "port_count": 0,
+      "ferp": [],
+      "work": "ПНР, настройка, проверка работоспособности и испытания.",
+      "attributes": {
+        "source_file": "12014-81-1400-КСБ1.СО Изм.1.xlsx",
+        "source_sheet": "Спецификация",
+        "source_rows": [
+          98
+        ],
+        "ki": 2,
+        "ku": 0,
+        "rationale": "устройство безопасности учтено как проверяемая точка/канал системы.",
+        "channel_rule": "preserve_existing",
+        "channel_ruleset_version": "2026-07-30.2"
+      }
+    }
+  ],
+  "summaries": {
+    "total_switch_ports": 0,
+    "channel_totals": {
+      "ki": 185,
+      "ku": 48,
+      "total": 233
+    },
+    "channel_components": {
+      "switch_data_ports": 0,
+      "logical_mgmt_ports": 0,
+      "voip_phones": 0,
+      "ups_units": 2,
+      "other_channels": 233
+    },
+    "ferp_channels_summary": {
+      "category": "II",
+      "base_code": "ФЕРп 02-01-002-11",
+      "base_limit": 160,
+      "extra_code": "ФЕРп 02-01-002-12",
+      "extra_channels": 73,
+      "notes": "Единый расчет каналов 2026-07-30.2: K_total=233; база 160, дополнительных каналов 73."
+    },
+    "cable_sections_totals": {
+      "scs_lines": 1,
+      "insulation_sections": 3,
+      "link_lines": 0,
+      "video_coax_lines": 0,
+      "optical_lines": 0
+    },
+    "notes": "JSON сформирован по спецификации проекта 12014-81-1400-КСБ1."
+  },
+  "tables": {
+    "equipment_3_1": [
+      {
+        "n": 1,
+        "title": "Модуль Integriti Access Controller (IAC)",
+        "type_or_model": "INTG-996035PCBK",
+        "work": "ПНР, настройка, испытания по ФЕРп 02-02-003-01."
+      },
+      {
+        "n": 2,
+        "title": "Модуль Integriti ILAM Intelligent 2 Door/Reader Module PCB&K",
+        "type_or_model": "INTG-996018PCBK",
+        "work": "ПНР, настройка, испытания."
+      },
+      {
+        "n": 3,
+        "title": "Модуль расширения Integriti UniBus 2 Door Expander PCB & Accessories",
+        "type_or_model": "INTG-996535PCBK",
+        "work": "ПНР, настройка, испытания."
+      },
+      {
+        "n": 4,
+        "title": "Модуль Integriti SLAM 2 Door/Reader Module PCB&K",
+        "type_or_model": "INTG-996012PCBK",
+        "work": "ПНР, настройка, испытания."
+      },
+      {
+        "n": 5,
+        "title": "Модуль Ethernet Bridge Module",
+        "type_or_model": "INTG-996088",
+        "work": "ПНР, настройка, испытания."
+      },
+      {
+        "n": 6,
+        "title": "Считыватель 13,56МГц RFID прокси-карт и брелков, CSN",
+        "type_or_model": "AY-K6255 (rev.B)",
+        "work": "ПНР, настройка, испытания."
+      },
+      {
+        "n": 7,
+        "title": "Источник питания резервированный 12В, под АКБ 17Ач",
+        "type_or_model": "ББП-80 исп.1",
+        "work": "ПНР, настройка, испытания по ФЕРп 01-06-023-01."
+      },
+      {
+        "n": 8,
+        "title": "Модуль расширения на 8 зон Integriti 8 Zone Expander PCB&K",
+        "type_or_model": "INTG-996005PCBKIT",
+        "work": "ПНР, настройка, испытания."
+      },
+      {
+        "n": 9,
+        "title": "Извещатель охранный точечный магнитоконтактный ИО 102-20 Б2М (З)",
+        "type_or_model": "ИО 102-20 Б2М (З)",
+        "work": "ПНР, настройка, испытания."
+      },
+      {
+        "n": 10,
+        "title": "Извещатель охранный точечный магнитоконтактный ИО 102-52",
+        "type_or_model": "ИО 102-52 (белый)",
+        "work": "ПНР, настройка, испытания."
+      },
+      {
+        "n": 11,
+        "title": "Станция авторизации карт Insight Card Enrolment Station",
+        "type_or_model": "994500BLANKEU",
+        "work": "ПНР, настройка, испытания."
+      },
+      {
+        "n": 12,
+        "title": "Уличный считыватель 13,56 МГц RFID прокси-карт AY-K6255",
+        "type_or_model": "AY-K6255 (rev.B)",
+        "work": "ПНР, настройка, испытания."
+      },
+      {
+        "n": 13,
+        "title": "Лицензия оператора Integriti Extra Client",
+        "type_or_model": "INTG-996911",
+        "work": "ПНР, настройка, испытания."
+      },
+      {
+        "n": 14,
+        "title": "Модуль расширения Integriti 8 Zone Expander (14КТПН-1)",
+        "type_or_model": "INTG-996005PCBKIT",
+        "work": "ПНР, настройка, испытания."
+      },
+      {
+        "n": 15,
+        "title": "Считыватель AY-K6255 (rev.B) (14КТПН-1)",
+        "type_or_model": "AY-K6255 (rev.B)",
+        "work": "ПНР, настройка, испытания."
+      },
+      {
+        "n": 16,
+        "title": "Извещатель охранный ИО 102-20 Б2М (З) (14КТПН-1)",
+        "type_or_model": "ИО 102-20 Б2М (З)",
+        "work": "ПНР, настройка, испытания."
+      },
+      {
+        "n": 17,
+        "title": "Извещатель охранный ИО 102-40 Б2М (4) (14КТПН-1)",
+        "type_or_model": "ИО 102-40 Б2М (4)",
+        "work": "ПНР, настройка, испытания."
+      },
+      {
+        "n": 18,
+        "title": "Пассивный ИК-извещатель FLX-S-ST (14КТПН-1)",
+        "type_or_model": "FLX-S-ST",
+        "work": "ПНР, настройка, испытания."
+      }
+    ],
+    "calc_4_1": [
+      {
+        "n": 1,
+        "item": "Модуль Integriti Access Controller (IAC)",
+        "qty": 1,
+        "rationale": "Контроллер: оконечные каналы учитываются на считывателях; 1 канал управления × 1 шт.",
+        "ki": 0,
+        "ku": 1
+      },
+      {
+        "n": 2,
+        "item": "Модуль Integriti ILAM Intelligent 2 Door/Reader Module PCB&K",
+        "qty": 1,
+        "rationale": "Контроллер: оконечные каналы учитываются на считывателях; 1 канал управления × 1 шт.",
+        "ki": 0,
+        "ku": 1
+      },
+      {
+        "n": 3,
+        "item": "Модуль Integriti SLAM 2 Door/Reader Module PCB&K",
+        "qty": 42,
+        "rationale": "Контроллер: оконечные каналы учитываются на считывателях; 1 канал управления × 42 шт.",
+        "ki": 0,
+        "ku": 42
+      },
+      {
+        "n": 4,
+        "item": "Модуль Ethernet Bridge Module",
+        "qty": 2,
+        "rationale": "Ethernet-мост: 1 канал RS-485 и 1 канал управления × 2 шт.",
+        "ki": 2,
+        "ku": 2
+      },
+      {
+        "n": 5,
+        "item": "Считыватель 13,56МГц RFID прокси-карт и брелков, CSN",
+        "qty": 83,
+        "rationale": "Считыватель: 1 информационный канал × 83 шт.; на контроллере повторно не учитывается.",
+        "ki": 83,
+        "ku": 0
+      },
+      {
+        "n": 6,
+        "item": "Источник питания резервированный 12В, под АКБ 17Ач",
+        "qty": 2,
+        "rationale": "оборудование питания учтено как проверяемые каналы контроля/управления.",
+        "ki": 0,
+        "ku": 2
+      },
+      {
+        "n": 7,
+        "item": "Извещатель охранный точечный магнитоконтактный ИО 102-20 Б2М (З)",
+        "qty": 53,
+        "rationale": "устройство безопасности учтено как проверяемая точка/канал системы.",
+        "ki": 53,
+        "ku": 0
+      },
+      {
+        "n": 8,
+        "item": "Извещатель охранный точечный магнитоконтактный ИО 102-52",
+        "qty": 14,
+        "rationale": "устройство безопасности учтено как проверяемая точка/канал системы.",
+        "ki": 14,
+        "ku": 0
+      },
+      {
+        "n": 9,
+        "item": "Станция авторизации карт Insight Card Enrolment Station",
+        "qty": 4,
+        "rationale": "устройство безопасности учтено как проверяемая точка/канал системы.",
+        "ki": 4,
+        "ku": 0
+      },
+      {
+        "n": 10,
+        "item": "Уличный считыватель 13,56 МГц RFID прокси-карт AY-K6255",
+        "qty": 4,
+        "rationale": "Считыватель: 1 информационный канал × 4 шт.; на контроллере повторно не учитывается.",
+        "ki": 4,
+        "ku": 0
+      },
+      {
+        "n": 11,
+        "item": "Лицензия оператора Integriti Extra Client",
+        "qty": 10,
+        "rationale": "оконечное устройство учтено как один информационный канал на устройство.",
+        "ki": 10,
+        "ku": 0
+      },
+      {
+        "n": 12,
+        "item": "Считыватель AY-K6255 (rev.B) (14КТПН-1)",
+        "qty": 6,
+        "rationale": "Считыватель: 1 информационный канал × 6 шт.; на контроллере повторно не учитывается.",
+        "ki": 6,
+        "ku": 0
+      },
+      {
+        "n": 13,
+        "item": "Извещатель охранный ИО 102-20 Б2М (З) (14КТПН-1)",
+        "qty": 3,
+        "rationale": "устройство безопасности учтено как проверяемая точка/канал системы.",
+        "ki": 3,
+        "ku": 0
+      },
+      {
+        "n": 14,
+        "item": "Извещатель охранный ИО 102-40 Б2М (4) (14КТПН-1)",
+        "qty": 4,
+        "rationale": "устройство безопасности учтено как проверяемая точка/канал системы.",
+        "ki": 4,
+        "ku": 0
+      },
+      {
+        "n": 15,
+        "item": "Пассивный ИК-извещатель FLX-S-ST (14КТПН-1)",
+        "qty": 2,
+        "rationale": "устройство безопасности учтено как проверяемая точка/канал системы.",
+        "ki": 2,
+        "ku": 0
+      }
+    ],
+    "ferp_4_2": [
+      {
+        "code": "ФЕРп 02-01-002-11",
+        "title": "Автоматизированная система управления II категории технической сложности, Кобщ = 160",
+        "unit": "система",
+        "qty": 1,
+        "rationale": "По единому расчету K_total=233."
+      },
+      {
+        "code": "ФЕРп 02-01-002-12",
+        "title": "Автоматизированная система управления II категории технической сложности, добавляется каждый канал сверх базы",
+        "unit": "канал",
+        "qty": 73,
+        "rationale": "233 - 160 = 73 каналов."
+      },
+      {
+        "code": "ФЕРп 01-06-023-01",
+        "title": "Устройство контроля уровня напряжения переменного или выпрямленного оперативного тока",
+        "unit": "шт.",
+        "qty": 2,
+        "rationale": "В спецификации присутствуют резервированные источники питания ББП-80 исп.1."
+      }
+    ],
+    "cable_sections": [
+      {
+        "id": 1,
+        "system": "СКУД / Ethernet",
+        "cable_type": "PVCLS нг(А)-LS 4х2х0,52",
+        "length_m": 1186,
+        "pairs_or_cores": 4,
+        "endpoints": "Коммутатор - Ethernet Bridge / АРМ",
+        "is_scs_line": true,
+        "needs_insulation_test": false,
+        "rationale": "Измерение параметров UTP кабельных линий Cat.5e."
+      },
+      {
+        "id": 2,
+        "system": "СКУД / Питание и интерфейсы",
+        "cable_type": "КПСВЭВнг(А)-LS 2х2х0,75",
+        "length_m": 970,
+        "pairs_or_cores": 4,
+        "endpoints": "Контроллеры - Считыватели СКУД",
+        "is_scs_line": false,
+        "needs_insulation_test": true,
+        "rationale": "Измерение сопротивления изоляции сигнальных цепей СКУД."
+      },
+      {
+        "id": 3,
+        "system": "СКУД и СОС / Шлейфы",
+        "cable_type": "КПСВВнг(А)-LS 1х2х0,75",
+        "length_m": 1029,
+        "pairs_or_cores": 2,
+        "endpoints": "Модули расширения - Извещатели СОС",
+        "is_scs_line": false,
+        "needs_insulation_test": true,
+        "rationale": "Проверка изоляции шлейфов охранной сигнализации."
+      },
+      {
+        "id": 4,
+        "system": "СКУД / Питание замков",
+        "cable_type": "КПСВВнг(А)-LS 1х2х1,5",
+        "length_m": 745,
+        "pairs_or_cores": 2,
+        "endpoints": "ББП - Электромагнитные замки",
+        "is_scs_line": false,
+        "needs_insulation_test": true,
+        "rationale": "Измерение изоляции цепей питания исполнительных устройств."
+      }
+    ],
+    "cable_journal": [],
+    "channel_tests": []
+  }
+}

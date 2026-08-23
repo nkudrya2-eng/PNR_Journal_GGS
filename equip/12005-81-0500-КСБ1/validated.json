@@ -1,0 +1,513 @@
+{
+  "document_context": {
+    "org_full": "Общество с ограниченной ответственностью «Голд-Линк»",
+    "org_short": "ООО «Голд-Линк»",
+    "org_inn_kpp": "7224078140/720301001",
+    "org_address": "625016, Россия, Тюменская область, город Тюмень, улица Александра Логунова, дом 11/5",
+    "org_phone_email": "Телефон: +7 (3452) 58-20-90 E-mail: info@gold-link.ru",
+    "approver_title": "Руководитель группы",
+    "approver_name": "Грязнов Е.Е.",
+    "developer_title": "Главный специалист",
+    "developer_title2": "технической группы",
+    "developer_name": "Кудря Н.Ю.",
+    "date_str": "12.05.25",
+    "system_name_nom": "Комплексная система безопасности",
+    "system_name_rod": "комплексной системы безопасности",
+    "category": "II (вторая)",
+    "coef_kuf": "1.0",
+    "coef_kms": "1.0",
+    "coef_kinf": "1.52",
+    "sheet_stage": "РД",
+    "sheet_page": 1,
+    "sheet_pages": 1,
+    "auto_pass_results": true
+  },
+  "auto_pass_results": true,
+  "project": {
+    "project_code": "12005-81-0500-КСБ1",
+    "project_title": "Комплексная система безопасности КПП №1. Промплощадка ЗИФ",
+    "site_title": "Контрольно-пропускной пункт №1",
+    "designer": null,
+    "customer": null,
+    "executor": "ООО «Голд-Линк»",
+    "category": "II"
+  },
+  "equipment": [
+    {
+      "equipment_type": "access_control",
+      "priority": 1,
+      "vendor": "Inner Range",
+      "name": "Integriti ILAM Intelligent 2 Door/Reader Module PCB&K - Интеллектуальный контроллер двух дверей",
+      "model_or_code": "INTG-996018PCBK",
+      "description": "Интеллектуальный контроллер двух дверей",
+      "quantity": 6,
+      "serial_numbers": [],
+      "port_count": 0,
+      "ferp": [
+        {
+          "code": "ФЕРп 02-03-002-01",
+          "title": "Центральный контроллер СКУД"
+        }
+      ],
+      "work": "ПНР, настройка, проверка работоспособности и испытания.",
+      "attributes": {
+        "source_file": "92_12005-81-0500-КСБ1.СО рев.A.xlsx",
+        "source_sheet": "1",
+        "ki": 0,
+        "ku": 6,
+        "rationale": "Контроллер: оконечные каналы учитываются на считывателях; 1 канал управления × 6 шт.",
+        "channel_rule": "controller_management_only",
+        "channel_ruleset_version": "2026-07-30.2"
+      }
+    },
+    {
+      "equipment_type": "access_control",
+      "priority": 2,
+      "vendor": "Inner Range",
+      "name": "Integriti SLAM 2 Door/Reader Module PCB&K — Контроллер двух дверей",
+      "model_or_code": "INTG-996012PCBK",
+      "description": "Контроллер двух дверей",
+      "quantity": 22,
+      "serial_numbers": [],
+      "port_count": 0,
+      "ferp": [
+        {
+          "code": "ФЕРп 02-03-002-01",
+          "title": "Центральный контроллер СКУД"
+        }
+      ],
+      "work": "ПНР, настройка, проверка работоспособности и испытания.",
+      "attributes": {
+        "source_file": "92_12005-81-0500-КСБ1.СО рев.A.xlsx",
+        "source_sheet": "1",
+        "ki": 0,
+        "ku": 22,
+        "rationale": "Контроллер: оконечные каналы учитываются на считывателях; 1 канал управления × 22 шт.",
+        "channel_rule": "controller_management_only",
+        "channel_ruleset_version": "2026-07-30.2"
+      }
+    },
+    {
+      "equipment_type": "access_control",
+      "priority": 3,
+      "vendor": "Rosslare",
+      "name": "Считыватель 13,56 МГц RFID прокси-карт и брелоков",
+      "model_or_code": "AY-K6255 (rev.B)",
+      "description": "Считыватель 13,56 МГц RFID прокси-карт и брелоков, Wiegand 26-bit",
+      "quantity": 40,
+      "serial_numbers": [],
+      "port_count": 0,
+      "ferp": [
+        {
+          "code": "ФЕРп 02-03-002-02",
+          "title": "Дополнительная точка доступа / считыватель СКУД"
+        }
+      ],
+      "work": "ПНР, настройка, проверка работоспособности и испытания.",
+      "attributes": {
+        "source_file": "92_12005-81-0500-КСБ1.СО рев.A.xlsx",
+        "source_sheet": "1",
+        "ki": 40,
+        "ku": 0,
+        "rationale": "Считыватель: 1 информационный канал × 40 шт.; на контроллере повторно не учитывается.",
+        "channel_rule": "reader_single_channel",
+        "channel_ruleset_version": "2026-07-30.2"
+      }
+    },
+    {
+      "equipment_type": "power_supply",
+      "priority": 4,
+      "vendor": "ЗАО НВП \"Болид\"",
+      "name": "Резервный источник питания, 12В, 3А (мах 4А), 17Ач",
+      "model_or_code": "РИП-12 ИСП.01 (РИП-12-3/17М1)",
+      "description": "Резервный источник питания",
+      "quantity": 2,
+      "serial_numbers": [],
+      "port_count": 0,
+      "ferp": [
+        {
+          "code": "ФЕРп 01-06-010-03",
+          "title": "Выпрямительный блок питания до 1 кВА со стабилизацией выходного напряжения"
+        }
+      ],
+      "work": "ПНР, настройка, проверка работоспособности и испытания.",
+      "attributes": {
+        "source_file": "92_12005-81-0500-КСБ1.СО рев.A.xlsx",
+        "source_sheet": "1",
+        "ki": 0,
+        "ku": 2,
+        "rationale": "оборудование питания учтено как проверяемые каналы контроля/управления.",
+        "channel_rule": "preserve_existing",
+        "channel_ruleset_version": "2026-07-30.2"
+      }
+    },
+    {
+      "equipment_type": "detector",
+      "priority": 5,
+      "vendor": "ООО НПП \"Магнито-Контакт\"",
+      "name": "Извещатель охранный точечный магнитоконтактный",
+      "model_or_code": "ИО 102-20 Б2М (З)",
+      "description": "Извещатель охранный точечный магнитоконтактный для магнитопроводящих конструкций",
+      "quantity": 38,
+      "serial_numbers": [],
+      "port_count": 0,
+      "ferp": [
+        {
+          "code": "ФЕРп 02-03-001-01",
+          "title": "Охранная сигнализация"
+        }
+      ],
+      "work": "ПНР, настройка, проверка работоспособности и испытания.",
+      "attributes": {
+        "source_file": "92_12005-81-0500-КСБ1.СО рев.A.xlsx",
+        "source_sheet": "1",
+        "ki": 38,
+        "ku": 0,
+        "rationale": "извещатель учтен как проверяемая точка/канал системы.",
+        "channel_rule": "preserve_existing",
+        "channel_ruleset_version": "2026-07-30.2"
+      }
+    },
+    {
+      "equipment_type": "detector",
+      "priority": 6,
+      "vendor": "ООО НПП \"Магнито-Контакт\"",
+      "name": "Извещатель охранный магнитоконтактный (на ворота)",
+      "model_or_code": "ДПМГ-2-100",
+      "description": "Извещатель охранный точечный магнитоконтактный для ворот",
+      "quantity": 24,
+      "serial_numbers": [],
+      "port_count": 0,
+      "ferp": [
+        {
+          "code": "ФЕРп 02-03-001-01",
+          "title": "Охранная сигнализация"
+        }
+      ],
+      "work": "ПНР, настройка, проверка работоспособности и испытания.",
+      "attributes": {
+        "source_file": "92_12005-81-0500-КСБ1.СО рев.A.xlsx",
+        "source_sheet": "1",
+        "ki": 24,
+        "ku": 0,
+        "rationale": "извещатель учтен как проверяемая точка/канал системы.",
+        "channel_rule": "preserve_existing",
+        "channel_ruleset_version": "2026-07-30.2"
+      }
+    },
+    {
+      "equipment_type": "detector",
+      "priority": 7,
+      "vendor": "Optex",
+      "name": "Пассивный ИК извещатель",
+      "model_or_code": "CDX-AM",
+      "description": "Пассивный ИК извещатель с зоной детекции (15х15м)",
+      "quantity": 28,
+      "serial_numbers": [],
+      "port_count": 0,
+      "ferp": [
+        {
+          "code": "ФЕРп 02-03-001-01",
+          "title": "Охранная сигнализация"
+        }
+      ],
+      "work": "ПНР, настройка, проверка работоспособности и испытания.",
+      "attributes": {
+        "source_file": "92_12005-81-0500-КСБ1.СО рев.A.xlsx",
+        "source_sheet": "1",
+        "ki": 28,
+        "ku": 0,
+        "rationale": "извещатель учтен как проверяемая точка/канал системы.",
+        "channel_rule": "preserve_existing",
+        "channel_ruleset_version": "2026-07-30.2"
+      }
+    },
+    {
+      "equipment_type": "detector",
+      "priority": 8,
+      "vendor": "ООО НПП \"Магнито-Контакт\"",
+      "name": "Извещатель магнитоконтактный взрывозащищенный",
+      "model_or_code": "ДПМ-1Ех исп.1B М250 М/Р",
+      "description": "Извещатель магнитоконтактный взрывозащищенный, кабель в металлорукаве",
+      "quantity": 2,
+      "serial_numbers": [],
+      "port_count": 0,
+      "ferp": [
+        {
+          "code": "ФЕРп 02-03-001-01",
+          "title": "Охранная сигнализация"
+        }
+      ],
+      "work": "ПНР, настройка, проверка работоспособности и испытания.",
+      "attributes": {
+        "source_file": "92_12005-81-0500-КСБ1.СО рев.A.xlsx",
+        "source_sheet": "1",
+        "ki": 2,
+        "ku": 0,
+        "rationale": "извещатель учтен как проверяемая точка/канал системы.",
+        "channel_rule": "preserve_existing",
+        "channel_ruleset_version": "2026-07-30.2"
+      }
+    }
+  ],
+  "summaries": {
+    "total_switch_ports": 0,
+    "channel_totals": {
+      "ki": 132,
+      "ku": 30,
+      "total": 162
+    },
+    "channel_components": {
+      "switch_data_ports": 0,
+      "logical_mgmt_ports": 0,
+      "voip_phones": 0,
+      "ups_units": 0,
+      "other_channels": 162
+    },
+    "ferp_channels_summary": {
+      "category": "II",
+      "base_code": "ФЕРп 02-01-002-11",
+      "base_limit": 160,
+      "extra_code": "ФЕРп 02-01-002-12",
+      "extra_channels": 2,
+      "notes": "Единый расчет каналов 2026-07-30.2: K_total=162; база 160, дополнительных каналов 2."
+    },
+    "cable_sections_totals": {
+      "scs_lines": 2,
+      "insulation_sections": 7,
+      "link_lines": 0,
+      "video_coax_lines": 0,
+      "optical_lines": 0
+    },
+    "notes": "Расчет выполнен на основании спецификации оборудования комплексной системы безопасности КПП №1."
+  },
+  "tables": {
+    "equipment_3_1": [
+      {
+        "n": 1,
+        "title": "Integriti ILAM Intelligent 2 Door/Reader Module PCB&K - Интеллектуальный контроллер двух дверей",
+        "type_or_model": "INTG-996018PCBK",
+        "work": "ПНР, настройка, испытания по ФЕРп 02-03-002-01."
+      },
+      {
+        "n": 2,
+        "title": "Integriti SLAM 2 Door/Reader Module PCB&K — Контроллер двух дверей",
+        "type_or_model": "INTG-996012PCBK",
+        "work": "ПНР, настройка, испытания по ФЕРп 02-03-002-01."
+      },
+      {
+        "n": 3,
+        "title": "Считыватель 13,56 МГц RFID прокси-карт и брелоков",
+        "type_or_model": "AY-K6255 (rev.B)",
+        "work": "ПНР, настройка, испытания по ФЕРп 02-03-002-02."
+      },
+      {
+        "n": 4,
+        "title": "Резервный источник питания, 12В, 3А (мах 4А), 17Ач",
+        "type_or_model": "РИП-12 ИСП.01 (РИП-12-3/17М1)",
+        "work": "ПНР, настройка, испытания по ФЕРп 01-06-010-03."
+      },
+      {
+        "n": 5,
+        "title": "Извещатель охранный точечный магнитоконтактный",
+        "type_or_model": "ИО 102-20 Б2М (З)",
+        "work": "ПНР, настройка, испытания по ФЕРп 02-03-001-01."
+      },
+      {
+        "n": 6,
+        "title": "Извещатель охранный магнитоконтактный (на ворота)",
+        "type_or_model": "ДПМГ-2-100",
+        "work": "ПНР, настройка, испытания по ФЕРп 02-03-001-01."
+      },
+      {
+        "n": 7,
+        "title": "Пассивный ИК извещатель",
+        "type_or_model": "CDX-AM",
+        "work": "ПНР, настройка, испытания по ФЕРп 02-03-001-01."
+      },
+      {
+        "n": 8,
+        "title": "Извещатель магнитоконтактный взрывозащищенный",
+        "type_or_model": "ДПМ-1Ех исп.1B М250 М/Р",
+        "work": "ПНР, настройка, испытания по ФЕРп 02-03-001-01."
+      }
+    ],
+    "calc_4_1": [
+      {
+        "n": 1,
+        "item": "Integriti ILAM Intelligent 2 Door/Reader Module PCB&K - Интеллектуальный контроллер двух дверей",
+        "qty": 6,
+        "rationale": "Контроллер: оконечные каналы учитываются на считывателях; 1 канал управления × 6 шт.",
+        "ki": 0,
+        "ku": 6
+      },
+      {
+        "n": 2,
+        "item": "Integriti SLAM 2 Door/Reader Module PCB&K — Контроллер двух дверей",
+        "qty": 22,
+        "rationale": "Контроллер: оконечные каналы учитываются на считывателях; 1 канал управления × 22 шт.",
+        "ki": 0,
+        "ku": 22
+      },
+      {
+        "n": 3,
+        "item": "Считыватель 13,56 МГц RFID прокси-карт и брелоков",
+        "qty": 40,
+        "rationale": "Считыватель: 1 информационный канал × 40 шт.; на контроллере повторно не учитывается.",
+        "ki": 40,
+        "ku": 0
+      },
+      {
+        "n": 4,
+        "item": "Резервный источник питания, 12В, 3А (мах 4А), 17Ач",
+        "qty": 2,
+        "rationale": "оборудование питания учтено как проверяемые каналы контроля/управления.",
+        "ki": 0,
+        "ku": 2
+      },
+      {
+        "n": 5,
+        "item": "Извещатель охранный точечный магнитоконтактный",
+        "qty": 38,
+        "rationale": "извещатель учтен как проверяемая точка/канал системы.",
+        "ki": 38,
+        "ku": 0
+      },
+      {
+        "n": 6,
+        "item": "Извещатель охранный магнитоконтактный (на ворота)",
+        "qty": 24,
+        "rationale": "извещатель учтен как проверяемая точка/канал системы.",
+        "ki": 24,
+        "ku": 0
+      },
+      {
+        "n": 7,
+        "item": "Пассивный ИК извещатель",
+        "qty": 28,
+        "rationale": "извещатель учтен как проверяемая точка/канал системы.",
+        "ki": 28,
+        "ku": 0
+      },
+      {
+        "n": 8,
+        "item": "Извещатель магнитоконтактный взрывозащищенный",
+        "qty": 2,
+        "rationale": "извещатель учтен как проверяемая точка/канал системы.",
+        "ki": 2,
+        "ku": 0
+      }
+    ],
+    "ferp_4_2": [
+      {
+        "code": "ФЕРп 02-01-002-11",
+        "title": "Автоматизированная система управления II категории технической сложности, Кобщ = 160",
+        "unit": "система",
+        "qty": 1,
+        "rationale": "По единому расчету K_total=162."
+      },
+      {
+        "code": "ФЕРп 02-01-002-12",
+        "title": "Автоматизированная система управления II категории технической сложности, добавляется каждый канал сверх базы",
+        "unit": "канал",
+        "qty": 2,
+        "rationale": "162 - 160 = 2 каналов."
+      },
+      {
+        "code": "ФЕРп 01-06-010-03",
+        "title": "Выпрямительный блок питания до 1 кВА со стабилизацией выходного напряжения",
+        "unit": "шт.",
+        "qty": 2,
+        "rationale": "В спецификации присутствуют резервные источники питания."
+      }
+    ],
+    "cable_sections": [
+      {
+        "id": 1,
+        "trace_id": "TR-SCS-1",
+        "system": "СКС",
+        "cable_type": "Кабель категории 5e U/UTP",
+        "length_m": 357,
+        "pairs_or_cores": 4,
+        "endpoints": "Коммутатор - Оборудование СКУД/СОС",
+        "is_scs_line": true,
+        "needs_insulation_test": false,
+        "rationale": "Линия СКС для передачи данных."
+      },
+      {
+        "id": 2,
+        "trace_id": "TR-SCS-2",
+        "system": "СКС",
+        "cable_type": "Кабель Industrial гибкий категории 5e U/UTP",
+        "length_m": 314,
+        "pairs_or_cores": 4,
+        "endpoints": "Коммутатор - Узлы связи",
+        "is_scs_line": true,
+        "needs_insulation_test": false,
+        "rationale": "Линия Industrial Ethernet."
+      },
+      {
+        "id": 3,
+        "trace_id": "TR-SIG-1",
+        "system": "СКУД и СОС",
+        "cable_type": "КПСВВнг(А)-LS 1x2x0,5",
+        "length_m": 352,
+        "pairs_or_cores": 2,
+        "endpoints": "Контроллеры - Извещатели/Считыватели",
+        "is_scs_line": false,
+        "needs_insulation_test": true,
+        "rationale": "Сигнальный шлейф охранной сигнализации и СКУД."
+      },
+      {
+        "id": 4,
+        "trace_id": "TR-SIG-2",
+        "system": "СКУД и СОС",
+        "cable_type": "КПСВВнг(А)-LS 1x2x0,75",
+        "length_m": 270,
+        "pairs_or_cores": 2,
+        "endpoints": "Контроллеры - Исполнительные устройства",
+        "is_scs_line": false,
+        "needs_insulation_test": true,
+        "rationale": "Линия питания и управления."
+      },
+      {
+        "id": 5,
+        "trace_id": "TR-SIG-3",
+        "system": "СКУД и СОС",
+        "cable_type": "КПСВВнг(А)-LS 1x2x1,0",
+        "length_m": 67,
+        "pairs_or_cores": 2,
+        "endpoints": "Источники питания - Узлы нагрузки",
+        "is_scs_line": false,
+        "needs_insulation_test": true,
+        "rationale": "Силовая линия питания систем безопасности."
+      },
+      {
+        "id": 6,
+        "trace_id": "TR-SIG-4",
+        "system": "СКУД и СОС",
+        "cable_type": "КПСВВнг(А)-LS 2x2x0,5",
+        "length_m": 547,
+        "pairs_or_cores": 4,
+        "endpoints": "Контроллеры - Периферийные модули",
+        "is_scs_line": false,
+        "needs_insulation_test": true,
+        "rationale": "Многопарный сигнальный кабель."
+      },
+      {
+        "id": 7,
+        "trace_id": "TR-SIG-5",
+        "system": "СКУД и СОС",
+        "cable_type": "КПСВВнг(А)-LS 2x2x0,75",
+        "length_m": 21,
+        "pairs_or_cores": 4,
+        "endpoints": "Контроллеры - Исполнительные элементы",
+        "is_scs_line": false,
+        "needs_insulation_test": true,
+        "rationale": "Линия подключения исполнительных устройств."
+      }
+    ],
+    "cable_journal": [],
+    "channel_tests": []
+  }
+}

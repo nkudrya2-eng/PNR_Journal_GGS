@@ -1,0 +1,1010 @@
+{
+  "document_context": {
+    "org_full": "Общество с ограниченной ответственностью «Голд-Линк»",
+    "org_short": "ООО «Голд-Линк»",
+    "org_inn_kpp": "7224078140/720301001",
+    "org_address": "625016, Россия, Тюменская область, город Тюмень, улица Александра Логунова, дом 11/5",
+    "org_phone_email": "Телефон: +7 (3452) 58-20-90 E-mail: info@gold-link.ru",
+    "approver_title": "Руководитель группы",
+    "approver_name": "Грязнов Е.Е.",
+    "developer_title": "Главный специалист",
+    "developer_title2": "технической группы",
+    "developer_name": "Кудря Н.Ю.",
+    "date_str": "12.05.25",
+    "system_name_nom": "Комплексная система безопасности",
+    "system_name_rod": "комплексной системы безопасности",
+    "category": "II (вторая)",
+    "coef_kuf": "1.0",
+    "coef_kms": "1.0",
+    "coef_kinf": "1.52",
+    "sheet_stage": "РД",
+    "sheet_page": "",
+    "sheet_pages": "",
+    "auto_pass_results": true
+  },
+  "auto_pass_results": true,
+  "project": {
+    "project_code": "12007-81-0700-КСБ1",
+    "project_title": "Площадка складского хозяйства. Комплексная система безопасности",
+    "site_title": "Площадка складского хозяйства",
+    "designer": "ООО «АйДи Инжиниринг»",
+    "customer": null,
+    "executor": "ООО «Голд-Линк»",
+    "category": "II"
+  },
+  "equipment": [
+    {
+      "equipment_type": "access_control",
+      "priority": 1,
+      "vendor": "Inner Range",
+      "name": "Интеллектуальный контроллер двух дверей Integriti SLAM",
+      "model_or_code": "INTG-996012PCBK",
+      "description": "Integriti SLAM 2 Door/Reader Module PCB&K - контроллер двух дверей/считывателей СКУД",
+      "quantity": 46,
+      "port_count": 0,
+      "ferp": [
+        {
+          "code": "ФЕРп 02-03-002-01",
+          "title": "Контроллер СКУД центральный"
+        }
+      ],
+      "work": "ПНР, проверка конфигурации, тестирование каналов связи и считывателей.",
+      "attributes": {
+        "source_file": "12007-81-0700-КСБ1.СО.pdf",
+        "source_sheet": "page 1",
+        "source_rows": [
+          2
+        ],
+        "ki": 0,
+        "ku": 46,
+        "rationale": "Контроллер: оконечные каналы учитываются на считывателях; 1 канал управления × 46 шт.",
+        "channel_rule": "controller_management_only",
+        "channel_ruleset_version": "2026-07-30.2"
+      }
+    },
+    {
+      "equipment_type": "access_control",
+      "priority": 2,
+      "vendor": "Inner Range",
+      "name": "Модуль моста Ethernet Integriti Ethernet Bridge Module",
+      "model_or_code": "INTG-996088",
+      "description": "Ethernet Bridge Module - мост Ethernet для передачи данных контроллеров Integriti",
+      "quantity": 8,
+      "port_count": 0,
+      "ferp": [
+        {
+          "code": "ФЕРп 02-02-002-01",
+          "title": "Настройка сетевых интерфейсов и протоколов обмена"
+        }
+      ],
+      "work": "ПНР, настройка сетевых параметров, проверка межсетевого взаимодействия.",
+      "attributes": {
+        "source_file": "12007-81-0700-КСБ1.СО.pdf",
+        "source_sheet": "page 1",
+        "source_rows": [
+          1
+        ],
+        "ki": 8,
+        "ku": 8,
+        "rationale": "Ethernet-мост: 1 канал RS-485 и 1 канал управления × 8 шт.",
+        "channel_rule": "ksb_ethernet_bridge",
+        "channel_ruleset_version": "2026-07-30.2"
+      }
+    },
+    {
+      "equipment_type": "detector",
+      "priority": 3,
+      "vendor": "Inner Range",
+      "name": "Универсальный LAN-модуль расширения на 8 зон Integriti 8 Zone Expander",
+      "model_or_code": "INTG-996005PCBKIT",
+      "description": "Integriti 8 Zone Expander PCB&K - модуль расширения на 8 охранных зон",
+      "quantity": 7,
+      "port_count": 0,
+      "ferp": [
+        {
+          "code": "ФЕРп 02-03-001-01",
+          "title": "Приемно-контрольный прибор охранный"
+        }
+      ],
+      "work": "ПНР, адресация зон, проверка прохождения сигналов тревоги.",
+      "attributes": {
+        "source_file": "12007-81-0700-КСБ1.СО.pdf",
+        "source_sheet": "page 3",
+        "source_rows": [
+          1
+        ],
+        "ki": 7,
+        "ku": 0,
+        "rationale": "7 модулей расширения шлейфов: 1 ki на каждый модуль.",
+        "channel_rule": "preserve_existing",
+        "channel_ruleset_version": "2026-07-30.2"
+      }
+    },
+    {
+      "equipment_type": "access_control",
+      "priority": 4,
+      "vendor": "ЭКСКОН",
+      "name": "Считыватель взрывозащищённый AL-RD-S06-N-RMF-T",
+      "model_or_code": "00855",
+      "description": "Считыватель прокси-карт взрывозащищенный для опасных зон",
+      "quantity": 12,
+      "port_count": 0,
+      "ferp": [
+        {
+          "code": "ФЕРп 02-03-002-02",
+          "title": "Считыватель СКУД, дополнительная точка"
+        }
+      ],
+      "work": "ПНР, юстировка, проверка считывания карт и передачи кода в СКУД.",
+      "attributes": {
+        "source_file": "12007-81-0700-КСБ1.СО.pdf",
+        "source_sheet": "page 1",
+        "source_rows": [
+          11
+        ],
+        "ki": 12,
+        "ku": 0,
+        "rationale": "Считыватель: 1 информационный канал × 12 шт.; на контроллере повторно не учитывается.",
+        "channel_rule": "reader_single_channel",
+        "channel_ruleset_version": "2026-07-30.2"
+      }
+    },
+    {
+      "equipment_type": "access_control",
+      "priority": 5,
+      "vendor": "Rosslare",
+      "name": "Считыватель RFID карт AY-K6255 (rev.B)",
+      "model_or_code": "AY-K6255 (rev.B)",
+      "description": "Считыватель 13,56 МГц RFID прокси-карт и брелоков, IP65, Weigand 26-bit",
+      "quantity": 72,
+      "port_count": 0,
+      "ferp": [
+        {
+          "code": "ФЕРп 02-03-002-02",
+          "title": "Считыватель СКУД, дополнительная точка"
+        }
+      ],
+      "work": "ПНР, проверка считывания карт доступа и индикации.",
+      "attributes": {
+        "source_file": "12007-81-0700-КСБ1.СО.pdf",
+        "source_sheet": "page 2",
+        "source_rows": [
+          1
+        ],
+        "ki": 72,
+        "ku": 0,
+        "rationale": "Считыватель: 1 информационный канал × 72 шт.; на контроллере повторно не учитывается.",
+        "channel_rule": "reader_single_channel",
+        "channel_ruleset_version": "2026-07-30.2"
+      }
+    },
+    {
+      "equipment_type": "access_control",
+      "priority": 6,
+      "vendor": "PERCo",
+      "name": "Считыватель бесконтактный PERCo-MR07 OEM",
+      "model_or_code": "PERCo-MR07 OEM",
+      "description": "Считыватель бесконтактный встраиваемый в турникет",
+      "quantity": 4,
+      "port_count": 0,
+      "ferp": [
+        {
+          "code": "ФЕРп 02-03-002-02",
+          "title": "Считыватель СКУД, дополнительная точка"
+        }
+      ],
+      "work": "ПНР, интеграция с турникетом и блоком алкотестера.",
+      "attributes": {
+        "source_file": "12007-81-0700-КСБ1.СО.pdf",
+        "source_sheet": "page 2",
+        "source_rows": [
+          12
+        ],
+        "ki": 4,
+        "ku": 0,
+        "rationale": "Считыватель: 1 информационный канал × 4 шт.; на контроллере повторно не учитывается.",
+        "channel_rule": "reader_single_channel",
+        "channel_ruleset_version": "2026-07-30.2"
+      }
+    },
+    {
+      "equipment_type": "detector",
+      "priority": 7,
+      "vendor": "ООО НПП \"МагнитоКонтакт\"",
+      "name": "Извещатель охранный точечный магнитоконтактный ДПМГ-2-100",
+      "model_or_code": "ДПМГ-2-100",
+      "description": "Извещатель магнитоконтактный для металлических ворот и дверей",
+      "quantity": 30,
+      "port_count": 0,
+      "ferp": [
+        {
+          "code": "ФЕРп 02-03-001-02",
+          "title": "Извещатель охранный точечный"
+        }
+      ],
+      "work": "ПНР, юстировка зазоров, проверка срабатывания при открывании ворот.",
+      "attributes": {
+        "source_file": "12007-81-0700-КСБ1.СО.pdf",
+        "source_sheet": "page 3",
+        "source_rows": [
+          2
+        ],
+        "ki": 30,
+        "ku": 0,
+        "rationale": "30 магнитоконтактных извещателей: 1 ki на извещатель.",
+        "channel_rule": "preserve_existing",
+        "channel_ruleset_version": "2026-07-30.2"
+      }
+    },
+    {
+      "equipment_type": "detector",
+      "priority": 8,
+      "vendor": "Optex",
+      "name": "Пассивный уличный широкоугольный ИК-извещатель QXI-ST",
+      "model_or_code": "QXI-ST",
+      "description": "Пассивный оптико-электронный уличный извещатель (12x15 м, 120°)",
+      "quantity": 3,
+      "port_count": 0,
+      "ferp": [
+        {
+          "code": "ФЕРп 02-03-001-02",
+          "title": "Извещатель охранный объемный"
+        }
+      ],
+      "work": "ПНР, настройка чувствительности, зоны обнаружения и антимаскирования.",
+      "attributes": {
+        "source_file": "12007-81-0700-КСБ1.СО.pdf",
+        "source_sheet": "page 3",
+        "source_rows": [
+          6
+        ],
+        "ki": 3,
+        "ku": 0,
+        "rationale": "3 объемных ик-извещателя: 1 ki на устройство.",
+        "channel_rule": "preserve_existing",
+        "channel_ruleset_version": "2026-07-30.2"
+      }
+    },
+    {
+      "equipment_type": "detector",
+      "priority": 9,
+      "vendor": "OPTEX",
+      "name": "Анализатор периметральной системы охраны FD-341",
+      "model_or_code": "FD-341",
+      "description": "Анализатор виброакустического сенсорного кабеля периметра",
+      "quantity": 1,
+      "port_count": 0,
+      "ferp": [
+        {
+          "code": "ФЕРп 02-03-001-01",
+          "title": "Приемно-контрольный прибор периметральной охраны"
+        }
+      ],
+      "work": "ПНР, калибровка чувствительности виброкабеля, настройка фильтрации помех.",
+      "attributes": {
+        "source_file": "12007-81-0700-КСБ1.СО.pdf",
+        "source_sheet": "page 3",
+        "source_rows": [
+          8
+        ],
+        "ki": 1,
+        "ku": 1,
+        "rationale": "1 анализатор периметра: 1 ki (информационный канал) и 1 ku (управление).",
+        "channel_rule": "preserve_existing",
+        "channel_ruleset_version": "2026-07-30.2"
+      }
+    },
+    {
+      "equipment_type": "access_control",
+      "priority": 10,
+      "vendor": "PERCo",
+      "name": "Всепогодный турникет-трипод PERCo TTR-11A",
+      "model_or_code": "TTR-11A",
+      "description": "Всепогодный турникет-трипод из нержавеющей стали с функцией 'антипаника'",
+      "quantity": 2,
+      "port_count": 0,
+      "ferp": [
+        {
+          "code": "ФЕРп 02-03-002-01",
+          "title": "Исполнительное устройство СКУД (турникет)"
+        }
+      ],
+      "work": "ПНР, настройка планок антипаники, разблокировки от СПА и доводки.",
+      "attributes": {
+        "source_file": "12007-81-0700-КСБ1.СО.pdf",
+        "source_sheet": "page 2",
+        "source_rows": [
+          11
+        ],
+        "ki": 2,
+        "ku": 2,
+        "rationale": "2 турникета: 1 ki (контроль прохода) и 1 ku (управление приводом) на турникет.",
+        "channel_rule": "preserve_existing",
+        "channel_ruleset_version": "2026-07-30.2"
+      }
+    },
+    {
+      "equipment_type": "access_control",
+      "priority": 11,
+      "vendor": "Фантом",
+      "name": "Шлагбаум автоматический Гранд-Арктик F6GA",
+      "model_or_code": "F6GA",
+      "description": "Автоматический шлагбаум с круглой стрелой 5 м и обогревом",
+      "quantity": 2,
+      "port_count": 0,
+      "ferp": [
+        {
+          "code": "ФЕРп 02-03-002-01",
+          "title": "Исполнительное устройство СКУД (шлагбаум)"
+        }
+      ],
+      "work": "ПНР, регулировка концевых выключателей, проверка управления от СКУД и камер.",
+      "attributes": {
+        "source_file": "12007-81-0700-КСБ1.СО.pdf",
+        "source_sheet": "page 2",
+        "source_rows": [
+          16
+        ],
+        "ki": 2,
+        "ku": 2,
+        "rationale": "2 шлагбаума: 1 ki (сигнал состояния) и 1 ku (команда открытия) на устройство.",
+        "channel_rule": "preserve_existing",
+        "channel_ruleset_version": "2026-07-30.2"
+      }
+    },
+    {
+      "equipment_type": "access_control",
+      "priority": 12,
+      "vendor": "Алкотектор",
+      "name": "Алкотестер Алкобарьер",
+      "model_or_code": "00035757",
+      "description": "Стационарный газоанализатор паров алкоголя в выдыхаемом воздухе для проходной",
+      "quantity": 2,
+      "port_count": 0,
+      "ferp": [
+        {
+          "code": "ФЕРп 02-03-002-02",
+          "title": "Дополнительный модуль СКУД (алкотестер)"
+        }
+      ],
+      "work": "ПНР, калибровка пробы воздуха, проверка блокировки прохода при обнаружении спирта.",
+      "attributes": {
+        "source_file": "12007-81-0700-КСБ1.СО.pdf",
+        "source_sheet": "page 2",
+        "source_rows": [
+          13
+        ],
+        "ki": 2,
+        "ku": 0,
+        "rationale": "2 алкотестера: 1 ki на устройство.",
+        "channel_rule": "preserve_existing",
+        "channel_ruleset_version": "2026-07-30.2"
+      }
+    },
+    {
+      "equipment_type": "access_control",
+      "priority": 13,
+      "vendor": "ЭКСКОН",
+      "name": "Электромагнитный взрывозащищённый замок AL-FM-S01-G12K",
+      "model_or_code": "000817",
+      "description": "Электромагнитный замок взрывозащищенный с датчиком состояния двери",
+      "quantity": 6,
+      "port_count": 0,
+      "ferp": [
+        {
+          "code": "ФЕРп 02-03-002-02",
+          "title": "Замок электромагнитный"
+        }
+      ],
+      "work": "ПНР, проверка удержания, разблокировки от УДП и СПА.",
+      "attributes": {
+        "source_file": "12007-81-0700-КСБ1.СО.pdf",
+        "source_sheet": "page 2",
+        "source_rows": [
+          3
+        ],
+        "ki": 0,
+        "ku": 6,
+        "rationale": "6 взрывозащищенных замков: 1 ku (канал управления питанием замка) на замок.",
+        "channel_rule": "preserve_existing",
+        "channel_ruleset_version": "2026-07-30.2"
+      }
+    },
+    {
+      "equipment_type": "access_control",
+      "priority": 14,
+      "vendor": "Aler",
+      "name": "Электромагнитный замок AL-350FВ-MG",
+      "model_or_code": "AL-350FВ-MG",
+      "description": "Замок электромагнитный УХЛ1 (-50...+50°C, IP67) с герконом",
+      "quantity": 39,
+      "port_count": 0,
+      "ferp": [
+        {
+          "code": "ФЕРп 02-03-002-02",
+          "title": "Замок электромагнитный"
+        }
+      ],
+      "work": "ПНР, регулировка якоря, проверка разблокировки по сигналу аварийного выхода.",
+      "attributes": {
+        "source_file": "12007-81-0700-КСБ1.СО.pdf",
+        "source_sheet": "page 2",
+        "source_rows": [
+          4
+        ],
+        "ki": 0,
+        "ku": 39,
+        "rationale": "39 электромагнитных замков: 1 ku на каждый замок.",
+        "channel_rule": "preserve_existing",
+        "channel_ruleset_version": "2026-07-30.2"
+      }
+    },
+    {
+      "equipment_type": "other",
+      "priority": 15,
+      "vendor": "Фантом",
+      "name": "Пульт управления 3-кнопочный PU3",
+      "model_or_code": "PU3",
+      "description": "Пульт кнопочный для ручного управления шлагбаумом на посту охраны",
+      "quantity": 2,
+      "port_count": 0,
+      "ferp": [
+        {
+          "code": "ФЕРп 02-03-002-02",
+          "title": "Пульт ручного управления"
+        }
+      ],
+      "work": "ПНР, проверка команд открывания, закрывания и стоп.",
+      "attributes": {
+        "source_file": "12007-81-0700-КСБ1.СО.pdf",
+        "source_sheet": "page 2",
+        "source_rows": [
+          19
+        ],
+        "ki": 2,
+        "ku": 0,
+        "rationale": "2 пульта управления: 1 ki на устройство.",
+        "channel_rule": "preserve_existing",
+        "channel_ruleset_version": "2026-07-30.2"
+      }
+    },
+    {
+      "equipment_type": "detector",
+      "priority": 16,
+      "vendor": "Фантом",
+      "name": "Фотоэлементы СПЭК-1113",
+      "model_or_code": "ДКЯГ.425151.07",
+      "description": "Фотоэлектрические датчики безопасности в районе шлагбаума",
+      "quantity": 4,
+      "port_count": 0,
+      "ferp": [
+        {
+          "code": "ФЕРп 02-03-001-02",
+          "title": "Извещатель оптико-электронный линейный"
+        }
+      ],
+      "work": "ПНР, оптическая юстировка приёмника и передатчика, проверка блокировки стрелы.",
+      "attributes": {
+        "source_file": "12007-81-0700-КСБ1.СО.pdf",
+        "source_sheet": "page 2",
+        "source_rows": [
+          20
+        ],
+        "ki": 4,
+        "ku": 0,
+        "rationale": "4 фотоэлемента безопасности: 1 ki на комплект.",
+        "channel_rule": "preserve_existing",
+        "channel_ruleset_version": "2026-07-30.2"
+      }
+    },
+    {
+      "equipment_type": "power_supply",
+      "priority": 17,
+      "vendor": "Mean Well",
+      "name": "Блок питания LRS-150-24",
+      "model_or_code": "LRS-150-24",
+      "description": "Блок питания AC-DC 156 Вт, 24 В/6.5 А для турникетов",
+      "quantity": 2,
+      "port_count": 0,
+      "ferp": [
+        {
+          "code": "ФЕРп 01-06-010-03",
+          "title": "Выпрямительный блок питания до 1 кВА со стабилизацией выходного напряжения"
+        }
+      ],
+      "work": "ПНР, замер напряжения под нагрузкой, проверка пульсаций и защиты.",
+      "attributes": {
+        "source_file": "12007-81-0700-КСБ1.СО.pdf",
+        "source_sheet": "page 2",
+        "source_rows": [
+          21
+        ],
+        "ki": 0,
+        "ku": 2,
+        "rationale": "2 блока питания: 1 ku (канал контроля/управления питанием) на блок.",
+        "channel_rule": "preserve_existing",
+        "channel_ruleset_version": "2026-07-30.2"
+      }
+    },
+    {
+      "equipment_type": "power_supply",
+      "priority": 18,
+      "vendor": "Mean Well",
+      "name": "Блок питания LRS-35-12",
+      "model_or_code": "LRS-35-12",
+      "description": "Блок питания AC-DC 36 Вт, 12 В/3 А для алкотестеров",
+      "quantity": 2,
+      "port_count": 0,
+      "ferp": [
+        {
+          "code": "ФЕРп 01-06-010-03",
+          "title": "Выпрямительный блок питания до 1 кВА со стабилизацией выходного напряжения"
+        }
+      ],
+      "work": "ПНР, замер выходных параметров питания.",
+      "attributes": {
+        "source_file": "12007-81-0700-КСБ1.СО.pdf",
+        "source_sheet": "page 2",
+        "source_rows": [
+          22
+        ],
+        "ki": 0,
+        "ku": 2,
+        "rationale": "2 блока питания: 1 ku на устройство.",
+        "channel_rule": "preserve_existing",
+        "channel_ruleset_version": "2026-07-30.2"
+      }
+    },
+    {
+      "equipment_type": "power_supply",
+      "priority": 19,
+      "vendor": "Mean Well",
+      "name": "Блок питания MDR-10-24",
+      "model_or_code": "MDR-10-24",
+      "description": "Блок питания на DIN-рейку 10 Вт, 24 В/0.42 А для блока FD-341",
+      "quantity": 1,
+      "port_count": 0,
+      "ferp": [
+        {
+          "code": "ФЕРп 01-06-010-03",
+          "title": "Выпрямительный блок питания до 1 кВА со стабилизацией выходного напряжения"
+        }
+      ],
+      "work": "ПНР, проверка уровня выходного напряжения 24 В.",
+      "attributes": {
+        "source_file": "12007-81-0700-КСБ1.СО.pdf",
+        "source_sheet": "page 3",
+        "source_rows": [
+          10
+        ],
+        "ki": 0,
+        "ku": 1,
+        "rationale": "1 блок питания: 1 ku.",
+        "channel_rule": "preserve_existing",
+        "channel_ruleset_version": "2026-07-30.2"
+      }
+    },
+    {
+      "equipment_type": "ups",
+      "priority": 20,
+      "vendor": "OPTEX",
+      "name": "Блок питания 12 В для подключения АКБ OPTEX",
+      "model_or_code": "OPTEX 12V PSU",
+      "description": "Блок резервированного питания 12 В с зарядом АКБ для анализатора FD-341",
+      "quantity": 1,
+      "port_count": 0,
+      "ferp": [
+        {
+          "code": "ФЕРп 01-06-023-01",
+          "title": "Устройство контроля уровня напряжения оперативного тока"
+        }
+      ],
+      "work": "ПНР, проверка перехода на резервное питание от АКБ.",
+      "attributes": {
+        "source_file": "12007-81-0700-КСБ1.СО.pdf",
+        "source_sheet": "page 3",
+        "source_rows": [
+          9
+        ],
+        "ki": 0,
+        "ku": 1,
+        "rationale": "1 ибп/блок резервного питания: 1 ku.",
+        "channel_rule": "preserve_existing",
+        "channel_ruleset_version": "2026-07-30.2"
+      }
+    },
+    {
+      "equipment_type": "power_supply",
+      "priority": 21,
+      "vendor": "Inner Range",
+      "name": "Интеллектуальный блок питания Integriti 8A Smart PSU",
+      "model_or_code": "INTG-996092",
+      "description": "Импульсный блок питания 8 А со встроенным мониторингом по сети",
+      "quantity": 2,
+      "port_count": 0,
+      "ferp": [
+        {
+          "code": "ФЕРп 01-06-010-03",
+          "title": "Выпрямительный блок питания до 1 кВА со стабилизацией выходного напряжения"
+        }
+      ],
+      "work": "ПНР, проверка телеметрии питания, зарядно-разрядных цепей АКБ.",
+      "attributes": {
+        "source_file": "12007-81-0700-КСБ1.СО.pdf",
+        "source_sheet": "page 1",
+        "source_rows": [
+          7
+        ],
+        "ki": 0,
+        "ku": 2,
+        "rationale": "2 интеллектуальных бп: 1 ku на устройство.",
+        "channel_rule": "preserve_existing",
+        "channel_ruleset_version": "2026-07-30.2"
+      }
+    }
+  ],
+  "summaries": {
+    "total_switch_ports": 0,
+    "channel_totals": {
+      "ki": 149,
+      "ku": 112,
+      "total": 261
+    },
+    "channel_components": {
+      "switch_data_ports": 0,
+      "logical_mgmt_ports": 0,
+      "voip_phones": 0,
+      "ups_units": 1,
+      "other_channels": 261
+    },
+    "ferp_channels_summary": {
+      "category": "II",
+      "base_code": "ФЕРп 02-01-002-11",
+      "base_limit": 160,
+      "extra_code": "ФЕРп 02-01-002-12",
+      "extra_channels": 101,
+      "notes": "Единый расчет каналов 2026-07-30.2: K_total=261; база 160, дополнительных каналов 101."
+    },
+    "cable_sections_totals": {
+      "scs_lines": 0,
+      "insulation_sections": 0,
+      "link_lines": 0,
+      "video_coax_lines": 0,
+      "optical_lines": 0
+    },
+    "notes": "Расчет сформирован на основании спецификации и схем проекта 12007-81-0700-КСБ1. Кабельная продукция и монтажные материалы исключены из состава ПНР оборудования."
+  },
+  "tables": {
+    "equipment_3_1": [
+      {
+        "n": 1,
+        "title": "Интеллектуальный контроллер двух дверей Integriti SLAM",
+        "type_or_model": "INTG-996012PCBK",
+        "work": "ПНР, проверка конфигурации, тестирование каналов связи по ФЕРп 02-03-002-01."
+      },
+      {
+        "n": 2,
+        "title": "Модуль моста Ethernet Integriti Ethernet Bridge Module",
+        "type_or_model": "INTG-996088",
+        "work": "ПНР, настройка сетевых параметров по ФЕРп 02-02-002-01."
+      },
+      {
+        "n": 3,
+        "title": "Универсальный LAN-модуль расширения на 8 зон Integriti 8 Zone Expander",
+        "type_or_model": "INTG-996005PCBKIT",
+        "work": "ПНР, адресация зон по ФЕРп 02-03-001-01."
+      },
+      {
+        "n": 4,
+        "title": "Считыватель взрывозащищённый AL-RD-S06-N-RMF-T",
+        "type_or_model": "00855",
+        "work": "ПНР, юстировка и проверка считывания по ФЕРп 02-03-002-02."
+      },
+      {
+        "n": 5,
+        "title": "Считыватель RFID карт AY-K6255 (rev.B)",
+        "type_or_model": "AY-K6255 (rev.B)",
+        "work": "ПНР, проверка считывания карт доступа по ФЕРп 02-03-002-02."
+      },
+      {
+        "n": 6,
+        "title": "Считыватель бесконтактный PERCo-MR07 OEM",
+        "type_or_model": "PERCo-MR07 OEM",
+        "work": "ПНР, интеграция с турникетом по ФЕРп 02-03-002-02."
+      },
+      {
+        "n": 7,
+        "title": "Извещатель охранный точечный магнитоконтактный ДПМГ-2-100",
+        "type_or_model": "ДПМГ-2-100",
+        "work": "ПНР, проверка срабатывания по ФЕРп 02-03-001-02."
+      },
+      {
+        "n": 8,
+        "title": "Пассивный уличный широкоугольный ИК-извещатель QXI-ST",
+        "type_or_model": "QXI-ST",
+        "work": "ПНР, настройка зоны обнаружения по ФЕРп 02-03-001-02."
+      },
+      {
+        "n": 9,
+        "title": "Анализатор периметральной системы охраны FD-341",
+        "type_or_model": "FD-341",
+        "work": "ПНР, калибровка виброкабеля по ФЕРп 02-03-001-01."
+      },
+      {
+        "n": 10,
+        "title": "Всепогодный турникет-трипод PERCo TTR-11A",
+        "type_or_model": "TTR-11A",
+        "work": "ПНР, настройка планок и антипаники по ФЕРп 02-03-002-01."
+      },
+      {
+        "n": 11,
+        "title": "Шлагбаум автоматический Гранд-Арктик F6GA",
+        "type_or_model": "F6GA",
+        "work": "ПНР, регулировка концевых выключателей по ФЕРп 02-03-002-01."
+      },
+      {
+        "n": 12,
+        "title": "Алкотестер Алкобарьер",
+        "type_or_model": "00035757",
+        "work": "ПНР, калибровка анализатора воздуха по ФЕРп 02-03-002-02."
+      },
+      {
+        "n": 13,
+        "title": "Электромагнитный взрывозащищённый замок AL-FM-S01-G12K",
+        "type_or_model": "000817",
+        "work": "ПНР, проверка удержания по ФЕРп 02-03-002-02."
+      },
+      {
+        "n": 14,
+        "title": "Электромагнитный замок AL-350FВ-MG",
+        "type_or_model": "AL-350FВ-MG",
+        "work": "ПНР, разблокировка по аварийному сигналу по ФЕРп 02-03-002-02."
+      },
+      {
+        "n": 15,
+        "title": "Пульт управления 3-кнопочный PU3",
+        "type_or_model": "PU3",
+        "work": "ПНР, проверка команд ручного управления по ФЕРп 02-03-002-02."
+      },
+      {
+        "n": 16,
+        "title": "Фотоэлементы СПЭК-1113",
+        "type_or_model": "ДКЯГ.425151.07",
+        "work": "ПНР, юстировка луча безопасности по ФЕРп 02-03-001-02."
+      },
+      {
+        "n": 17,
+        "title": "Блок питания LRS-150-24",
+        "type_or_model": "LRS-150-24",
+        "work": "ПНР, замер параметров по ФЕРп 01-06-010-03."
+      },
+      {
+        "n": 18,
+        "title": "Блок питания LRS-35-12",
+        "type_or_model": "LRS-35-12",
+        "work": "ПНР, замер выходного напряжения по ФЕРп 01-06-010-03."
+      },
+      {
+        "n": 19,
+        "title": "Блок питания MDR-10-24",
+        "type_or_model": "MDR-10-24",
+        "work": "ПНР, замер параметров по ФЕРп 01-06-010-03."
+      },
+      {
+        "n": 20,
+        "title": "Блок питания 12 В для подключения АКБ OPTEX",
+        "type_or_model": "OPTEX 12V PSU",
+        "work": "ПНР, проверка резервирования по ФЕРп 01-06-023-01."
+      },
+      {
+        "n": 21,
+        "title": "Интеллектуальный блок питания Integriti 8A Smart PSU",
+        "type_or_model": "INTG-996092",
+        "work": "ПНР, проверка телеметрии по ФЕРп 01-06-010-03."
+      }
+    ],
+    "calc_4_1": [
+      {
+        "n": 1,
+        "item": "Интеллектуальный контроллер двух дверей Integriti SLAM",
+        "qty": 46,
+        "rationale": "Контроллер: оконечные каналы учитываются на считывателях; 1 канал управления × 46 шт.",
+        "ki": 0,
+        "ku": 46
+      },
+      {
+        "n": 2,
+        "item": "Модуль моста Ethernet Integriti Ethernet Bridge Module",
+        "qty": 8,
+        "rationale": "Ethernet-мост: 1 канал RS-485 и 1 канал управления × 8 шт.",
+        "ki": 8,
+        "ku": 8
+      },
+      {
+        "n": 3,
+        "item": "Универсальный LAN-модуль расширения на 8 зон Integriti 8 Zone Expander",
+        "qty": 7,
+        "rationale": "7 модулей расширения шлейфов: 1 ki на каждый модуль.",
+        "ki": 7,
+        "ku": 0
+      },
+      {
+        "n": 4,
+        "item": "Считыватель взрывозащищённый AL-RD-S06-N-RMF-T",
+        "qty": 12,
+        "rationale": "Считыватель: 1 информационный канал × 12 шт.; на контроллере повторно не учитывается.",
+        "ki": 12,
+        "ku": 0
+      },
+      {
+        "n": 5,
+        "item": "Считыватель RFID карт AY-K6255 (rev.B)",
+        "qty": 72,
+        "rationale": "Считыватель: 1 информационный канал × 72 шт.; на контроллере повторно не учитывается.",
+        "ki": 72,
+        "ku": 0
+      },
+      {
+        "n": 6,
+        "item": "Считыватель бесконтактный PERCo-MR07 OEM",
+        "qty": 4,
+        "rationale": "Считыватель: 1 информационный канал × 4 шт.; на контроллере повторно не учитывается.",
+        "ki": 4,
+        "ku": 0
+      },
+      {
+        "n": 7,
+        "item": "Извещатель охранный точечный магнитоконтактный ДПМГ-2-100",
+        "qty": 30,
+        "rationale": "30 магнитоконтактных извещателей: 1 ki на извещатель.",
+        "ki": 30,
+        "ku": 0
+      },
+      {
+        "n": 8,
+        "item": "Пассивный уличный широкоугольный ИК-извещатель QXI-ST",
+        "qty": 3,
+        "rationale": "3 объемных ик-извещателя: 1 ki на устройство.",
+        "ki": 3,
+        "ku": 0
+      },
+      {
+        "n": 9,
+        "item": "Анализатор периметральной системы охраны FD-341",
+        "qty": 1,
+        "rationale": "1 анализатор периметра: 1 ki (информационный канал) и 1 ku (управление).",
+        "ki": 1,
+        "ku": 1
+      },
+      {
+        "n": 10,
+        "item": "Всепогодный турникет-трипод PERCo TTR-11A",
+        "qty": 2,
+        "rationale": "2 турникета: 1 ki (контроль прохода) и 1 ku (управление приводом) на турникет.",
+        "ki": 2,
+        "ku": 2
+      },
+      {
+        "n": 11,
+        "item": "Шлагбаум автоматический Гранд-Арктик F6GA",
+        "qty": 2,
+        "rationale": "2 шлагбаума: 1 ki (сигнал состояния) и 1 ku (команда открытия) на устройство.",
+        "ki": 2,
+        "ku": 2
+      },
+      {
+        "n": 12,
+        "item": "Алкотестер Алкобарьер",
+        "qty": 2,
+        "rationale": "2 алкотестера: 1 ki на устройство.",
+        "ki": 2,
+        "ku": 0
+      },
+      {
+        "n": 13,
+        "item": "Электромагнитный взрывозащищённый замок AL-FM-S01-G12K",
+        "qty": 6,
+        "rationale": "6 взрывозащищенных замков: 1 ku (канал управления питанием замка) на замок.",
+        "ki": 0,
+        "ku": 6
+      },
+      {
+        "n": 14,
+        "item": "Электромагнитный замок AL-350FВ-MG",
+        "qty": 39,
+        "rationale": "39 электромагнитных замков: 1 ku на каждый замок.",
+        "ki": 0,
+        "ku": 39
+      },
+      {
+        "n": 15,
+        "item": "Пульт управления 3-кнопочный PU3",
+        "qty": 2,
+        "rationale": "2 пульта управления: 1 ki на устройство.",
+        "ki": 2,
+        "ku": 0
+      },
+      {
+        "n": 16,
+        "item": "Фотоэлементы СПЭК-1113",
+        "qty": 4,
+        "rationale": "4 фотоэлемента безопасности: 1 ki на комплект.",
+        "ki": 4,
+        "ku": 0
+      },
+      {
+        "n": 17,
+        "item": "Блок питания LRS-150-24",
+        "qty": 2,
+        "rationale": "2 блока питания: 1 ku (канал контроля/управления питанием) на блок.",
+        "ki": 0,
+        "ku": 2
+      },
+      {
+        "n": 18,
+        "item": "Блок питания LRS-35-12",
+        "qty": 2,
+        "rationale": "2 блока питания: 1 ku на устройство.",
+        "ki": 0,
+        "ku": 2
+      },
+      {
+        "n": 19,
+        "item": "Блок питания MDR-10-24",
+        "qty": 1,
+        "rationale": "1 блок питания: 1 ku.",
+        "ki": 0,
+        "ku": 1
+      },
+      {
+        "n": 20,
+        "item": "Блок питания 12 В для подключения АКБ OPTEX",
+        "qty": 1,
+        "rationale": "1 ибп/блок резервного питания: 1 ku.",
+        "ki": 0,
+        "ku": 1
+      },
+      {
+        "n": 21,
+        "item": "Интеллектуальный блок питания Integriti 8A Smart PSU",
+        "qty": 2,
+        "rationale": "2 интеллектуальных бп: 1 ku на устройство.",
+        "ki": 0,
+        "ku": 2
+      }
+    ],
+    "ferp_4_2": [
+      {
+        "code": "ФЕРп 02-01-002-11",
+        "title": "Автоматизированная система управления II категории технической сложности, Кобщ = 160",
+        "unit": "система",
+        "qty": 1,
+        "rationale": "По единому расчету K_total=261."
+      },
+      {
+        "code": "ФЕРп 02-01-002-12",
+        "title": "Автоматизированная система управления II категории технической сложности, добавляется каждый канал сверх базы",
+        "unit": "канал",
+        "qty": 101,
+        "rationale": "261 - 160 = 101 каналов."
+      },
+      {
+        "code": "ФЕРп 01-06-010-03",
+        "title": "Выпрямительный блок питания до 1 кВА со стабилизацией выходного напряжения",
+        "unit": "шт.",
+        "qty": 9,
+        "rationale": "В спецификации присутствуют 9 блоков питания (2 шт LRS-150-24, 2 шт LRS-35-12, 1 шт MDR-10-24, 2 шт INTG-996092 и др.)."
+      },
+      {
+        "code": "ФЕРп 01-06-023-01",
+        "title": "Устройство контроля уровня напряжения переменного или выпрямленного оперативного тока",
+        "unit": "шт.",
+        "qty": 1,
+        "rationale": "Блок резервированного питания 12 В OPTEX с подключением АКБ."
+      }
+    ],
+    "cable_sections": [],
+    "cable_journal": [],
+    "channel_tests": []
+  }
+}
