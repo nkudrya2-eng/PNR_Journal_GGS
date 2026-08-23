@@ -222,7 +222,7 @@ table.acoustic-table td {
       <td style="border: 1px solid #777; padding: 5px; word-break: break-word;">{{ eq.vendor | default('—') }}</td>
       <td style="border: 1px solid #777; padding: 5px; text-align: center; white-space: nowrap;">{{ eq.quantity }} шт.</td>
       <td style="border: 1px solid #777; padding: 5px; font-size: 11pt; word-break: break-word;">{{ eq.work | default('ПНР, настройка, проверка работоспособности и испытания.') }}</td>
-      <td style="border: 1px solid #777; padding: 5px; text-align: center; white-space: nowrap;"><span style="color: #0b7500; font-weight: bold;">[x] Налажено</span></td>
+      <td style="border: 1px solid #777; padding: 5px; text-align: center; white-space: nowrap;"><span style="color: #0b7500; font-weight: bold;">[x] Выполнено</span></td>
     </tr>
     {% endfor %}
   </tbody>
