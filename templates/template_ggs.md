@@ -83,7 +83,7 @@ table.acoustic-table td {
 <div style="height: 25mm;"></div>
 
    <div style="font-size: 17pt; font-weight: bold; text-transform: uppercase; line-height: 1.4;">
-        {{ project_object | default(project.project_title) }}
+        {{ (project_object | default(project.project_title)) | safe }}
     </div>
 
    <div style="height: 12mm;"></div>
